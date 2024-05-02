@@ -1,6 +1,8 @@
 pipeline {
     agent any
 
+    tools {nodejs "nodejs"}
+    
     environment {
         NGINX_SERVER = "${NGINX_SERVER}"
     }
