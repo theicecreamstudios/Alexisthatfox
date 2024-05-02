@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        NGINX_SERVER = env.NGINX_SERVER
+        NGINX_SERVER = NGINX_SERVER
     }
 
     stages {
@@ -19,7 +19,7 @@ pipeline {
     stage('Deploy to NGINX') {
             steps {
                 script {
-                    sh "scp -r ./build/* ${env.NGINX_SERVER}"
+                    sh "scp -r ./build/* ${NGINX_SERVER}"
                 }
             }
         }
