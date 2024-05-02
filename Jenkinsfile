@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        NGINX_SERVER = $NGINX_SERVER
+        NGINX_SERVER = "${NGINX_SERVER}"
     }
 
     stages {
