@@ -80,20 +80,18 @@ export const useDataCustomHook = () => {
                 ` What I went through and all the continues healing has led me on my mission to let you know that you aren't alone, and your story does matter. I promise to help woman find the courage to speak their truth, reclaim their sexiness and regain their confidence to love themselves.`
             ],
             subHeader: 'Work with Alexis',
-            services: {
-                withDesc : [
-                  {
+            services: [ 
+                {
                     primary: 'AWAKEN THE GODDESS',
                     secondary: 'MOVEMENT CLASS',
-                    description: ''
-                  },
-                  {
+                    description: 'Explore individual or group sessions with Alexis from Cacao Circles to sensual movement classes. Each session is designed with your highest intentions at the center.'
+                },
+                {
                     primary: 'CACAO CIRCLE',
                     secondary: '',
-                    description: ''
-                  }
-                ],
-               withoutDesc: [ {
+                    description: 'Explore individual or group sessions with Alexis from Cacao Circles to sensual movement classes. Each session is designed with your highest intentions at the center.'
+                },
+                {
                   primary: 'FOXES UNPLUG',
                   secondary: 'RETREATS',
                   description: "Alexis hosts women's retreats. She is also available to facilitate at your next retreat!. Click below to join us on one of our retreats or see how Alexis can support your event."
@@ -103,9 +101,7 @@ export const useDataCustomHook = () => {
                   secondary: '',
                   description: 'Interested in hiring me for speaking, engagements, partnerships or other business inquires'
                 }
-                ]
-            },
-            exploreService: 'EXPLORE INDIVIDUAL OR GROUP SESSIONS WITH ALEXIS FROM CACAO CIRCLES TO SENSUAL MOVEMENT CLASSES. EACH SESSION IS DESIGNED WITH YOUR HIGHEST INTENIONS AT THE CENTER.'
+            ]
         },
         sensualDance:{
             header: "Awaken the goddess",

@@ -4,21 +4,23 @@ import Box from '@mui/material/Box';
 import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
+import Toolbar from '@mui/material/Toolbar';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import HeaderTitle from '../../components/HeaderTitle/HeaderTitle';
+import CardFlip from '../../components/CardFlip/CardFlip';
 import {useDataCustomHook} from '../../Data/data';
 
 const About = () => {
 
   const data = useDataCustomHook();
-  const {meetAlexis: {header, foxyImg, about, subHeader, services, exploreService}} = data;
+  const {meetAlexis: {header, foxyImg, about, subHeader, services}} = data;
 
   return(
   <Box className={styles.About}>
     <CssBaseline />
+
+    
     <Container maxWidth="lg">
       <Box sx={{ flexGrow: 1, mt: 4, display: {xs: 'none', sm: 'block'}}}>
         <Grid 
@@ -82,97 +84,16 @@ const About = () => {
           textAlign: 'center'
         }}>{subHeader}</Typography>
       </Box>
+      <Toolbar/>
       <Box sx={{flexGrow: 1, py: 5, px: 3}}>
-        <Grid container spacing={{ xs: 2, md: 1 }} columns={{ xs: 4, sm: 12, md: 12 }}>
-          <Grid item xs={12} md={6}>
-            <Box sx={{flexGrow: 1, py: 3, px: 3}}>
-              <Grid container spacing={{ xs: 2, md: 4 }} columns={{ xs: 4, sm: 12, md: 12 }}>
-                {services.withDesc.map((el, index) => 
-                  <Grid item xs={2} sm={6} key={el.primary}>
-                    <Card sx={{ background: '#1E310A', color: 'white', borderRadius: 0  }}>
-                      <CardContent sx={{height: 180, display: 'flex', flexDirection: 'column', justifyContent: el.secondary ? 'center' : 'center', alignItems: 'center', py: 3}}>
-                        <Typography variant="h5" component="div" 
-                        sx={{ 
-                          width: {xs: 'initial', md: 170},
-                          textAlign: 'center',
-                          fontSize: {xs: '1rem', sm:'1.5rem'},
-                          fontFamily: "Kollektif", fontWeight: 700,
-                          color:'#cfcfcf' 
-                        }}
-                          >
-                            {el.primary.toUpperCase()}
-                          </Typography>
-                        {el.secondary && <Typography variant="h6" component="div" 
-                        sx={{ 
-                          textAlign: 'center', 
-                          mt: 2,
-                          fontSize: {xs: '0.8rem', sm:'1.2rem'},
-                          fontFamily:'monospace', fontWeight: 700,
-                          color:'#cfcfcf'  
-                          }}
-                          >
-                          {el.secondary}
-                          </Typography>
-                        }
-                      </CardContent>
-                    </Card>
-                  </Grid>
-                )}
-                <Grid item xs={12} sm={12}>
-                  <Box sx={{width: 'inherit'}}>
-                    <Typography variant="caption" component="div" sx={{color: 'white', fontFamily:'monospace', fontWeight: 700 }}>
-                      {exploreService}
-                    </Typography>
-                  </Box>
-                </Grid>
-              </Grid>
-            </Box> 
-            
+
+      <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 12 }}>
+        {services.map((el, index) => (
+          <Grid item xs={2} sm={4} md={6} lg={3} key={index}>
+            <CardFlip item={el}/>
           </Grid>
-          <Grid item xs={12} md={6}>
-            <Box sx={{flexGrow: 1, py: 3, px: 3}}>
-              <Grid container spacing={{ xs: 2, md: 4 }} columns={{ xs: 4, sm: 12, md: 12 }}>
-                {services.withoutDesc.map((el, index) => 
-                 <Grid item xs={2} sm={6} key={el.primary}>
-                 <Card sx={{ background: '#1E310A', color: 'white', borderRadius: 0  }}>
-                   <CardContent sx={{height: 180, display: 'flex', flexDirection: 'column', justifyContent: el.secondary ? 'center' : 'center', alignItems: 'center', py: 3}}>
-                     <Typography 
-                     variant="h5" 
-                     component="div" 
-                     sx={{
-                      width: {xs: 120, md: 170}, 
-                      textAlign: 'center',
-                      fontSize: {xs: '1rem', sm:'1.5rem'},
-                      fontFamily:'monospace', fontWeight: 700,
-                      color:'#cfcfcf'  
-                      }}
-                      >
-                        {el.primary.toUpperCase()}
-                      </Typography>
-                     {el.secondary && <Typography variant="h6" component="div" 
-                     sx={{
-                      width: 170, 
-                      textAlign: 'center',
-                      mt: 2,
-                      fontSize: {xs: '0.8rem', sm:'1.2rem'},
-                      fontFamily:'monospace', fontWeight: 700 ,
-                      color:'#cfcfcf' 
-                      }}>{el.secondary}</Typography>}
-                   </CardContent>
-                 </Card>
-               </Grid>
-                )}
-                {services.withoutDesc.map((el, index) => 
-                   <Grid item xs={2} sm={6}>
-                   <Box sx={{width: 'inherit',}}>
-                     <Typography variant="caption" component="div" sx={{color: 'white', fontFamily:'monospace', fontWeight: 700 }}>{el.description.toUpperCase()}</Typography>
-                   </Box>
-                 </Grid>
-                )}
-              </Grid>
-            </Box> 
-          </Grid>
-        </Grid>
+        ))}
+      </Grid>
       </Box>
     </Box>
   </Box>
