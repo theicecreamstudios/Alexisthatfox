@@ -15,6 +15,7 @@ import Podcast from "./pages/Podcast/Podcast";
 import CacaoCircle from "./pages/CacaoCircles/CacaoCircles";
 import SensualDance from "./pages/SensualDance/SensualDance";
 import NoMatch from "./pages/NoMatch/NoMatch"
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         {/* No Page found */}
         <Route path="*" element={<NoMatch />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
     </div>
   );
