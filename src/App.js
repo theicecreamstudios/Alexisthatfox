@@ -16,6 +16,7 @@ import CacaoCircle from "./pages/CacaoCircles/CacaoCircles";
 import SensualDance from "./pages/SensualDance/SensualDance";
 import NoMatch from "./pages/NoMatch/NoMatch"
 import Footer from './components/Footer/Footer';
+import { Box } from '@mui/material';
 
 
 function App() {
@@ -24,9 +25,13 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Navbar activeLink={activeLink} setActiveLink={setActiveLink}/>
-      
-       <Routes>
+      <Box sx={{display:'flex',flexDirection:'column'}}>
+        <Box>
+        <Navbar activeLink={activeLink} setActiveLink={setActiveLink}/>
+        </Box>
+
+        <Box sx={{flexGrow:1}}>
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="meet-me" element={<About />} />
         <Route path="contact" element={<Contact />} />
@@ -38,8 +43,12 @@ function App() {
         {/* No Page found */}
         <Route path="*" element={<NoMatch />} />
       </Routes>
-      <Footer/>
-    </BrowserRouter>
+        </Box>
+        <Box>
+        <Footer/>
+        </Box>
+      </Box>
+  </BrowserRouter>
     </div>
   );
 }
