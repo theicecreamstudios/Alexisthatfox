@@ -133,18 +133,20 @@ function Navbar({activeLink, setActiveLink}) {
           >
             {name}
           </Typography>
-          <Box sx={{ flexGrow: 1, justifyContent:"center", alignItems:"flex-start" , textAlign:"center" , display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, justifyContent:"space-evenly", alignItems:"flex-start" , textAlign:"center" , display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Link 
               href={page.path} 
               underline="none" 
+              target={page.label === 'Shop' ? '_blank' : ''}
               sx={{
                 fontFamily: 'Assistant, sans-serif',
                 fontOpticalSizing: 'auto',
                 fontStyle: 'normal',
                 fontWeight: 700,
+                fontSize: 12,
                 color: activeLink === page.path ? '#564e37' : colorAlexis, 
-                mx:3, 
+                mx:2, 
                 cursor:"pointer",
                 "&:hover":{
                   color: '#564e37'
