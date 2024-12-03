@@ -19,6 +19,7 @@ const SoundBath = () => {
       header,
       image,
       description,
+      accessory,
       impacts: {
         impactHeader,
         impactDescription,
@@ -44,6 +45,35 @@ const SoundBath = () => {
             textAlign: 'center',
           }}
         >
+          <Box sx={{ mt: 1, position: 'absolute' }}>
+            <CardMedia
+              component='img'
+              sx={{
+                width: { xs: 100, sm: 120, md: 200 },
+                opacity: 0.6,
+              }}
+              image={accessory}
+              alt='Foxy'
+            />
+          </Box>
+          <Box
+            sx={{
+              mt: 3,
+              position: 'absolute',
+              right: 0,
+              transform: 'rotate(93deg)',
+            }}
+          >
+            <CardMedia
+              component='img'
+              sx={{
+                width: { xs: 100, sm: 120, md: 200 },
+                opacity: 0.6,
+              }}
+              image={accessory}
+              alt='Foxy'
+            />
+          </Box>
           <Typography
             variant='h2'
             sx={{ py: 5, mb: 0, fontFamily: 'BDSans', color: '#FFFFFF' }}
@@ -163,14 +193,15 @@ const SoundBath = () => {
               columns={{ xs: 12, sm: 12, md: 12 }}
             >
               {soundBathsSessions.map((session) => (
-                <Grid item xs={12} sm={6} >
-                  <Box sx={{
-                    display: 'flex',
-                    flexDirection:'column',
-                    alignItems: 'center',
-                    justifyContent:'center'
-
-                  }}>
+                <Grid item xs={12} sm={6}>
+                  <Box
+                    sx={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                    }}
+                  >
                     <Typography
                       variant='h4'
                       sx={{
@@ -203,7 +234,7 @@ const SoundBath = () => {
             sx={{
               textAlign: 'center',
               width: 350,
-              
+
               m: 'auto',
               pb: 1,
             }}

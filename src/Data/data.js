@@ -22,7 +22,7 @@ import cocaoBrew from '../assets/photosAlexis1/cacaoBrew.png';
 import grlTrip from '../assets/photosAlexis2/retreat_girls_trips.jpg';
 import healing from '../assets/photosAlexis2/retreat_healing.jpg';
 import coupleRetreat from '../assets/photosAlexis2/coupleRetreat.png';
-import foxie from '../assets/photosAlexis2/foxie1.png';
+import foxie from '../assets/accessories/logo.webp';
 import Retreat1 from '../assets/photosAlexis1/Healing_Retreat.png';
 import santorini from '../assets/photosAlexis1/santorini.png';
 import pastRetreat from '../assets/photosAlexis1/pastRetreat.jpg';
@@ -47,8 +47,9 @@ import threads from '../assets/accessories/threads.svg';
 import tiktok from '../assets/accessories/tiktok-square.svg';
 import youtube from '../assets/accessories/youtube.svg';
 import soldOut from '../assets/accessories/soldout.png';
-import foxyPlaceholder from '../assets/accessories/foxyplacebolder.png';
-
+import foxyPlaceholder from '../assets/accessories/foxyClub.webp';
+import glitter from '../assets/accessories/glitter.png'
+import vines from '../assets/accessories/vines.png'
 export const useDataCustomHook = () => {
   const data = {
     name: 'AlexisThatFox',
@@ -178,6 +179,7 @@ export const useDataCustomHook = () => {
     sensualDance: {
       header: 'Awaken the goddess',
       foxyImg: SensualDanceWorkshop,
+      accessory: glitter,
       description: [
         `Through the sacred art of sensual dance, Awaken the Goddess invites you to rediscover and embody your divine feminine essence. With a focus on many types of music—especially the soul-stirring rhythms of Bachata—we create a natural and playful space where heart, body, mind, and soul find balance and flow. This is more than just movement; it’s a journey into your sensual power, allowing you to reconnect with yourself in the most sublime and empowering way.`,
 
@@ -211,6 +213,7 @@ export const useDataCustomHook = () => {
       healer: {
         header: 'Cacoa healer',
         img: cacoaHealer,
+        accessory: vines,
         description: [
           ` When we speak of cacao, we often celebrate her ability to open the heart—but what does that truly mean? How can this ancient plant medicine from the Amazon transform us on a spiritual and emotional level? The answer lies in cacao’s power to guide us into deeper communion with ourselves, inviting healing in the most nurturing, transformative way.`,
 
@@ -243,6 +246,7 @@ export const useDataCustomHook = () => {
     soundBath: {
       header: 'Sound Bath',
       image: SensualDanceWorkshop,
+      accessory: glitter,
       description: `A sound bath is a meditative experience where you’re immersed in the therapeutic sounds of instruments like crystal bowls, gongs, tuning forks, and so much more. These instruments create vibrations and frequencies that wash over you, helping to guide your body and mind into a deep state of relaxation and healing. Unlike traditional meditation, where silence or a guided voice is key, a sound bath uses the power of sound to connect you with deeper levels of calm.`,
       impacts: {
         impactHeader: 'How a Sound Bath Impacts and Heals You',
@@ -457,6 +461,7 @@ export const useDataCustomHook = () => {
     },
     events: {
       header: 'Events Happening near you',
+      glitter: glitter,
       description: `Whatever you're going through, you don't have to go through it alone. Alexis that Fox aims to create an inclusive community of womxnknown as “FOXGANG” who are all on a journey just like you.`,
       btnText: 'Book Event',
       btnTextLink: 'https://www.wetravel.com',
