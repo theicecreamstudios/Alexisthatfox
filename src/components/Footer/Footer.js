@@ -32,7 +32,7 @@ export default function Footer() {
     <ThemeProvider theme={defaultTheme}>
       <Box
         sx={{
-          mt: 5,
+          mt: 15,
           mb: 1,
         }}
       >

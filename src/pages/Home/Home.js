@@ -86,7 +86,7 @@ const Home = () => {
                   variant="body1"
                   component="div"
                   sx={{
-                    px: 2,
+                    px: {xs: 1, sm: 2},
                     fontFamily: "Tenor Sans, sans-serif",
                     fontSize: { xs: 12, md: 15 },
                     display: { xs: "none", sm: "block" },
