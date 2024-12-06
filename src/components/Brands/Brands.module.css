@@ -27,6 +27,8 @@
       display: flex;
       animation: swipe var(--speed) linear infinite backwards;
     }
+
+    
 }
 
 @keyframes swipe {

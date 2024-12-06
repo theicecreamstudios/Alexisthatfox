@@ -17,6 +17,9 @@ import SensualDance from "./pages/SensualDance/SensualDance";
 import NoMatch from "./pages/NoMatch/NoMatch"
 import Footer from './components/Footer/Footer';
 import { Box } from '@mui/material';
+import SoundBath from './pages/SoundBath/SoundBath';
+import SocialClub from './pages/SocialClub/SocialClub';
+import Events from './pages/Events/Events';
 
 
 function App() {
@@ -35,10 +38,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="meet-me" element={<About />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="retreats-event" element={<Retreats />} />
+        <Route path="retreats" element={<Retreats />} />
+        <Route path="events" element={<Events />} />
         <Route path="shop" element={<Shop/>} />
         <Route path="podcast" element={<Podcast/>} />
-        <Route path="cacao-circles" element={<CacaoCircle/>} />
+        <Route path="cacao-healer" element={<CacaoCircle/>} />
+        <Route path="sound-bath" element={<SoundBath/>} />
+        <Route path="social-club" element={<SocialClub/>} />
         <Route path="sensual-dance" element={<SensualDance/>} />
         {/* No Page found */}
         <Route path="*" element={<NoMatch />} />
