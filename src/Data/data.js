@@ -43,7 +43,7 @@ import soldOut from '../assets/accessories/soldout.png';
 import foxyClubLogo from '../assets/accessories/foxyClub.webp';
 import vines from '../assets/accessories/vines.png'
 import glitter from '../assets/accessories/glitter.png'
-
+import foxyLogo from '../assets/accessories/logo.webp'
 import soundBathIMG from "../assets/accessories/soundBathImage.png";
 import soundBathIMG1 from "../assets/accessories/soundBathIMG1.png";
 import soundBathIMG2 from "../assets/accessories/soundBathIMG2.png";
@@ -64,7 +64,9 @@ import holdingHands from "../assets/accessories/womenChat.png";
 import foxxyYoutube from "../assets/accessories/foxxyYoutube.png";
 import comingSoon from "../assets/accessories/comingSoon.png";
 import onAir from "../assets/accessories/onAir.png";
-
+import stampIcon from "../assets/accessories/submit_Stamp.png"
+import envelop from '../assets/accessories/envelop.png'
+import brownPaper from '../assets/accessories/brownPaper.png'
 
 export const useDataCustomHook = () => {
   const data = {
@@ -323,7 +325,7 @@ export const useDataCustomHook = () => {
     },
     retreats: {
       jumbotron: {
-        icon: foxie,
+        icon: foxyLogo,
         accessory: {
           icon: InstaIcon,
           link: "https://www.instagram.com/",
@@ -563,7 +565,10 @@ export const useDataCustomHook = () => {
       subHeader: "Spring 2024",
     },
     contact: {
-      img: snowyFox,
+      accessory: envelop,
+      stamp: stampIcon,
+      brownPaper: brownPaper,
+      header: 'Lets Connect',
       initialState: {
         name: "",
         email: "",
@@ -602,6 +607,7 @@ export const useDataCustomHook = () => {
             "Partnerships",
             "Speaking",
             "Engagements",
+            "Something Else"
           ],
         },
         {
