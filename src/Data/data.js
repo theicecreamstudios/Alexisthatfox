@@ -1,49 +1,49 @@
 // import { useTranslation } from "react-i18next";
 
-import gap from "../assets/LogoPartnersBRANDS/adoreME.png";
-import cerebral from "../assets/LogoPartnersBRANDS/cerebral.png";
-import champs from "../assets/LogoPartnersBRANDS/Champs.png";
-import foria from "../assets/LogoPartnersBRANDS/Foria.png";
-import fruitByTheFoot from "../assets/LogoPartnersBRANDS/fruitbythefoot.png";
-import lelo from "../assets/LogoPartnersBRANDS/Lelo.png";
-import pantene from "../assets/LogoPartnersBRANDS/Pantene.png";
-import summers from "../assets/LogoPartnersBRANDS/summers.jpg";
-import tula from "../assets/LogoPartnersBRANDS/Tula.png";
-import walmart from "../assets/LogoPartnersBRANDS/walmart.png";
-import WomenBest from "../assets/photosAlexis1/womensbest.png";
-import Skylar from "../assets/photosAlexis1/SkylarLogo.jpg";
-import foxy from "../assets/photosAlexis2/foxy.jpg";
-import meetFoxy from "../assets/photosAlexis1/meetFoxxy.jpg";
-import SensualDanceWorkshop from "../assets/photosAlexis1/Sensual-dance.jpg";
-import coffeeBeans from "../assets/photosAlexis1/coffee.jpeg";
-import cacoaHealer from "../assets/photosAlexis1/cacaoHealer.png";
-import cacaoCircle from "../assets/photosAlexis1/cacaoCircle.png";
-import cocaoBrew from "../assets/photosAlexis1/cacaoBrew.png";
-import grlTrip from "../assets/photosAlexis2/retreat_girls_trips.jpg";
-import healing from "../assets/photosAlexis2/retreat_healing.jpg";
-import foxie from "../assets/photosAlexis2/foxie1.png";
-import pastRetreat from "../assets/photosAlexis1/pastRetreat.jpg";
-import pin from "../assets/photosAlexis1/pin.png";
-import pointer from "../assets/photosAlexis1/clickPointer.png";
-import videoFoxy from "../assets/photosAlexis1/retreatVideo.mp4";
-import shopImage1 from "../assets/foxxyIMGSHOP/podcastIMG.png";
-import shopImage5 from "../assets/photosAlexis2/appeal.jpg";
-import snowyFox from "../assets/photosAlexis1/fox.png";
-import yourHosts from "../assets/photosAlexis2/yourHosts.png";
-import arrow from "../assets/accessories/arrowDirection.png";
-import lipPrint from "../assets/accessories/Untitled design.png";
-import InstaIcon from "../assets/accessories/instLogo.png";
-import facebook from "../assets/accessories/facebook.svg";
-import instagram from "../assets/accessories/instagram.svg";
-import snapchat from "../assets/accessories/snapchat.svg";
-import threads from "../assets/accessories/threads.svg";
-import tiktok from "../assets/accessories/tiktok-square.svg";
-import youtube from "../assets/accessories/youtube.svg";
-import soldOut from "../assets/accessories/soldout.png";
-import foxyClubLogo from "../assets/accessories/foxyClub.webp";
-import vines from "../assets/accessories/vines.png";
-import glitter from "../assets/accessories/glitter.png";
-import foxyLogo from "../assets/accessories/logo.webp";
+import gap from '../assets/LogoPartnersBRANDS/adoreME.png';
+import cerebral from '../assets/LogoPartnersBRANDS/cerebral.png';
+import champs from '../assets/LogoPartnersBRANDS/Champs.png';
+import foria from '../assets/LogoPartnersBRANDS/Foria.png';
+import fruitByTheFoot from '../assets/LogoPartnersBRANDS/fruitbythefoot.png';
+import lelo from '../assets/LogoPartnersBRANDS/Lelo.png';
+import pantene from '../assets/LogoPartnersBRANDS/Pantene.png';
+import summers from '../assets/LogoPartnersBRANDS/summers.jpg';
+import tula from '../assets/LogoPartnersBRANDS/Tula.png';
+import walmart from '../assets/LogoPartnersBRANDS/walmart.png';
+import WomenBest from '../assets/photosAlexis1/womensbest.png';
+import Skylar from '../assets/photosAlexis1/SkylarLogo.jpg';
+import foxy from '../assets/photosAlexis2/foxy.jpg';
+import meetFoxy from '../assets/photosAlexis1/meetFoxxy.jpg';
+import SensualDanceWorkshop from '../assets/photosAlexis1/Sensual-dance.jpg';
+import coffeeBeans from '../assets/photosAlexis1/coffee.jpeg';
+import cacoaHealer from '../assets/photosAlexis1/cacaoHealer.png';
+import cacaoCircle from '../assets/photosAlexis1/cacaoCircle.png';
+import cocaoBrew from '../assets/photosAlexis1/cacaoBrew.png';
+import grlTrip from '../assets/photosAlexis2/retreat_girls_trips.jpg';
+import healing from '../assets/photosAlexis2/retreat_healing.jpg';
+import foxie from '../assets/photosAlexis2/foxie1.png';
+import pastRetreat from '../assets/photosAlexis1/pastRetreat.jpg';
+import pin from '../assets/photosAlexis1/pin.png';
+import pointer from '../assets/photosAlexis1/clickPointer.png';
+import videoFoxy from '../assets/photosAlexis1/retreatVideo.mp4';
+import shopImage1 from '../assets/foxxyIMGSHOP/podcastIMG.png';
+import shopImage5 from '../assets/photosAlexis2/appeal.jpg';
+import snowyFox from '../assets/photosAlexis1/fox.png';
+import yourHosts from '../assets/photosAlexis2/yourHosts.png';
+import arrow from '../assets/accessories/arrowDirection.png';
+import lipPrint from '../assets/accessories/Untitled design.png';
+import InstaIcon from '../assets/accessories/instLogo.png';
+import facebook from '../assets/accessories/facebook.svg';
+import instagram from '../assets/accessories/instagram.svg';
+import snapchat from '../assets/accessories/snapchat.svg';
+import threads from '../assets/accessories/threads.svg';
+import tiktok from '../assets/accessories/tiktok-square.svg';
+import youtube from '../assets/accessories/youtube.svg';
+import soldOut from '../assets/accessories/soldout.png';
+import foxyClubLogo from '../assets/accessories/foxyClub.webp';
+import vines from '../assets/accessories/vines.png'
+import glitter from '../assets/accessories/glitter.png'
+import foxyLogo from '../assets/accessories/logo.webp'
 import soundBathIMG from "../assets/accessories/soundBathImage.png";
 import soundBathIMG1 from "../assets/accessories/soundBathIMG1.png";
 import soundBathIMG2 from "../assets/accessories/soundBathIMG2.png";
@@ -64,6 +64,9 @@ import holdingHands from "../assets/accessories/womenChat.png";
 import foxxyYoutube from "../assets/accessories/foxxyYoutube.png";
 import comingSoon from "../assets/accessories/comingSoon.png";
 import onAir from "../assets/accessories/onAir.png";
+import stampIcon from "../assets/accessories/submit_Stamp.png"
+import envelop from '../assets/accessories/envelop.png'
+import brownPaper from '../assets/accessories/brownPaper.png'
 import noFlyer from "../assets/accessories/noFlyer25.png";
 
 export const useDataCustomHook = () => {
@@ -580,7 +583,10 @@ export const useDataCustomHook = () => {
       subHeader: "Spring 2024",
     },
     contact: {
-      img: snowyFox,
+      accessory: envelop,
+      stamp: stampIcon,
+      brownPaper: brownPaper,
+      header: 'Lets Connect',
       initialState: {
         name: "",
         email: "",
@@ -619,6 +625,7 @@ export const useDataCustomHook = () => {
             "Partnerships",
             "Speaking",
             "Engagements",
+            "Something Else"
           ],
         },
         {
