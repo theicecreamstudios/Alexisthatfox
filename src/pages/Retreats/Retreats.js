@@ -117,7 +117,7 @@ const Retreats = () => {
       <Box
         sx={{
           height: { xs: "30vh", lg: "35vh" },
-          background: "#1e3706",
+          background: "#392d13",
           textAlign: "center",
           position: "relative",
         }}
@@ -128,10 +128,10 @@ const Retreats = () => {
             sx={{
               width: { xs: 50, sm: 100, md: 150 },
               height: { xs: 50, sm: 100, md: 150 },
-              borderRadius: '50%',
-              transform: 'scale(2.1)',
-              transformOrigin: 'center',
-              transition: 'transform 0.5s ease', 
+              borderRadius: "50%",
+              transform: "scale(2.1)",
+              transformOrigin: "center",
+              transition: "transform 0.5s ease",
             }}
             image={icon}
             alt="Foxy"
@@ -193,10 +193,10 @@ const Retreats = () => {
         sx={{
           width: { xs: 300, sm: 300, md: 500 },
           height: { xs: 200, sm: 300, md: 500 },
-          m: 'auto',
-          mt: { xs: '-80px', sm: '-100px', md: '-40px'},
-          position: 'relative',
-          overflow: 'hidden',
+          m: "auto",
+          mt: { xs: "-80px", sm: "-100px", md: "-40px" },
+          position: "relative",
+          overflow: "hidden",
         }}
       >
         <video
@@ -205,8 +205,8 @@ const Retreats = () => {
           muted
           loop
           style={{
-            width: '100%',
-            height: '100%',
+            width: "100%",
+            height: "100%",
             // objectFit: 'cover',
           }}
         >
@@ -366,16 +366,18 @@ const Retreats = () => {
                     },
                   }}
                 >
-                  <CardMedia
-                    component="img"
-                    sx={{
-                      width: { xs: "90%", sm: 150 }, // Maintain the same image size
-                      cursor: "pointer",
-                      borderRadius: 2, // Optional: Add slight rounding for aesthetic
-                    }}
-                    image={item.img}
-                    alt={`Item ${index}`}
-                  />
+                  <Link href={item.link} underline="none" target="_blank">
+                    <CardMedia
+                      component="img"
+                      sx={{
+                        width: { xs: "90%", sm: 150 }, // Maintain the same image size
+                        cursor: "pointer",
+                        borderRadius: 2, // Optional: Add slight rounding for aesthetic
+                      }}
+                      image={item.img}
+                      alt={`Item ${index}`}
+                    />
+                  </Link>
                 </Box>
               ))}
             </Box>
@@ -398,7 +400,7 @@ const Retreats = () => {
 
       <Box
         sx={{
-          background: "#1E310A",
+          background: "#392d13",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -534,10 +536,17 @@ const Retreats = () => {
                 fontWeight: 700,
                 fontFamily: "Tenor Sans",
               }}
+              // onClick={() => {
+              //   const newTab = window.open("", "_blank");
+              //   if (newTab) {
+              //     newTab.location.href = `mailto:${sponsor.email}`;
+              //   }
               onClick={() => {
-                const newTab = window.open("", "_blank");
-                if (newTab) {
-                  newTab.location.href = `mailto:${sponsor.email}`;
+                const email = sponsor.email;
+                if (email) {
+                  window.location.href = `mailto:${encodeURIComponent(email)}`;
+                } else {
+                  console.error("No email address available");
                 }
               }}
             />
