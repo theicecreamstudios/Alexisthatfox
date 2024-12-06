@@ -21,21 +21,14 @@ import cacaoCircle from '../assets/photosAlexis1/cacaoCircle.png';
 import cocaoBrew from '../assets/photosAlexis1/cacaoBrew.png';
 import grlTrip from '../assets/photosAlexis2/retreat_girls_trips.jpg';
 import healing from '../assets/photosAlexis2/retreat_healing.jpg';
-import coupleRetreat from '../assets/photosAlexis2/coupleRetreat.png';
 import foxie from '../assets/photosAlexis2/foxie1.png';
-import Retreat1 from '../assets/photosAlexis1/Healing_Retreat.png';
-import santorini from '../assets/photosAlexis1/santorini.png';
 import pastRetreat from '../assets/photosAlexis1/pastRetreat.jpg';
 import pin from '../assets/photosAlexis1/pin.png';
 import pointer from '../assets/photosAlexis1/clickPointer.png';
 import videoFoxy from '../assets/photosAlexis1/retreatVideo.mp4';
 import shopImage1 from '../assets/foxxyIMGSHOP/podcastIMG.png';
-import shopImage2 from '../assets/foxxyIMGSHOP/podcastIMG2.png';
-import shopImage3 from '../assets/foxxyIMGSHOP/YOUTUBEfox.png';
-import shopImage4 from '../assets/foxxyIMGSHOP/comingSoon.png';
-import shopImage5 from '../assets/photosAlexis2/image_6483441 (7).jpg';
+import shopImage5 from '../assets/photosAlexis2/appeal.jpg';
 import snowyFox from '../assets/photosAlexis1/fox.png';
-import colombiaFlyer from '../assets/photosAlexis2/colombiaFlyer.jpg';
 import yourHosts from '../assets/photosAlexis2/yourHosts.png';
 import arrow from '../assets/accessories/arrowDirection.png';
 import lipPrint from '../assets/accessories/Untitled design.png';
@@ -47,7 +40,7 @@ import threads from '../assets/accessories/threads.svg';
 import tiktok from '../assets/accessories/tiktok-square.svg';
 import youtube from '../assets/accessories/youtube.svg';
 import soldOut from '../assets/accessories/soldout.png';
-import foxyPlaceholder from '../assets/accessories/logo.webp';
+import foxyClubLogo from '../assets/accessories/foxyClub.webp';
 import vines from '../assets/accessories/vines.png'
 import glitter from '../assets/accessories/glitter.png'
 
@@ -64,7 +57,6 @@ import cancunFlyer25 from "../assets/accessories/cancunFlyer25.png";
 import jTree26 from "../assets/accessories/jTree26.png";
 import sAflyer25 from "../assets/accessories/sAflyer25.png";
 import liveEvent from "../assets/accessories/liveEvent.png";
-import foxxySocialLogo from "../assets/accessories/foxySocialLogo.png";
 import threeGirls from "../assets/accessories/threeGirls.png";
 import girlsDrink from "../assets/accessories/girlsDrink.png";
 import kayak from "../assets/accessories/paddlePic.png";
@@ -482,7 +474,7 @@ export const useDataCustomHook = () => {
         link: "https://www.instagram.com/",
         linkText: "thefoxysocialclub",
       },
-      logo: foxxySocialLogo,
+      logo: foxyClubLogo,
       header: "WELCOME TO THE FOXY SOCIAL CLUB: WHERE FOXES UNITE!",
       description: [
         `Let’s be real—life is better when you’ve got a fierce, fabulous community around you. That’s exactly what the Foxy Social Club is all about! This isn’t just a social club; it’s a whole lifestyle for bold, adventurous women who are ready to live life to the fullest. We’re Foxes—aka #FoxGang—and we’re all about building connections, having fun, and making memories, both online and in person`,
@@ -492,7 +484,7 @@ export const useDataCustomHook = () => {
       ],
       clubImages: [girlsDrink, holdingHands, threeGirls, kayak],
       foxyMembership: {
-        backgroundImage: foxxySocialLogo,
+        backgroundImage: foxyClubLogo,
         icon: pointer,
         membershipHeader: "FOXGANG Memberships",
         memberships: [
