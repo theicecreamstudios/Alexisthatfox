@@ -1,16 +1,24 @@
-import React from "react";
-import styles from "./Events.module.css";
-import CssBaseline from "@mui/material/CssBaseline";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import CardMedia from "@mui/material/CardMedia";
-import { useDataCustomHook } from "../../Data/data";
-import FoxyButton from "../../components/FoxyButton/FoxyButton";
+import React from 'react';
+import styles from './Events.module.css';
+import CssBaseline from '@mui/material/CssBaseline';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import CardMedia from '@mui/material/CardMedia';
+import { useDataCustomHook } from '../../Data/data';
+import FoxyButton from '../../components/FoxyButton/FoxyButton';
 
 const Events = () => {
   const data = useDataCustomHook();
   const {
-    events: { header, description, btnText, btnTextLink, img, accessory },
+    events: {
+      header,
+      glitter,
+      description,
+      btnText,
+      btnTextLink,
+      img,
+      accessory,
+    },
   } = data;
 
   return (
@@ -25,8 +33,37 @@ const Events = () => {
           position: "relative",
         }}
       >
+        <Box sx={{ mt: 1, position: 'absolute' }}>
+          <CardMedia
+            component='img'
+            sx={{
+              width: { xs: 70, sm: 100, md: 200 },
+              opacity: 0.6,
+            }}
+            image={glitter}
+            alt='Foxy'
+          />
+        </Box>
+        <Box
+          sx={{
+            mt: 3,
+            position: 'absolute',
+            right: 0,
+            transform: 'rotate(93deg)',
+          }}
+        >
+          <CardMedia
+            component='img'
+            sx={{
+              width: { xs: 70, sm: 100, md: 200 },
+              opacity: 0.6,
+            }}
+            image={glitter}
+            alt='Foxy'
+          />
+        </Box>
         <Typography
-          variant="h3"
+          variant='h3'
           sx={{
             pt: 2,
             mb: 0,
@@ -66,56 +103,56 @@ const Events = () => {
       >
         <Box
           sx={{
-            position: "relative",
-            width: { xs: "70%", sm: "50%", md: 350 },
-            m: "auto",
+            position: 'relative',
+            width: { xs: '70%', sm: '50%', md: 350 },
+            m: 'auto',
           }}
         >
           <CardMedia
-            component="img"
+            component='img'
             sx={{
-              width: { xs: "50%", md: 200 },
-              height: "auto",
-              position: "absolute",
+              width: { xs: '50%', md: 200 },
+              height: 'auto',
+              position: 'absolute',
               top: -2,
               left: { xs: -17, md: -80 },
-              transform: "rotate(348deg)",
+              transform: 'rotate(348deg)',
             }}
             image={accessory}
-            alt="Foxy"
+            alt='Foxy'
           />
 
           <CardMedia
-            component="img"
+            component='img'
             sx={{
               // width: { xs: '70%', sm: '50%', md: 350 },
-              height: "auto",
+              height: 'auto',
               p: 2,
-              background: "white",
+              background: 'white',
             }}
             image={img}
-            alt="Foxy"
+            alt='Foxy'
           />
         </Box>
       </Box>
-      <Box sx={{ textAlign: "center" }}>
+      <Box sx={{ textAlign: 'center' }}>
         <FoxyButton
           fullWidth={false}
-          variant="contained"
+          variant='contained'
           label={btnText.toUpperCase()}
-          backgroundColor={"#706953"}
-          hoverBackgroundColor={"#706953"}
-          height={"initial"}
-          width={"initial"}
+          backgroundColor={'#706953'}
+          hoverBackgroundColor={'#706953'}
+          height={'initial'}
+          width={'initial'}
           sx={{
             borderRadius: 0,
             fontSize: { xs: 15, md: 18 },
-            color: "#FFFFF",
+            color: '#FFFFF',
             fontWeight: 700,
             px: 5,
           }}
           onClick={() => {
-            const newTab = window.open("", "_blank");
+            const newTab = window.open('', '_blank');
             if (newTab) {
               newTab.location.href = btnTextLink;
             }

@@ -128,8 +128,10 @@ const Retreats = () => {
             sx={{
               width: { xs: 50, sm: 100, md: 150 },
               height: { xs: 50, sm: 100, md: 150 },
-              border: "1px solid gold",
-              borderRadius: "50%",
+              borderRadius: '50%',
+              transform: 'scale(2.1)',
+              transformOrigin: 'center',
+              transition: 'transform 0.5s ease', 
             }}
             image={icon}
             alt="Foxy"
@@ -189,12 +191,12 @@ const Retreats = () => {
       </Box>
       <Box
         sx={{
-          width: { xs: 300, sm: 300 },
-          height: { xs: 200, sm: 300 },
-          m: "auto",
-          mt: { xs: "-80px", sm: "-100px", md: "-40px" },
-          position: "relative",
-          overflow: "hidden",
+          width: { xs: 300, sm: 300, md: 500 },
+          height: { xs: 200, sm: 300, md: 500 },
+          m: 'auto',
+          mt: { xs: '-80px', sm: '-100px', md: '-40px'},
+          position: 'relative',
+          overflow: 'hidden',
         }}
       >
         <video
@@ -203,9 +205,9 @@ const Retreats = () => {
           muted
           loop
           style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
+            width: '100%',
+            height: '100%',
+            // objectFit: 'cover',
           }}
         >
           <source src={videoSrc} type="video/mp4" />

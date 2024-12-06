@@ -1,53 +1,56 @@
 // import { useTranslation } from "react-i18next";
 
-import gap from "../assets/LogoPartnersBRANDS/adoreME.png";
-import cerebral from "../assets/LogoPartnersBRANDS/cerebral.png";
-import champs from "../assets/LogoPartnersBRANDS/Champs.png";
-import foria from "../assets/LogoPartnersBRANDS/Foria.png";
-import fruitByTheFoot from "../assets/LogoPartnersBRANDS/fruitbythefoot.png";
-import lelo from "../assets/LogoPartnersBRANDS/Lelo.png";
-import pantene from "../assets/LogoPartnersBRANDS/Pantene.png";
-import summers from "../assets/LogoPartnersBRANDS/summers.jpg";
-import tula from "../assets/LogoPartnersBRANDS/Tula.png";
-import walmart from "../assets/LogoPartnersBRANDS/walmart.png";
-import WomenBest from "../assets/photosAlexis1/womensbest.png";
-import Skylar from "../assets/photosAlexis1/SkylarLogo.jpg";
-import foxy from "../assets/photosAlexis2/foxy.jpg";
-import meetFoxy from "../assets/photosAlexis1/meetFoxxy.jpg";
-import SensualDanceWorkshop from "../assets/photosAlexis1/Sensual-dance.jpg";
-import coffeeBeans from "../assets/photosAlexis1/coffee.jpeg";
-import cacoaHealer from "../assets/photosAlexis1/cacaoHealer.png";
-import cacaoCircle from "../assets/photosAlexis1/cacaoCircle.png";
-import cocaoBrew from "../assets/photosAlexis1/cacaoBrew.png";
-import grlTrip from "../assets/photosAlexis2/retreat_girls_trips.jpg";
-import healing from "../assets/photosAlexis2/retreat_healing.jpg";
-import coupleRetreat from "../assets/photosAlexis2/coupleRetreat.png";
-import foxie from "../assets/photosAlexis2/foxie1.png";
-import Retreat1 from "../assets/photosAlexis1/Healing_Retreat.png";
-import santorini from "../assets/photosAlexis1/santorini.png";
-import pastRetreat from "../assets/photosAlexis1/pastRetreat.jpg";
-import pin from "../assets/photosAlexis1/pin.png";
-import pointer from "../assets/photosAlexis1/clickPointer.png";
-import videoFoxy from "../assets/photosAlexis1/retreatVideo.mp4";
-import shopImage1 from "../assets/accessories/podCast.png";
-import shopImage2 from "../assets/foxxyIMGSHOP/podcastIMG2.png";
-import shopImage3 from "../assets/foxxyIMGSHOP/YOUTUBEfox.png";
-import shopImage4 from "../assets/foxxyIMGSHOP/comingSoon.png";
-import shopImage5 from "../assets/photosAlexis2/image_6483441 (7).jpg";
-import snowyFox from "../assets/photosAlexis1/fox.png";
-import colombiaFlyer from "../assets/photosAlexis2/colombiaFlyer.jpg";
-import yourHosts from "../assets/photosAlexis2/yourHosts.png";
-import arrow from "../assets/accessories/arrowDirection.png";
-import lipPrint from "../assets/accessories/Untitled design.png";
-import InstaIcon from "../assets/accessories/instLogo.png";
-import facebook from "../assets/accessories/facebook.svg";
-import instagram from "../assets/accessories/instagram.svg";
-import snapchat from "../assets/accessories/snapchat.svg";
-import threads from "../assets/accessories/threads.svg";
-import tiktok from "../assets/accessories/tiktok-square.svg";
-import youtube from "../assets/accessories/youtube.svg";
-import soldOut from "../assets/accessories/soldout.png";
-import foxyPlaceholder from "../assets/accessories/foxxyBGSocialLogo.png";
+import gap from '../assets/LogoPartnersBRANDS/adoreME.png';
+import cerebral from '../assets/LogoPartnersBRANDS/cerebral.png';
+import champs from '../assets/LogoPartnersBRANDS/Champs.png';
+import foria from '../assets/LogoPartnersBRANDS/Foria.png';
+import fruitByTheFoot from '../assets/LogoPartnersBRANDS/fruitbythefoot.png';
+import lelo from '../assets/LogoPartnersBRANDS/Lelo.png';
+import pantene from '../assets/LogoPartnersBRANDS/Pantene.png';
+import summers from '../assets/LogoPartnersBRANDS/summers.jpg';
+import tula from '../assets/LogoPartnersBRANDS/Tula.png';
+import walmart from '../assets/LogoPartnersBRANDS/walmart.png';
+import WomenBest from '../assets/photosAlexis1/womensbest.png';
+import Skylar from '../assets/photosAlexis1/SkylarLogo.jpg';
+import foxy from '../assets/photosAlexis2/foxy.jpg';
+import meetFoxy from '../assets/photosAlexis1/meetFoxxy.jpg';
+import SensualDanceWorkshop from '../assets/photosAlexis1/Sensual-dance.jpg';
+import coffeeBeans from '../assets/photosAlexis1/coffee.jpeg';
+import cacoaHealer from '../assets/photosAlexis1/cacaoHealer.png';
+import cacaoCircle from '../assets/photosAlexis1/cacaoCircle.png';
+import cocaoBrew from '../assets/photosAlexis1/cacaoBrew.png';
+import grlTrip from '../assets/photosAlexis2/retreat_girls_trips.jpg';
+import healing from '../assets/photosAlexis2/retreat_healing.jpg';
+import coupleRetreat from '../assets/photosAlexis2/coupleRetreat.png';
+import foxie from '../assets/photosAlexis2/foxie1.png';
+import Retreat1 from '../assets/photosAlexis1/Healing_Retreat.png';
+import santorini from '../assets/photosAlexis1/santorini.png';
+import pastRetreat from '../assets/photosAlexis1/pastRetreat.jpg';
+import pin from '../assets/photosAlexis1/pin.png';
+import pointer from '../assets/photosAlexis1/clickPointer.png';
+import videoFoxy from '../assets/photosAlexis1/retreatVideo.mp4';
+import shopImage1 from '../assets/foxxyIMGSHOP/podcastIMG.png';
+import shopImage2 from '../assets/foxxyIMGSHOP/podcastIMG2.png';
+import shopImage3 from '../assets/foxxyIMGSHOP/YOUTUBEfox.png';
+import shopImage4 from '../assets/foxxyIMGSHOP/comingSoon.png';
+import shopImage5 from '../assets/photosAlexis2/image_6483441 (7).jpg';
+import snowyFox from '../assets/photosAlexis1/fox.png';
+import colombiaFlyer from '../assets/photosAlexis2/colombiaFlyer.jpg';
+import yourHosts from '../assets/photosAlexis2/yourHosts.png';
+import arrow from '../assets/accessories/arrowDirection.png';
+import lipPrint from '../assets/accessories/Untitled design.png';
+import InstaIcon from '../assets/accessories/instLogo.png';
+import facebook from '../assets/accessories/facebook.svg';
+import instagram from '../assets/accessories/instagram.svg';
+import snapchat from '../assets/accessories/snapchat.svg';
+import threads from '../assets/accessories/threads.svg';
+import tiktok from '../assets/accessories/tiktok-square.svg';
+import youtube from '../assets/accessories/youtube.svg';
+import soldOut from '../assets/accessories/soldout.png';
+import foxyPlaceholder from '../assets/accessories/logo.webp';
+import vines from '../assets/accessories/vines.png'
+import glitter from '../assets/accessories/glitter.png'
+
 import soundBathIMG from "../assets/accessories/soundBathImage.png";
 import soundBathIMG1 from "../assets/accessories/soundBathIMG1.png";
 import soundBathIMG2 from "../assets/accessories/soundBathIMG2.png";
@@ -69,7 +72,7 @@ import holdingHands from "../assets/accessories/womenChat.png";
 import foxxyYoutube from "../assets/accessories/foxxyYoutube.png";
 import comingSoon from "../assets/accessories/comingSoon.png";
 import onAir from "../assets/accessories/onAir.png";
-import lope from "../assets/accessories/envelopeContact.png";
+
 
 export const useDataCustomHook = () => {
   const data = {
@@ -200,6 +203,7 @@ export const useDataCustomHook = () => {
     sensualDance: {
       header: "Awaken the Goddess",
       foxyImg: SensualDanceWorkshop,
+      accessory: glitter,
       description: [
         `Through the sacred art of sensual dance, Awaken the Goddess invites you to rediscover and embody your divine feminine essence. With a focus on many types of music—especially the soul-stirring rhythms of Bachata—we create a natural and playful space where heart, body, mind, and soul find balance and flow. This is more than just movement; it’s a journey into your sensual power, allowing you to reconnect with yourself in the most sublime and empowering way.`,
 
@@ -233,6 +237,7 @@ export const useDataCustomHook = () => {
       healer: {
         header: "Cacoa Healer",
         img: cacoaHealer,
+        accessory: vines,
         description: [
           ` When we speak of cacao, we often celebrate her ability to open the heart—but what does that truly mean? How can this ancient plant medicine from the Amazon transform us on a spiritual and emotional level? The answer lies in cacao’s power to guide us into deeper communion with ourselves, inviting healing in the most nurturing, transformative way.`,
 
@@ -263,8 +268,9 @@ export const useDataCustomHook = () => {
       btnTextLink: "",
     },
     soundBath: {
-      header: "Sound Bath",
+      header: 'Sound Bath',
       image: soundBathIMG,
+      accessory: glitter,
       description: `A sound bath is a meditative experience where you’re immersed in the therapeutic sounds of instruments like crystal bowls, gongs, tuning forks, and so much more. These instruments create vibrations and frequencies that wash over you, helping to guide your body and mind into a deep state of relaxation and healing. Unlike traditional meditation, where silence or a guided voice is key, a sound bath uses the power of sound to connect you with deeper levels of calm.`,
       impacts: {
         impactHeader: "How a Sound Bath Impacts and Heals You",
@@ -462,7 +468,8 @@ export const useDataCustomHook = () => {
       },
     },
     events: {
-      header: "Events Happening near you",
+      header: 'Events Happening near you',
+      glitter: glitter,
       description: `Whatever you're going through, you don't have to go through it alone. Alexis that Fox aims to create an inclusive community of womxnknown as “FOXGANG” who are all on a journey just like you.`,
       btnText: "Book Event",
       btnTextLink: "https://www.wetravel.com",
@@ -485,7 +492,7 @@ export const useDataCustomHook = () => {
       ],
       clubImages: [girlsDrink, holdingHands, threeGirls, kayak],
       foxyMembership: {
-        backgroundImage: foxyPlaceholder,
+        backgroundImage: foxxySocialLogo,
         icon: pointer,
         membershipHeader: "FOXGANG Memberships",
         memberships: [

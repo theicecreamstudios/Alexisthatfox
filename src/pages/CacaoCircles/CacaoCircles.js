@@ -18,7 +18,34 @@ const CacaoCircles = () => {
     <div className={styles.CacaoCircles}>
       <CssBaseline />
       {/* <Container maxWidth="xl"> */}
-      <Box sx={{ background: "#312813", color: "white", py: 5, px: 3 }}>
+      <Box
+        sx={{
+          background: '#312813',
+          color: 'white',
+          py: 5,
+          px: 3,
+          position: 'relative',
+          overflow: 'hidden', 
+        }}
+      >
+        <Box sx={{ 
+          position: 'absolute',
+          top: {sm: 50, md: 50},
+          right: 0,
+          transform: 'rotate(90deg)',
+          transformOrigin: 'top right', 
+          width: { xs: 100, sm: 70, md: 70 }, 
+           }}>
+          <CardMedia
+            component='img'
+            image={healer.accessory}
+            alt='cacoa healer'
+            sx={{
+              opacity: 0.6,
+            }}
+          />
+        </Box>
+
         <HeaderTitle title={healer.header} />
         <Box sx={{ flexGrow: 1, mt: 4, display: { xs: "none", md: "block" } }}>
           <Grid
@@ -85,12 +112,12 @@ const CacaoCircles = () => {
         >
           <Box sx={{ float: "left", width: "50%", mr: 3 }}>
             <CardMedia
-              component="img"
+              component='img'
               sx={{
-                width: "100%",
+                width: '100%',
                 mx: 1,
-                borderTopRightRadius: "50%",
-                borderTopLeftRadius: "50%",
+                borderTopRightRadius: '50%',
+                borderTopLeftRadius: '50%',
               }}
               image={healer.img}
               alt="cacoa healer"
@@ -193,8 +220,8 @@ const CacaoCircles = () => {
         <HeaderTitle title={brew.header} />
         <Box sx={{ display: { xs: "block", md: "none" } }}>
           <CardMedia
-            component="img"
-            sx={{ borderTopRightRadius: "50%", borderTopLeftRadius: "50%" }}
+            component='img'
+            sx={{ borderTopRightRadius: '50%', borderTopLeftRadius: '50%' }}
             image={brew.img}
             alt="cacoa brew"
           />
@@ -209,10 +236,10 @@ const CacaoCircles = () => {
             <Grid item xs={5} sx={{ display: { xs: "none", md: "block" } }}>
               <Box>
                 <CardMedia
-                  component="img"
+                  component='img'
                   sx={{
-                    borderTopRightRadius: "50%",
-                    borderTopLeftRadius: "50%",
+                    borderTopRightRadius: '50%',
+                    borderTopLeftRadius: '50%',
                   }}
                   image={brew.img}
                   alt="cacoa brew"
@@ -253,8 +280,8 @@ const CacaoCircles = () => {
         </Box>
       </Box>
 
-      <Box sx={{ pt: 10, height: "50vh" }}>
-        <Box sx={{ position: "relative", background: "#CFC5B3" }}>
+      <Box sx={{ pt: 10, height: '50vh' }}>
+        <Box sx={{ position: 'relative', background: '#CFC5B3' }}>
           <Box
             sx={{
               textAlign: "center",
