@@ -1,13 +1,13 @@
-import React from 'react';
-import styles from './SocialClub.module.css';
-import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
-import CardMedia from '@mui/material/CardMedia';
-import { useDataCustomHook } from '../../Data/data';
-import Link from '@mui/material/Link';
-import InstagramIcon from '../../components/instagramIcon/instagramIcon';
-import { Container, Grid, Typography } from '@mui/material';
-import FoxyButton from '../../components/FoxyButton/FoxyButton';
+import React from "react";
+import styles from "./SocialClub.module.css";
+import CssBaseline from "@mui/material/CssBaseline";
+import Box from "@mui/material/Box";
+import CardMedia from "@mui/material/CardMedia";
+import { useDataCustomHook } from "../../Data/data";
+import Link from "@mui/material/Link";
+import InstagramIcon from "../../components/instagramIcon/instagramIcon";
+import { Container, Grid, Typography } from "@mui/material";
+import FoxyButton from "../../components/FoxyButton/FoxyButton";
 
 const SocialClub = () => {
   const data = useDataCustomHook();
@@ -28,47 +28,48 @@ const SocialClub = () => {
       {/* Header Section */}
       <Box
         sx={{
-          height: { xs: '35vh' }, // Parent container height
-          background: '#DDD1C3',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          position: 'relative',
+          height: { xs: "35vh" }, // Parent container height
+          background: "#d9ccc0",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          position: "relative",
         }}
       >
         <Box
           sx={{
-            width: { xs: '90%', sm: '70%', md: '50%' },
-            height: '100%',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
+            width: { xs: "90%", sm: "70%", md: "50%" },
+            height: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
           <CardMedia
-            component='img'
+            component="img"
             sx={{
-              maxWidth: '100%',
-              maxHeight: '100%',
-              objectFit: 'contain',
+              maxWidth: "100%",
+              maxHeight: "100%",
+              objectFit: "contain",
             }}
             image={logo}
-            alt='Foxy'
+            alt="Foxy"
           />
         </Box>
-        <Box sx={{ position: 'absolute', left: 10, top: { xs: 15, sm: 20 } }}>
+        <Box sx={{ position: "absolute", left: 10, top: { xs: 15, sm: 20 } }}>
           <Link
             href={accessory.link}
-            underline='none'
+            underline="none"
             sx={{
-              display: 'flex',
-              flexDirection: { xs: 'column', sm: 'row' },
-              justifyContent: { xs: 'flex-start', sm: 'center' },
-              alignItems: { xs: 'flex-start', sm: 'center' },
-              color: '#727272',
+              display: "flex",
+              flexDirection: { xs: "column", sm: "row" },
+              justifyContent: { xs: "flex-start", sm: "center" },
+              alignItems: { xs: "flex-start", sm: "center" },
+              color: "#727272",
               fontSize: { xs: 9, md: 12 },
+              fontFamily: "Ovo",
             }}
-            target='_blank'
+            target="_blank"
           >
             <InstagramIcon />
 
@@ -76,36 +77,37 @@ const SocialClub = () => {
           </Link>
         </Box>
       </Box>
-      <Container maxWidth='xl'>
+      <Container maxWidth="xl">
         <Box>
           <Typography
-            variant='h5'
+            variant="h5"
             sx={{
-              textAlign: 'center',
+              textAlign: "center",
               mt: 1,
               mb: 3,
+              fontFamily: "Ovo",
             }}
           >
             {header.toUpperCase()}
           </Typography>
           {description.map((txt, index) => (
             <Typography
-              variant='body2'
+              variant="body2"
               sx={{
                 mt: 1,
                 mb: 3,
+                fontFamily: "Ovo",
               }}
             >
               {txt}
             </Typography>
           ))}
         </Box>
-        
       </Container>
       <Box>
         <Box
           sx={{
-            width: '100%',
+            width: "100%",
           }}
         >
           <Grid
@@ -113,19 +115,19 @@ const SocialClub = () => {
             spacing={0}
             columnSpacing={0}
             sx={{
-              justifyContent: 'center', // Center images within the grid
+              justifyContent: "center", // Center images within the grid
             }}
           >
             {clubImages.map((image, index) => (
               <Grid item xs={6} md={3} key={`image-${index}`}>
                 <Box
-                  component='img'
+                  component="img"
                   src={image}
                   alt={`image-${index}`}
                   sx={{
-                    width: '100%',
-                    height: 'auto',
-                    objectFit: 'cover',
+                    width: "100%",
+                    height: "auto",
+                    objectFit: "cover",
                   }}
                 />
               </Grid>
@@ -133,8 +135,14 @@ const SocialClub = () => {
           </Grid>
         </Box>
         <Box
-            sx={{ position: 'relative', background: '#DDD1C3', color: 'white', height:70, mt: -1}}
-          />
+          sx={{
+            position: "relative",
+            background: "#DDD1C3",
+            color: "white",
+            height: 70,
+            mt: -1,
+          }}
+        />
       </Box>
 
       {/* membership */}
@@ -142,71 +150,74 @@ const SocialClub = () => {
       <Box
         sx={{
           backgroundImage: `url(${backgroundImage})`,
-          backgroundSize: { xs: 'cover', md: 'auto' },
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          position: 'relative',
+          backgroundSize: { xs: "cover", md: "auto" },
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          position: "relative",
         }}
       >
         <Box
           sx={{
-            background: '#ffffffd9',
-            width: '100%',
+            background: "#ffffffd9",
+            width: "100%",
           }}
         >
           <Container>
             <Typography
-              variant='h3'
+              variant="h3"
               sx={{
-                textAlign: 'center',
+                textAlign: "center",
                 my: 7,
+                fontFamily: "Italiana",
               }}
             >
               {membershipHeader}
             </Typography>
 
             <Box
-              display='flex'
-              justifyContent='space-between'
-              gap='32px'
+              display="flex"
+              justifyContent="space-between"
+              gap="32px"
               sx={{
-                flexDirection: { xs: 'column', md: 'row' },
+                flexDirection: { xs: "column", md: "row" },
               }}
             >
               {/** Reusable Function to Render a Column */}
               {memberships.map((column, columnIndex) => (
-                <Box flex='1' key={column.title}>
+                <Box flex="1" key={column.title}>
                   <Typography
-                    variant='h3'
+                    variant="h3"
                     sx={{
-                      textAlign: 'center',
+                      textAlign: "center",
+                      fontFamily: "Ovo",
                     }}
                   >
                     {column.title}
                   </Typography>
                   <Typography
-                    variant='h6'
+                    variant="h6"
                     sx={{
-                      textAlign: 'center',
+                      textAlign: "center",
+                      fontFamily: "Tenar Sans",
                     }}
                   >
                     ({column.type})
                   </Typography>
-                  <Typography variant='h6' sx={{}}>
+                  <Typography variant="h6" sx={{ fontFamily: "Ovo" }}>
                     {column.description.toUpperCase()}
                   </Typography>
                   {column.benefits.map((el, index) => (
                     <Typography
                       key={`${el}-${index}`} // Ensure uniqueness
-                      component='div'
-                      variant='h6'
+                      component="div"
+                      variant="h6"
                       gutterBottom
                       sx={{
                         p: 1,
                         // fontSize: '0.8rem',
-                        fontFamily: 'Kollektif',
-                        display: 'flex',
-                        alignItems: 'flex-start',
+                        fontFamily: "Ovo",
+                        display: "flex",
+                        alignItems: "flex-start",
                       }}
                     >
                       <span style={{ marginRight: 5 }}> * </span>
@@ -214,85 +225,94 @@ const SocialClub = () => {
                     </Typography>
                   ))}
                   <Typography
-                    variant='h6'
+                    variant="h6"
                     sx={{
-                      fontWeight: 'bold',
+                      fontFamily: "Ovo",
+                      fontWeight: "bold",
                       mt: 3,
                     }}
                   >
                     {column.note.toUpperCase()}
                   </Typography>
 
-                    {/* Pricing */}
-                  <Box flex='1' key={column.pricing.price}
-                sx={{
-                  textAlign:'center',
-                  height: 500,
-                  mt: 3
-                }}>
-                  <Typography variant='h6' sx={{my: 3}}>
-                    {column.pricing.note}
-                  </Typography>
-                  <Typography
-                    variant='h3'
-                    sx={{
-                      fontWeight: 700,
-                    }}
-                  >
-                    {column.pricing.price}
-                  </Typography>
+                  {/* Pricing */}
                   <Box
+                    flex="1"
+                    key={column.pricing.price}
                     sx={{
-                      p: 3,
-                      position: 'relative', 
-                      textAlign: 'center',
-                      height: 'auto',
+                      fontFamily: "Ovo",
+                      textAlign: "center",
+                      height: 500,
+                      mt: 3,
                     }}
                   >
-                    {/* Button */}
-                    <FoxyButton
-                      fullWidth={false}
-                      variant='contained'
-                      label={column.pricing.btnText}
-                      backgroundColor={'#955B35'}
-                      hoverBackgroundColor={'#955B35'}
-                      height={'initial'}
+                    <Typography variant="h6" sx={{ my: 3 }}>
+                      {column.pricing.note}
+                    </Typography>
+                    <Typography
+                      variant="h3"
                       sx={{
-                        width: 300,
-                        fontSize: '2.5rem',
-                        color: 'white',
+                        fontFamily: "Ovo",
                         fontWeight: 700,
-                        cursor: 'pointer',
-                        background: 'linear-gradient(135deg, rgba(191, 149, 63, 0.8), rgba(252, 246, 186, 0.8), rgba(179, 135, 40, 0.8), rgba(251, 245, 183, 0.8), rgba(170, 119, 28, 0.8))',
-                        borderRadius: 40
                       }}
-                    />
-
-                    {/* Hand Icon */}
-                    <CardMedia
-                      component='img'
+                    >
+                      {column.pricing.price}
+                    </Typography>
+                    <Box
                       sx={{
-                        width: 50,
-                        position: 'absolute', 
-                        left: '50%', 
-                        transform: 'translateX(-50%) translateY(10px)', 
-                        bottom: '-45px', 
-                        rotate: '22deg'
+                        p: 3,
+                        position: "relative",
+                        textAlign: "center",
+                        height: "auto",
                       }}
-                      image={icon} 
-                      alt='click'
-                    />
-                  </Box>
+                    >
+                      {/* Button */}
+                      <FoxyButton
+                        fullWidth={false}
+                        variant="contained"
+                        label={column.pricing.btnText}
+                        backgroundColor={"#955B35"}
+                        hoverBackgroundColor={"#955B35"}
+                        height={"initial"}
+                        sx={{
+                          width: 300,
+                          fontSize: "2.5rem",
+                          color: "black",
+                          fontWeight: 700,
+                          cursor: "pointer",
+                          background:
+                            // "linear-gradient(135deg, rgba(255, 220, 91), rgba(238, 204, 64),(129, 99, 23))",
+                            "linear-gradient(135deg, rgba(191, 149, 63, 0.8), rgba(252, 246, 186, 0.8), rgba(179, 135, 40, 0.8), rgba(251, 245, 183, 0.8), rgba(170, 119, 28, 0.8))",
+                          borderRadius: 40,
+                        }}
+                      />
 
-                  <Typography
-                    variant='h6'
-                    sx={{
-                      mt: 10
-                    }}
-                  >
-                    {column.pricing.btnMessage}
-                  </Typography>
-                </Box>
+                      {/* Hand Icon */}
+                      <CardMedia
+                        component="img"
+                        sx={{
+                          width: 50,
+                          position: "absolute",
+                          left: "50%",
+                          transform: "translateX(-50%) translateY(10px)",
+                          bottom: "-45px",
+                          rotate: "22deg",
+                        }}
+                        image={icon}
+                        alt="click"
+                      />
+                    </Box>
+
+                    <Typography
+                      variant="h6"
+                      sx={{
+                        mt: 10,
+                        fontFamily: "Ovo",
+                      }}
+                    >
+                      {column.pricing.btnMessage}
+                    </Typography>
+                  </Box>
                 </Box>
               ))}
             </Box>

@@ -1,15 +1,15 @@
-import React from 'react';
-import styles from './SoundBath.module.css';
-import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import CardMedia from '@mui/material/CardMedia';
-import FoxyButton from '../../components/FoxyButton/FoxyButton';
-import { useDataCustomHook } from '../../Data/data';
-import Grid from '@mui/material/Grid';
-import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import React from "react";
+import styles from "./SoundBath.module.css";
+import CssBaseline from "@mui/material/CssBaseline";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import CardMedia from "@mui/material/CardMedia";
+import FoxyButton from "../../components/FoxyButton/FoxyButton";
+import { useDataCustomHook } from "../../Data/data";
+import Grid from "@mui/material/Grid";
+import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 const SoundBath = () => {
   const data = useDataCustomHook();
@@ -39,58 +39,58 @@ const SoundBath = () => {
       <Box>
         <Box
           sx={{
-            height: { xs: '30vh', md: '35vh', lg: '40vh' },
-            background: '#1e3706',
-            textAlign: 'center',
+            height: { xs: "30vh", md: "35vh", lg: "40vh" },
+            background: "#1e3706",
+            textAlign: "center",
           }}
         >
           <Typography
-            variant='h2'
-            sx={{ py: 5, mb: 0, fontFamily: 'BDSans', color: '#FFFFFF' }}
+            variant="h2"
+            sx={{ py: 5, mb: 0, fontFamily: "Italiana", color: "#FFFFFF" }}
           >
             {header}
           </Typography>
         </Box>
 
         <CardMedia
-          component='img'
+          component="img"
           sx={{
             width: { xs: 200, sm: 300 },
             height: { xs: 200, sm: 300 },
-            borderRadius: '50%',
-            m: 'auto',
-            mt: { xs: '-90px', sm: '-140px' },
+            borderRadius: "50%",
+            m: "auto",
+            mt: { xs: "-90px", sm: "-140px" },
           }}
           image={image}
-          alt='Foxy'
+          alt="Foxy"
         />
       </Box>
-      <Container maxWidth='xl'>
+      <Container maxWidth="xl">
         <Box sx={{ mt: 2 }}>
           <Typography
-            variant='body2'
+            variant="body2"
             sx={{
-              textAlign: 'center',
-              width: { xs: '85%', md: '70%' },
-              m: 'auto',
-              fontFamily: 'Kollektif',
+              textAlign: "center",
+              width: { xs: "85%", md: "70%" },
+              m: "auto",
+              fontFamily: "Ovo",
             }}
           >
             {description}
           </Typography>
         </Box>
         <Box
-          display='flex'
-          alignItems='center'
-          justifyContent='space-between'
-          width='90%'
-          position='relative'
-          margin='auto'
+          display="flex"
+          alignItems="center"
+          justifyContent="space-between"
+          width="90%"
+          position="relative"
+          margin="auto"
           sx={{ mt: 5 }}
         >
           <ArrowLeftIcon sx={{ mr: -1.5 }} />
           {/* Connecting Line */}
-          <Box flex='1' height='2px' bgcolor='black'></Box>
+          <Box flex="1" height="2px" bgcolor="black"></Box>
 
           {/* Right Arrow */}
           <ArrowRightIcon sx={{ ml: -1.5 }} />
@@ -98,26 +98,35 @@ const SoundBath = () => {
 
         {/* impact */}
         <Box sx={{ pb: 5 }}>
-          <Typography variant='h5' sx={{ textAlign: 'center', m: 'auto' }}>
+          <Typography
+            variant="h5"
+            sx={{ textAlign: "center", m: "auto", fontFamily: "Ovo" }}
+          >
             {impactHeader.toUpperCase()}
           </Typography>
 
-          <Typography variant='body2' sx={{ textAlign: 'center', mt: 3 }}>
+          <Typography
+            variant="body2"
+            sx={{ textAlign: "center", mt: 3, fontFamily: "Ovo" }}
+          >
             {impactDescription.toUpperCase()}
           </Typography>
-          <Typography variant='body2' sx={{ textAlign: 'center', mt: 3 }}>
+          <Typography
+            variant="body2"
+            sx={{ textAlign: "center", mt: 3, fontFamily: "Ovo" }}
+          >
             {impactSubHeader.toUpperCase()}
           </Typography>
           {soundBathBenefits.map((el, index) => (
             <Typography
               key={`${el.heading}-${index}`} // Ensure uniqueness
-              component='div'
-              variant='body2'
+              component="div"
+              variant="body2"
               gutterBottom
               sx={{
                 p: 1,
-                fontSize: '0.8rem',
-                fontFamily: 'Kollektif',
+                fontSize: "0.8rem",
+                fontFamily: "Ovo",
               }}
             >
               <span style={{ marginRight: 5 }}> * </span>
@@ -129,8 +138,8 @@ const SoundBath = () => {
           ))}
         </Box>
       </Container>
-      <Box sx={{ flexGrow: 1, background: '#9b947d', p: 2, mt: 5 }}>
-        <Container maxWidth='lg'>
+      <Box sx={{ flexGrow: 1, background: "#9b947d", p: 2, mt: 5 }}>
+        <Container maxWidth="lg">
           <Grid
             container
             spacing={{ xs: 2, md: 3 }}
@@ -139,51 +148,54 @@ const SoundBath = () => {
             {soundBathsImages.map((el, index) => (
               <Grid item xs={12} sm={12} md={4} key={`soundbath_img_${index}`}>
                 <CardMedia
-                  component='img'
+                  component="img"
                   sx={{
                     width: { xs: 200, sm: 300 },
                     height: { xs: 200, sm: 300 },
-                    margin: 'auto',
-                    borderRadius: '50%',
+                    margin: "auto",
+                    borderRadius: "50%",
                   }}
                   image={el}
-                  alt='Foxy'
+                  alt="Foxy"
                 />
               </Grid>
             ))}
           </Grid>
         </Container>
       </Box>
-      <Container maxWidth='lg'>
+      <Container maxWidth="lg">
         <Box sx={{ flexGrow: 1, p: 2, pb: 4 }}>
-          <Container maxWidth='lg'>
+          <Container maxWidth="lg">
             <Grid
               container
               spacing={{ xs: 2, md: 3 }}
               columns={{ xs: 12, sm: 12, md: 12 }}
             >
               {soundBathsSessions.map((session) => (
-                <Grid item xs={12} sm={6} >
-                  <Box sx={{
-                    display: 'flex',
-                    flexDirection:'column',
-                    alignItems: 'center',
-                    justifyContent:'center'
-
-                  }}>
+                <Grid item xs={12} sm={6}>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
                     <Typography
-                      variant='h4'
+                      variant="h4"
                       sx={{
-                        textAlign: 'center',
+                        textAlign: "center",
+                        fontFamily: "Tenor Sans",
                       }}
                     >
                       {session.type}
                     </Typography>
                     {session.pricing.map((el) => (
                       <Typography
-                        variant='h6'
+                        variant="h6"
                         sx={{
-                          textAlign: 'center',
+                          textAlign: "center",
+                          fontFamily: "Ovo",
                         }}
                         key={el}
                       >
@@ -199,12 +211,13 @@ const SoundBath = () => {
 
         <Box>
           <Typography
-            variant='h6'
+            variant="h6"
             sx={{
-              textAlign: 'center',
+              textAlign: "center",
               width: 350,
-              
-              m: 'auto',
+              fontFamily: "Tenor Sans",
+
+              m: "auto",
               pb: 1,
             }}
           >
@@ -216,33 +229,35 @@ const SoundBath = () => {
           <Box
             key={el}
             sx={{
-              textAlign: 'center',
+              textAlign: "center",
               mt: -1,
             }}
           >
             <Typography
-              variant='caption'
+              variant="caption"
               sx={{
                 fontSize: 10,
+                fontFamily: "Ovo",
               }}
             >
               {el.toUpperCase()}
             </Typography>
           </Box>
         ))}
-        <Box sx={{ textAlign: 'center', mt: 2 }}>
+        <Box sx={{ textAlign: "center", mt: 2 }}>
           <FoxyButton
             fullWidth={false}
-            variant='contained'
+            variant="contained"
             label={btnText}
-            backgroundColor={'#9C5632'}
-            hoverBackgroundColor={'#9C5632'}
-            height={'initial'}
+            backgroundColor={"#9C5632"}
+            hoverBackgroundColor={"#9C5632"}
+            height={"initial"}
             sx={{
               width: 170,
               borderRadius: 5,
               fontSize: 15,
-              color: 'white',
+              color: "white",
+              fontFamily: "Ovo",
             }}
           />
         </Box>

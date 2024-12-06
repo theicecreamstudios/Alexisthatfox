@@ -1,79 +1,101 @@
 // import { useTranslation } from "react-i18next";
 
-import gap from '../assets/LogoPartnersBRANDS/adoreME.png';
-import cerebral from '../assets/LogoPartnersBRANDS/cerebral.png';
-import champs from '../assets/LogoPartnersBRANDS/Champs.png';
-import foria from '../assets/LogoPartnersBRANDS/Foria.png';
-import fruitByTheFoot from '../assets/LogoPartnersBRANDS/fruitbythefoot.png';
-import lelo from '../assets/LogoPartnersBRANDS/Lelo.png';
-import pantene from '../assets/LogoPartnersBRANDS/Pantene.png';
-import summers from '../assets/LogoPartnersBRANDS/summers.jpg';
-import tula from '../assets/LogoPartnersBRANDS/Tula.png';
-import walmart from '../assets/LogoPartnersBRANDS/walmart.png';
-import WomenBest from '../assets/photosAlexis1/womensbest.png';
-import Skylar from '../assets/photosAlexis1/SkylarLogo.jpg';
-import foxy from '../assets/photosAlexis2/foxy.jpg';
-import meetFoxy from '../assets/photosAlexis1/meetFoxxy.jpg';
-import SensualDanceWorkshop from '../assets/photosAlexis1/Sensual-dance.jpg';
-import coffeeBeans from '../assets/photosAlexis1/coffee.jpeg';
-import cacoaHealer from '../assets/photosAlexis1/cacaoHealer.png';
-import cacaoCircle from '../assets/photosAlexis1/cacaoCircle.png';
-import cocaoBrew from '../assets/photosAlexis1/cacaoBrew.png';
-import grlTrip from '../assets/photosAlexis2/retreat_girls_trips.jpg';
-import healing from '../assets/photosAlexis2/retreat_healing.jpg';
-import coupleRetreat from '../assets/photosAlexis2/coupleRetreat.png';
-import foxie from '../assets/photosAlexis2/foxie1.png';
-import Retreat1 from '../assets/photosAlexis1/Healing_Retreat.png';
-import santorini from '../assets/photosAlexis1/santorini.png';
-import pastRetreat from '../assets/photosAlexis1/pastRetreat.jpg';
-import pin from '../assets/photosAlexis1/pin.png';
-import pointer from '../assets/photosAlexis1/clickPointer.png';
-import videoFoxy from '../assets/photosAlexis1/retreatVideo.mp4';
-import shopImage1 from '../assets/foxxyIMGSHOP/podcastIMG.png';
-import shopImage2 from '../assets/foxxyIMGSHOP/podcastIMG2.png';
-import shopImage3 from '../assets/foxxyIMGSHOP/YOUTUBEfox.png';
-import shopImage4 from '../assets/foxxyIMGSHOP/comingSoon.png';
-import shopImage5 from '../assets/photosAlexis2/image_6483441 (7).jpg';
-import snowyFox from '../assets/photosAlexis1/fox.png';
-import colombiaFlyer from '../assets/photosAlexis2/colombiaFlyer.jpg';
-import yourHosts from '../assets/photosAlexis2/yourHosts.png';
-import arrow from '../assets/accessories/arrowDirection.png';
-import lipPrint from '../assets/accessories/Untitled design.png';
-import InstaIcon from '../assets/accessories/instLogo.png';
-import facebook from '../assets/accessories/facebook.svg';
-import instagram from '../assets/accessories/instagram.svg';
-import snapchat from '../assets/accessories/snapchat.svg';
-import threads from '../assets/accessories/threads.svg';
-import tiktok from '../assets/accessories/tiktok-square.svg';
-import youtube from '../assets/accessories/youtube.svg';
-import soldOut from '../assets/accessories/soldout.png';
-import foxyPlaceholder from '../assets/accessories/foxyplacebolder.png';
+import gap from "../assets/LogoPartnersBRANDS/adoreME.png";
+import cerebral from "../assets/LogoPartnersBRANDS/cerebral.png";
+import champs from "../assets/LogoPartnersBRANDS/Champs.png";
+import foria from "../assets/LogoPartnersBRANDS/Foria.png";
+import fruitByTheFoot from "../assets/LogoPartnersBRANDS/fruitbythefoot.png";
+import lelo from "../assets/LogoPartnersBRANDS/Lelo.png";
+import pantene from "../assets/LogoPartnersBRANDS/Pantene.png";
+import summers from "../assets/LogoPartnersBRANDS/summers.jpg";
+import tula from "../assets/LogoPartnersBRANDS/Tula.png";
+import walmart from "../assets/LogoPartnersBRANDS/walmart.png";
+import WomenBest from "../assets/photosAlexis1/womensbest.png";
+import Skylar from "../assets/photosAlexis1/SkylarLogo.jpg";
+import foxy from "../assets/photosAlexis2/foxy.jpg";
+import meetFoxy from "../assets/photosAlexis1/meetFoxxy.jpg";
+import SensualDanceWorkshop from "../assets/photosAlexis1/Sensual-dance.jpg";
+import coffeeBeans from "../assets/photosAlexis1/coffee.jpeg";
+import cacoaHealer from "../assets/photosAlexis1/cacaoHealer.png";
+import cacaoCircle from "../assets/photosAlexis1/cacaoCircle.png";
+import cocaoBrew from "../assets/photosAlexis1/cacaoBrew.png";
+import grlTrip from "../assets/photosAlexis2/retreat_girls_trips.jpg";
+import healing from "../assets/photosAlexis2/retreat_healing.jpg";
+import coupleRetreat from "../assets/photosAlexis2/coupleRetreat.png";
+import foxie from "../assets/photosAlexis2/foxie1.png";
+import Retreat1 from "../assets/photosAlexis1/Healing_Retreat.png";
+import santorini from "../assets/photosAlexis1/santorini.png";
+import pastRetreat from "../assets/photosAlexis1/pastRetreat.jpg";
+import pin from "../assets/photosAlexis1/pin.png";
+import pointer from "../assets/photosAlexis1/clickPointer.png";
+import videoFoxy from "../assets/photosAlexis1/retreatVideo.mp4";
+import shopImage1 from "../assets/accessories/podCast.png";
+import shopImage2 from "../assets/foxxyIMGSHOP/podcastIMG2.png";
+import shopImage3 from "../assets/foxxyIMGSHOP/YOUTUBEfox.png";
+import shopImage4 from "../assets/foxxyIMGSHOP/comingSoon.png";
+import shopImage5 from "../assets/photosAlexis2/image_6483441 (7).jpg";
+import snowyFox from "../assets/photosAlexis1/fox.png";
+import colombiaFlyer from "../assets/photosAlexis2/colombiaFlyer.jpg";
+import yourHosts from "../assets/photosAlexis2/yourHosts.png";
+import arrow from "../assets/accessories/arrowDirection.png";
+import lipPrint from "../assets/accessories/Untitled design.png";
+import InstaIcon from "../assets/accessories/instLogo.png";
+import facebook from "../assets/accessories/facebook.svg";
+import instagram from "../assets/accessories/instagram.svg";
+import snapchat from "../assets/accessories/snapchat.svg";
+import threads from "../assets/accessories/threads.svg";
+import tiktok from "../assets/accessories/tiktok-square.svg";
+import youtube from "../assets/accessories/youtube.svg";
+import soldOut from "../assets/accessories/soldout.png";
+import foxyPlaceholder from "../assets/accessories/foxxyBGSocialLogo.png";
+import soundBathIMG from "../assets/accessories/soundBathImage.png";
+import soundBathIMG1 from "../assets/accessories/soundBathIMG1.png";
+import soundBathIMG2 from "../assets/accessories/soundBathIMG2.png";
+import soundBathIMG3 from "../assets/accessories/soundBathIMG3.png";
+import womenHoldingHandsBK from "../assets/accessories/womenHoldingHandsBK.png";
+import motherDaughter from "../assets/accessories/motherDaughter.png";
+import foxxyNbooEL from "../assets/accessories/foxxyNbooEL.png";
+import jamaicaFlyer25 from "../assets/accessories/jamaicaFlyer25.png";
+import baliFlyer25 from "../assets/accessories/baliFlyer25.png";
+import cancunFlyer25 from "../assets/accessories/cancunFlyer25.png";
+import jTree26 from "../assets/accessories/jTree26.png";
+import sAflyer25 from "../assets/accessories/sAflyer25.png";
+import liveEvent from "../assets/accessories/liveEvent.png";
+import foxxySocialLogo from "../assets/accessories/foxySocialLogo.png";
+import threeGirls from "../assets/accessories/threeGirls.png";
+import girlsDrink from "../assets/accessories/girlsDrink.png";
+import kayak from "../assets/accessories/paddlePic.png";
+import holdingHands from "../assets/accessories/womenChat.png";
+import foxxyYoutube from "../assets/accessories/foxxyYoutube.png";
+import comingSoon from "../assets/accessories/comingSoon.png";
+import onAir from "../assets/accessories/onAir.png";
+import lope from "../assets/accessories/envelopeContact.png";
 
 export const useDataCustomHook = () => {
   const data = {
-    name: 'AlexisThatFox',
+    name: "AlexisThatFox",
     header: {
       pages: [
-        { label: 'Home', path: '/' },
-        { label: 'Meet Alexis', path: 'meet-me' },
-        { label: 'Sensual Dance', path: 'sensual-dance' },
-        { label: 'Cacao Healer', path: 'cacao-healer' },
-        { label: 'Sound Baths', path: 'sound-bath' },
-        { label: 'Retreats', path: 'retreats' },
-        { label: 'Events', path: 'events' },
-        { label: 'Social Club', path: 'social-club' },
-        { label: 'Podcast/ Vlog', path: 'podcast' },
-        { label: 'Shop', path: 'https://www.foxappeal.com' },
-        { label: 'Contact', path: 'contact' },
+        { label: "Home", path: "/" },
+        { label: "Meet Alexis", path: "meet-me" },
+        { label: "Sensual Dance", path: "sensual-dance" },
+        { label: "Cacao Healer", path: "cacao-healer" },
+        { label: "Sound Baths", path: "sound-bath" },
+        { label: "Retreats", path: "retreats" },
+        { label: "Events", path: "events" },
+        { label: "Social Club", path: "social-club" },
+        { label: "Podcast/ Vlog", path: "podcast" },
+        { label: "Shop", path: "https://www.foxappeal.com" },
+        { label: "Contact", path: "contact" },
       ],
     },
     home: {
       jumbotron: {
         foxyImg: foxy,
-        header: 'HEY FOXY THANG!',
+        header: "HEY FOXY THANG!",
         subHeader:
-          'HOST OF FOXY PODCAST, FEMININE EMODIMENT FACILTATOR, CACAO HEALER, CONTENT CREATOR, INSPIRATIONAL WRITER AND SPEAKER',
-        bttnText: 'Read More...',
+          "HOST OF HEY FOXY TANG! PODCAST, FEMININE EMBODIMENT FACILITATOR, CACAO & SOUND BATH HEALER, RETREAT HOST, CONTENT CREATOR, INSPIRATIONAL WRITER AND SPEAKER",
+        bttnText: "Read More...",
         description: [
           `A little bit of madness is OK—in fact, it’s what makes you unstoppable! I’ve turned my own chaos and trauma into fierce strength, and now I’m here to help you do the same`,
 
@@ -107,7 +129,7 @@ export const useDataCustomHook = () => {
       },
     },
     meetAlexis: {
-      header: 'meet Alexis',
+      header: "Meet Alexis",
       foxyImg: meetFoxy,
       about: [
         `I’m Alexis Ramirez Jackson—a true fox of all trades. Born and raised in the heart of New York City, I’m a proud Latina embodying a whirlwind of passion, power, and resilience. From facilitating retreats, feminine embodiment movement
@@ -120,63 +142,63 @@ export const useDataCustomHook = () => {
 
         ` My journey through pain and healing has shaped my mission: to show women that they are never alone. Your story matters. I’m here to help you find the courage to speak your truth, reclaim your divine sexiness, and reignite your confidence to love yourself unapologetically. Remember, together we’ll rise, heal, and step into our full, powerful, foxy selves.`,
       ],
-      subHeader: 'Work with Alexis',
+      subHeader: "Work with Alexis",
       services: {
         withDesc: [
           {
-            primary: 'AWAKEN THE GODDESS',
-            secondary: 'MOVEMENT CLASS',
-            description: '',
+            primary: "AWAKEN THE GODDESS",
+            secondary: "MOVEMENT CLASS",
+            description: "",
           },
           {
-            primary: 'CACAO CIRCLE & SOUND BATHS',
-            secondary: '',
-            description: '',
+            primary: "CACAO CIRCLE & SOUND BATHS",
+            secondary: "",
+            description: "",
           },
         ],
         withoutDesc: [
           {
-            primary: 'FOXES UNPLUG',
+            primary: "FOXES UNPLUG",
             description:
               "Alexis hosts women's retreats. She is also available to facilitate at your next retreat!. Click below to join us on one of our retreats or see how Alexis can support your event.",
           },
           {
-            primary: 'Content Creator',
-            secondary: '',
+            primary: "Content Creator",
+            secondary: "",
             description:
-              'Interested in hiring me for speaking, engagements, partnerships or other business inquires',
+              "Interested in hiring me for speaking, engagements, partnerships or other business inquires",
           },
         ],
       },
       exploreService:
-        'EXPLORE INDIVIDUAL OR GROUP SESSIONS WITH ALEXIS FROM CACAO CIRCLES TO SENSUAL MOVEMENT CLASSES. EACH SESSION IS DESIGNED WITH YOUR HIGHEST INTENIONS AT THE CENTER.',
+        "EXPLORE INDIVIDUAL OR GROUP SESSIONS WITH ALEXIS FROM CACAO CIRCLES TO SENSUAL MOVEMENT CLASSES. EACH SESSION IS DESIGNED WITH YOUR HIGHEST INTENIONS AT THE CENTER.",
       media: {
-        mediaHeader: 'Stay in touch',
+        mediaHeader: "Stay in touch",
         accessory: lipPrint,
         platforms: [
           {
-            name: 'instagram',
+            name: "instagram",
             icons: instagram,
-            link: 'https://www.instagram.com',
+            link: "https://www.instagram.com",
           },
-          { name: 'tiktok', icons: tiktok, link: 'https://www.tiktok.com' },
-          { name: 'youtube', icons: youtube, link: 'https://www.youtube.com' },
+          { name: "tiktok", icons: tiktok, link: "https://www.tiktok.com" },
+          { name: "youtube", icons: youtube, link: "https://www.youtube.com" },
           {
-            name: 'snapchat',
+            name: "snapchat",
             icons: snapchat,
-            link: 'https://www.snapchat.com',
+            link: "https://www.snapchat.com",
           },
-          { name: 'threads', icons: threads, link: 'https://www.threads.net' },
+          { name: "threads", icons: threads, link: "https://www.threads.net" },
           {
-            name: 'facebook',
+            name: "facebook",
             icons: facebook,
-            link: 'https://www.facebook.com',
+            link: "https://www.facebook.com",
           },
         ],
       },
     },
     sensualDance: {
-      header: 'Awaken the goddess',
+      header: "Awaken the Goddess",
       foxyImg: SensualDanceWorkshop,
       description: [
         `Through the sacred art of sensual dance, Awaken the Goddess invites you to rediscover and embody your divine feminine essence. With a focus on many types of music—especially the soul-stirring rhythms of Bachata—we create a natural and playful space where heart, body, mind, and soul find balance and flow. This is more than just movement; it’s a journey into your sensual power, allowing you to reconnect with yourself in the most sublime and empowering way.`,
@@ -184,32 +206,32 @@ export const useDataCustomHook = () => {
         `Sensual dance, infused with devotional states and uplifting emotions, becomes a potent tool for awakening the goddess within. Conscious, sensual movement offers profound harmonization on many levels:`,
       ],
       benefits: [
-        'Strengthens the body: Cultivating vitality and health while embracing your feminine power.',
-        'Removes blockages and inhibitions: Let go of what no longer serves you, releasing yourself from emotional and energetic chains.',
-        'Opens the heart and heals emotionally: Step into your confidence, vulnerability, and emotional freedom, transforming your inner world.',
-        'Reclaims your sensuality: Embrace your body, your beauty, and your natural sexy. Own it, all of it—the goddess within is waiting to be revealed.',
-        'And, it’s pure joy! Dance your way into bliss. Sensual movement lifts the spirit and brings out the best in you, leaving you elevated and empowered.',
+        "Strengthens the body: Cultivating vitality and health while embracing your feminine power.",
+        "Removes blockages and inhibitions: Let go of what no longer serves you, releasing yourself from emotional and energetic chains.",
+        "Opens the heart and heals emotionally: Step into your confidence, vulnerability, and emotional freedom, transforming your inner world.",
+        "Reclaims your sensuality: Embrace your body, your beauty, and your natural sexy. Own it, all of it—the goddess within is waiting to be revealed.",
+        "And, it’s pure joy! Dance your way into bliss. Sensual movement lifts the spirit and brings out the best in you, leaving you elevated and empowered.",
       ],
       workshopDescription: `During this workshop you will feel connected to your mind, body, and spirit to experience the beauty that is divine self love. This workshop will ...`,
       workshopBenefits: [
-        'Improve your self-confidence and dignity',
-        'Awaken your erotic charisma and magnetic power',
-        'Cherish and love yourself through dance',
-        'Remove tensions, strengthen your body and find natural healing and regeneration through playful movements',
-        'Discover how dance will liberate you and improve your sexuality',
-        'Admiring and transfiguring other women as a tool to heal the bond to the feminine nature',
-        'Supportive sisterhood-embrace and embraced by the feminine',
-        'Re-discover the goddess within you!',
+        "Improve your self-confidence and dignity",
+        "Awaken your erotic charisma and magnetic power",
+        "Cherish and love yourself through dance",
+        "Remove tensions, strengthen your body and find natural healing and regeneration through playful movements",
+        "Discover how dance will liberate you and improve your sexuality",
+        "Admiring and transfiguring other women as a tool to heal the bond to the feminine nature",
+        "Supportive sisterhood-embrace and embraced by the feminine",
+        "Re-discover the goddess within you!",
       ],
       subText: `You also have the option to include Cacao with this service. Why add cacao? Cacao is a heart opening medicine that invites us to love ourselves, provides energy, focus and healing. It will be intimate than most of us have ever known. That’s why it’s so powerful to combine dance and cacao. With this combination you’ll be ready to meet the goddess you are and connect with her on a deeper level.`,
       subImg: coffeeBeans,
       subHeader: `Elevate your next event and include a “Awaken the Goddess” movement class `,
-      bttnText: 'Book Workshop',
-      bttnLink: 'ALEXISTHATFOX@GMAIL.COM',
+      bttnText: "Book Workshop",
+      bttnLink: "ALEXISTHATFOX@GMAIL.COM",
     },
     cacaoCircle: {
       healer: {
-        header: 'Cacoa healer',
+        header: "Cacoa Healer",
         img: cacoaHealer,
         description: [
           ` When we speak of cacao, we often celebrate her ability to open the heart—but what does that truly mean? How can this ancient plant medicine from the Amazon transform us on a spiritual and emotional level? The answer lies in cacao’s power to guide us into deeper communion with ourselves, inviting healing in the most nurturing, transformative way.`,
@@ -226,97 +248,93 @@ export const useDataCustomHook = () => {
         ],
       },
       circle: {
-        header: 'The Cacoa Circle',
+        header: "The Cacoa Circle",
         img: cacaoCircle,
         description: `Cacao Ceremony with me is a next level surrender into the depths of your heart. We will journey with the medicine of cacao and go on a powerful personalized journey into your inner world. Here, we will meet your Highest Self and Inner Child, and we will allow our combined intuitions to guide us where we need to go to unlock you into a deeper connection with yourself. These sessions are super powerful for helping you to see something which has been evading your awareness, or to help you have a reconciliation and acceptance with yourself and others close to you, or to really connect you back to a deep remembering of love being the center and origins of all things. These sessions are at least 2 hours long and sometimes do go over, depending on where the journey takes us.`,
       },
       brew: {
-        header: 'What is in the cocoa brew',
+        header: "What is in the cocoa brew",
         img: cocaoBrew,
         description: `Our Ceremonial Cacao is made with Grade Cacao, Water, Sweetener and love. The vegan, dairy free, gluten free. If you have an allergies to chili, nuts, vanilla or anything please let me know at the time of booking.`,
       },
       subHeader:
-        'ELEVATE YOUR NEXT EVENT OR RETREAT AND INCLUDE A CACAO CIRCLE',
-      btnText: 'BOOK CACAO CIRCLE',
-      btnTextLink: '',
+        "ELEVATE YOUR NEXT EVENT OR RETREAT AND INCLUDE A CACAO CIRCLE",
+      btnText: "BOOK CACAO CIRCLE",
+      btnTextLink: "",
     },
     soundBath: {
-      header: 'Sound Bath',
-      image: SensualDanceWorkshop,
+      header: "Sound Bath",
+      image: soundBathIMG,
       description: `A sound bath is a meditative experience where you’re immersed in the therapeutic sounds of instruments like crystal bowls, gongs, tuning forks, and so much more. These instruments create vibrations and frequencies that wash over you, helping to guide your body and mind into a deep state of relaxation and healing. Unlike traditional meditation, where silence or a guided voice is key, a sound bath uses the power of sound to connect you with deeper levels of calm.`,
       impacts: {
-        impactHeader: 'How a Sound Bath Impacts and Heals You',
+        impactHeader: "How a Sound Bath Impacts and Heals You",
         impactDescription: `Sound baths don’t just create a peaceful environment—they also work on a deeper, energetic level to promote healing and balance within your body.`,
         impactSubHeader: `HERE’S HOW:`,
         soundBathBenefits: [
           {
-            heading: 'RELIEVES STRESS AND TENSION',
+            heading: "RELIEVES STRESS AND TENSION",
             content:
-              'The soothing tones help slow down brainwave activity, inducing a meditative state where the body can release stress, tension, and anxiety. This can lead to reduced levels of cortisol (the stress hormone) and an overall sense of calm.',
+              "The soothing tones help slow down brainwave activity, inducing a meditative state where the body can release stress, tension, and anxiety. This can lead to reduced levels of cortisol (the stress hormone) and an overall sense of calm.",
           },
           {
-            heading: 'RESETS YOUR NERVOUS SYSTEM',
+            heading: "RESETS YOUR NERVOUS SYSTEM",
             content:
-              'Sound frequencies help to activate the parasympathetic nervous system, which is responsible for rest, digestion, and recovery. This makes sound baths a powerful tool for calming your body’s fight-or-flight response and encouraging healing.',
+              "Sound frequencies help to activate the parasympathetic nervous system, which is responsible for rest, digestion, and recovery. This makes sound baths a powerful tool for calming your body’s fight-or-flight response and encouraging healing.",
           },
           {
-            heading: 'CLEARS EMOTIONAL BLOCKAGES',
+            heading: "CLEARS EMOTIONAL BLOCKAGES",
             content:
-              'Many people experience emotional releases during a sound bath, allowing them to let go of feelings of overwhelm, sadness, or frustration. The sound waves work like a massage for your mind and heart, creating space for emotional balance and clarity.',
+              "Many people experience emotional releases during a sound bath, allowing them to let go of feelings of overwhelm, sadness, or frustration. The sound waves work like a massage for your mind and heart, creating space for emotional balance and clarity.",
           },
           {
-            heading: 'BOOSTS CREATIVITY AND MENTAL CLARITY',
+            heading: "BOOSTS CREATIVITY AND MENTAL CLARITY",
             content:
-              'As the mind relaxes, your brain enters a state of flow, where creativity and focus can flourish. Whether you’re looking to solve a problem, make a decision, or connect with your inner self, a sound bath can help clear mental fog and create a fresh perspective.',
+              "As the mind relaxes, your brain enters a state of flow, where creativity and focus can flourish. Whether you’re looking to solve a problem, make a decision, or connect with your inner self, a sound bath can help clear mental fog and create a fresh perspective.",
           },
           {
-            heading: 'PROMOTES PHYSICAL HEALING',
+            heading: "PROMOTES PHYSICAL HEALING",
             content:
-              'The frequencies used in a sound bath stimulate the cells in your body, encouraging physical healing at a cellular level. The vibrations help reduce inflammation, promote better circulation, and can even aid in pain relief.',
+              "The frequencies used in a sound bath stimulate the cells in your body, encouraging physical healing at a cellular level. The vibrations help reduce inflammation, promote better circulation, and can even aid in pain relief.",
           },
         ],
       },
-      soundBathsImages: [
-        SensualDanceWorkshop,
-        SensualDanceWorkshop,
-        SensualDanceWorkshop,
-      ],
+      soundBathsImages: [soundBathIMG1, soundBathIMG2, soundBathIMG3],
       soundBathsSessions: [
         {
-          type: 'Private Sound Bath',
+          type: "Private Sound Bath",
           pricing: [
             `starting at $99 for 1-3 people`,
             `An additional $33/Person for 4-8 people`,
           ],
         },
         {
-          type: 'Private Party/Events',
-          pricing: ['starting at 250+'],
+          type: "Private Party/Events",
+          pricing: ["starting at 250+"],
         },
       ],
       findUs:
-        'You can also find Sound Bath online on Tik Tok & The Foxy Social Club',
+        "You can also find Sound Bath online on Tik Tok & The Foxy Social Club",
 
       subscribe: [
-        'Subscribe to my Tik Tok to recieve a sound bath',
-        'or',
-        'Join the foxy social club to receive soundbaths and many more perks',
+        "Subscribe to my Tik Tok to recieve a sound bath",
+        "or",
+        "Join the foxy social club to receive soundbaths and many more perks",
       ],
       btnText: `Book Sound Bath`,
-      btnTextLink: '',
+      btnTextLink: "",
     },
     retreats: {
       jumbotron: {
         icon: foxie,
         accessory: {
           icon: InstaIcon,
-          link: 'https://www.instagram.com/',
-          linkText: '@Foxesunplug',
+          link: "https://www.instagram.com/",
+          linkText: "@Foxesunplug",
         },
-        retreatsHeader: 'Foxes Unplug',
+        retreatsHeader: "Foxes Unplug",
         videoSrc: videoFoxy,
-        subHeader: 'UNPLUG. RESTORE, OVERCOME, LOVE & LIVE TU VIDA',
-        retreatIntroHeader: 'EVER DREAMED OF TRAVELING BUT...',
+        subHeader: "UNPLUG. RESTORE, OVERCOME, LOVE & LIVE TU VIDA",
+        retreatIntroHeader: "EVER DREAMED OF TRAVELING BUT...",
         description: [
           `Felt Afraid to Go Solo? Or maybe you’ve made plans with your friends, only for them to fall through again? Trust me, I’ve been there! That’s why I created Foxes Unplug—not just aretreat, not just a girl’s trip, but a life-changing experience and sisterhood that will leave you feeling empowered, inspired, and so much more.`,
           `Foxes Unplug is all about bringing together a community of amazing people—aka “Foxes”—who are ready to laugh, cry, heal, party, dance, and conquer their fears together. It’s aplace where you’ll do more than just travel; you’ll form deep, lasting connections with yourself and your new sisters. We’ll create unforgettable memories, share in beautifulexperiences, and come back home feeling like our true, unapologetic selves.`,
@@ -325,12 +343,12 @@ export const useDataCustomHook = () => {
       },
 
       retreat: {
-        header: 'Retreat VS Girls Trips',
+        header: "Retreat VS Girls Trips",
         groupRetreats: {
           wellness: {
-            img: healing,
-            header: 'Wellness Retreats',
-            subHeader: 'Where self- love transformation meets adventure',
+            img: womenHoldingHandsBK,
+            header: "Wellness Retreats",
+            subHeader: "Where self- love transformation meets adventure",
             description: [
               `This isn’t just a retreat—it’s your first step into the next chapter of you. We’re creating a space where wellness meets adventure, and where your journey toward self-love begins. It’s more than just a getaway; it’s a sacred pause where you can focus on yourself in ways you’ve never done before.`,
               `Imagine waking up each day to a new adventure, while also diving deep into your own heart. This retreat is all about reconnecting with your true self—learning to love yourself fully, while pushing past old limits. We’re blending the power of inner work with the thrill of exploration,so you’re not just sitting around meditating (though, trust, we’ve got space for that too)—you’re actively living, healing, and growing in the most exhilarating way possible.`,
@@ -344,8 +362,8 @@ export const useDataCustomHook = () => {
           },
           healing: {
             img: healing,
-            header: 'Healing Retreats',
-            subHeader: 'A journey into deep tranformation',
+            header: "Healing Retreats",
+            subHeader: "A journey into deep tranformation",
             description: [
               `At our Healing Retreats, we’re not just talking about surface-level relaxation—we’re diving deep into the real work of healing and transformation. This is your time to focus entirely on you, to peel back the layers and reconnect with your most authentic self. We’ll be creating new habits, trying practices you’ve never experienced before, and tapping into the kind of healing that reshapes your life from the inside out.`,
 
@@ -356,8 +374,8 @@ export const useDataCustomHook = () => {
           },
           girlsTrip: {
             img: grlTrip,
-            header: 'Girls Trip',
-            subHeader: 'The ultimate Girls Trip',
+            header: "Girls Trip",
+            subHeader: "The ultimate Girls Trip",
             description: [
               `It’s time to shake off the ordinary and jump into something extraordinary! This isn’t just any getaway; it’s a full-on adventure that’s about LIVING life to the fullest. Picture this: you, surrounded by an amazing tribe of fierce women, trying new things, making memories, and rediscovering the real you.`,
               `This trip is all about stepping out of your day-to-day routine and into a world of excitement, peace, fun, and new experiences. No more same-old, same-old. It’s time to stop being boring, pack your bags, and come live it up with us! We’re creating an experience where you can be unapologetically YOU—laugh, dance, explore, and just be without a care in the world.`,
@@ -368,9 +386,9 @@ export const useDataCustomHook = () => {
             ],
           },
           motherDaughter: {
-            img: grlTrip,
-            header: 'Mother Daughter Getaway',
-            subHeader: 'Reconnect, Reignite, and Cherish the Bond',
+            img: motherDaughter,
+            header: "Mother Daughter Getaway",
+            subHeader: "Reconnect, Reignite, and Cherish the Bond",
             description: [
               `In the whirlwind of life, we often forget to pause and spend quality time with the people we love the most—especially our mothers or daughters. Whether your child is younger, your mom is older, or your connection simply needs a bit of nurturing, this trip is about taking that time back. Our Mother-Daughter Getaways are designed for all ages and stages, whether you’re a daughter wanting to reconnect with your mom, or a mother wanting to create beautiful new memories with your child. And if you don’t have a mom, no worries—bring the motherly figure who has been a source of love and guidance in your life`,
 
@@ -384,10 +402,10 @@ export const useDataCustomHook = () => {
         },
         couplesRetreat: {
           couples: {
-            img: coupleRetreat,
+            img: foxxyNbooEL,
             img2: yourHosts,
-            tx: 'yOUR HOSTs',
-            header: 'FOXES UNPLUG ALSO OFFERS COUPLES RETREATS',
+            tx: "yOUR HOSTs",
+            header: "FOXES UNPLUG ALSO OFFERS COUPLES RETREATS",
             description: [
               `All Couples Welcome! This is not your average couples retreat. Sure, we’ll be doing the important work—rekindling that lost spark, healing old wounds, and learning how to truly communicate from the heart. But guess what? It’s not all deep talks and “kumbaya.” We believe that reconnecting should also be fun!. That’s why we’ll be exploring, adventuring, and fully experiencing the beauty of where we are, right in the moment.`,
               `Whether your relationship needs some TLC, or things are already amazing and you just want to reconnect on a deeper level, this retreat is for you. We’re creating a space where you and your partner can come with an open mind, set new intentions, and truly enjoy each other—no matter where you’re at in your journey together.`,
@@ -399,134 +417,122 @@ export const useDataCustomHook = () => {
           },
         },
         upcoming: {
-          header: 'UPCOMING RETREATS',
+          header: "UPCOMING RETREATS",
           retreats: [
             {
-              img: Retreat1,
-              link: '',
+              img: jamaicaFlyer25,
+              link: "",
             },
             {
-              img: colombiaFlyer,
-              link: '',
+              img: baliFlyer25,
+              link: "",
             },
             {
-              img: colombiaFlyer,
-              link: '',
+              img: cancunFlyer25,
+              link: "",
             },
             {
-              img: santorini,
-              link: '',
+              img: jTree26,
+              link: "",
             },
             {
-              img: colombiaFlyer,
-              link: '',
-            },
-            {
-              img: santorini,
-              link: '',
-            },
-            {
-              img: colombiaFlyer,
-              link: '',
-            },
-            {
-              img: santorini,
-              link: '',
+              img: sAflyer25,
+              link: "",
             },
           ],
         },
       },
-      subText: 'Yes! we offer payment plans',
+      subText: "Yes! we offer payment plans!!",
       memories: {
-        header: 'FOXGANG MEMORIES',
+        header: "FOXGANG MEMORIES",
         img: pastRetreat,
         handIcon: pointer,
         pinIcon: pin,
         link: {
-          btnText: 'SEE MORE MEMORIES',
-          path: '',
+          btnText: "SEE MORE MEMORIES",
+          path: "",
         },
       },
       sponsor: {
-        header: 'Want to be a sponsor',
+        header: "Want to be a sponsor??",
         description:
-          'You can be a sponsor in many different ways, by gifting or by donating a trip to those who cannot afford it. If you would like more information email me at',
-        email: 'Foxesunplug@gmail.com',
-        btnText: 'BECOME A SPONSOR',
+          "You can be a sponsor in many different ways, by gifting or by donating a trip to those who cannot afford it. If you would like more information email me at",
+        email: "Foxesunplug@gmail.com",
+        btnText: "BECOME A SPONSOR",
       },
     },
     events: {
-      header: 'Events Happening near you',
+      header: "Events Happening near you",
       description: `Whatever you're going through, you don't have to go through it alone. Alexis that Fox aims to create an inclusive community of womxnknown as “FOXGANG” who are all on a journey just like you.`,
-      btnText: 'Book Event',
-      btnTextLink: 'https://www.wetravel.com',
+      btnText: "Book Event",
+      btnTextLink: "https://www.wetravel.com",
       accessory: soldOut,
-      img: santorini,
+      img: liveEvent,
     },
     SocialClub: {
       accessory: {
         icon: InstaIcon,
-        link: 'https://www.instagram.com/',
-        linkText: 'thefoxysocialclub',
+        link: "https://www.instagram.com/",
+        linkText: "thefoxysocialclub",
       },
-      logo: foxyPlaceholder,
-      header: 'WELCOME TO THE FOXY SOCIAL CLUB: WHERE FOXES UNITE!',
+      logo: foxxySocialLogo,
+      header: "WELCOME TO THE FOXY SOCIAL CLUB: WHERE FOXES UNITE!",
       description: [
         `Let’s be real—life is better when you’ve got a fierce, fabulous community around you. That’s exactly what the Foxy Social Club is all about! This isn’t just a social club; it’s a whole lifestyle for bold, adventurous women who are ready to live life to the fullest. We’re Foxes—aka #FoxGang—and we’re all about building connections, having fun, and making memories, both online and in person`,
 
         `Whether you’re meeting up in the digital space or attending our in-person events, this is your chance to break free from the everyday routine. It’s time to get out of the house, meet new people, and actually do something exciting! With the Foxy Social Club, you’re joining a vibrant community where you can laugh, chat, and share experiences with like-minded women who are ready to make life more fun and fulfilling.`,
         `It’s not just a club—it’s a way of life. We’re here to empower each other, explore new hobbies, and create lasting friendships. Think of it as your go-to space for adventure, connection, and`,
       ],
-      clubImages: [cacoaHealer, cacaoCircle, cacoaHealer, cacaoCircle],
+      clubImages: [girlsDrink, holdingHands, threeGirls, kayak],
       foxyMembership: {
         backgroundImage: foxyPlaceholder,
         icon: pointer,
-        membershipHeader: 'FOXGANG Memberships',
+        membershipHeader: "FOXGANG Memberships",
         memberships: [
           {
-            title: 'Foxy Insider',
-            type: ' Entry level membership',
+            title: "Foxy Insider",
+            type: " Entry level membership",
             description: `As a foxy insider, you get access to exclusive perks that bring you closer to our community, lifestyle, and all the fabulous things foxes love. Here’s what you’ll enjoy:`,
             benefits: [
-              'Exclusive access to the foxy social club private online community—connect with other foxes like you!',
-              'First look at all the new fox appeal clothing before anyone else.',
-              'Early access to fox appeal sales and exclusive discounts just for you.',
-              'Monthly journal prompts to guide your personal growth and keep you in tune with your inner fox.',
-              'Early info on foxes unplug retreats and trips, so you can plan your next adventure before the rest.',
-              'Access to the broadcast channel for insider news and updates.',
-              'Book club access—discuss and grow with like-minded foxes.',
-              'Discounted tickets for any in-person events—because you should be part of every gathering!',
+              "Exclusive access to the foxy social club private online community—connect with other foxes like you!",
+              "First look at all the new fox appeal clothing before anyone else.",
+              "Early access to fox appeal sales and exclusive discounts just for you.",
+              "Monthly journal prompts to guide your personal growth and keep you in tune with your inner fox.",
+              "Early info on foxes unplug retreats and trips, so you can plan your next adventure before the rest.",
+              "Access to the broadcast channel for insider news and updates.",
+              "Book club access—discuss and grow with like-minded foxes.",
+              "Discounted tickets for any in-person events—because you should be part of every gathering!",
             ],
-            note: 'Step into the foxy insider circle and start living the foxy life—bold, empowered, and in the know.',
+            note: "Step into the foxy insider circle and start living the foxy life—bold, empowered, and in the know.",
             pricing: {
-              note: 'Normally $10.99 but today',
-              price: '$4.99',
-              btnText: 'Foxgang',
-              btnTextLink: '',
-              btnMessage: 'Click here to be a part of the gang',
+              note: "Normally $10.99 but today",
+              price: "$4.99",
+              btnText: "Foxgang",
+              btnTextLink: "",
+              btnMessage: "Click here to be a part of the gang",
             },
           },
           {
-            title: 'Foxy Elite',
-            type: 'Premium membership',
+            title: "Foxy Elite",
+            type: "Premium membership",
             description:
-              'READY TO LEVEL UP? The foxy elite membership is for those who want it all—the ultimate VIP experience within the foxy social club. You’ll get everything from the foxy insider membership, plus even more exclusive perks designed to elevate your lifestyle and keep you thriving. Here’s what you can look forward to as a foxy elite:',
+              "READY TO LEVEL UP? The foxy elite membership is for those who want it all—the ultimate VIP experience within the foxy social club. You’ll get everything from the foxy insider membership, plus even more exclusive perks designed to elevate your lifestyle and keep you thriving. Here’s what you can look forward to as a foxy elite:",
             benefits: [
-              'Everything in the foxy insider package—because you deserve all the perks.',
-              'VIP access to all fox appeal products—shop the latest drops 24 hours before anyone else.',
-              'Fox it up workout programs: 90-day home and gym workouts to get you moving and feeling fierce.',
-              'Exclusive discounts on foxes unplug—travel and explore the world with your foxes and save while doing it.',
-              'Workbook challenges to help you stay on top of your personal growth and goals.',
-              'Monthly vent sesh—your space to let loose, connect, and share what’s on your mind with your fellow foxes.',
-              'Monthly meet-ups with foxes in your town—experience discounted prices on fun like wine tasting, pottery classes, and so much more!',
+              "Everything in the foxy insider package—because you deserve all the perks.",
+              "VIP access to all fox appeal products—shop the latest drops 24 hours before anyone else.",
+              "Fox it up workout programs: 90-day home and gym workouts to get you moving and feeling fierce.",
+              "Exclusive discounts on foxes unplug—travel and explore the world with your foxes and save while doing it.",
+              "Workbook challenges to help you stay on top of your personal growth and goals.",
+              "Monthly vent sesh—your space to let loose, connect, and share what’s on your mind with your fellow foxes.",
+              "Monthly meet-ups with foxes in your town—experience discounted prices on fun like wine tasting, pottery classes, and so much more!",
             ],
             note: `The foxy elite experience is about you—your growth, your fitness, and your connection to an empowering community. Take your foxy life to the next level with the best of everything.`,
             pricing: {
-              note: 'Normally $15.99 but today',
-              price: '$9.99',
-              btnText: 'Foxgang',
-              btnTextLink: '',
-              btnMessage: 'Click here to be a part of the gang',
+              note: "Normally $15.99 but today",
+              price: "$9.99",
+              btnText: "Foxgang",
+              btnTextLink: "",
+              btnMessage: "Click here to be a part of the gang",
             },
           },
         ],
@@ -534,82 +540,82 @@ export const useDataCustomHook = () => {
     },
     podcastVlog: {
       vlog: {
-        header: 'Vlog',
+        header: "Vlog",
         img: shopImage1,
-        text: 'WELCOME TO MY VLOG JOURNAL. HERE I WILL SHARE PARTS OF MY LIFE, FROM MY DAILY ROUTINES TO MY INNER THOUGHTS.',
+        text: "WELCOME TO MY VLOG JOURNAL. HERE I WILL SHARE PARTS OF MY LIFE, FROM MY DAILY ROUTINES TO MY INNER THOUGHTS.",
         link: {
-          img: shopImage3,
-          path: 'https://www.youtube.com/channel/UCAABQ1cbiVoPHxE-vHk_KKA',
+          img: foxxyYoutube,
+          path: "https://www.youtube.com/channel/UCAABQ1cbiVoPHxE-vHk_KKA",
         },
       },
       podcast: {
-        header: 'Hey Foxy Thang! Podcast',
+        header: "Hey Foxy Thang! Podcast",
         soon: {
-          img: shopImage4,
+          img: comingSoon,
         },
         air: {
-          img: shopImage2,
+          img: onAir,
         },
       },
     },
     shop: {
       img: shopImage5,
-      header: 'Coming Soon...',
-      subHeader: 'Spring 2024',
+      header: "Coming Soon...",
+      subHeader: "Spring 2024",
     },
     contact: {
       img: snowyFox,
       initialState: {
-        name: '',
-        email: '',
-        interest: '',
-        message: '',
+        name: "",
+        email: "",
+        interest: "",
+        message: "",
       },
       forms: [
         {
-          label: 'Name',
-          name: 'name',
-          formType: 'input',
-          placeholder: '',
+          label: "Name",
+          name: "name",
+          formType: "input",
+          placeholder: "",
           required: true,
           multiline: false,
           rows: 0,
         },
         {
-          label: 'Email',
-          name: 'email',
-          formType: 'input',
-          placeholder: '',
+          label: "Email",
+          name: "email",
+          formType: "input",
+          placeholder: "",
           required: true,
           multiline: false,
           rows: 0,
         },
         {
-          label: 'Interested In',
-          name: 'interest',
-          formType: 'select',
-          placeholder: '',
+          label: "Interested In",
+          name: "interest",
+          formType: "select",
+          placeholder: "",
           required: true,
           options: [
-            'Sensual Dance',
-            'Cacao Circles',
-            'Retreats',
-            'Partnerships',
-            'Speaking',
-            'Engagements',
+            "Sensual Dance",
+            "Cacao Circles",
+            "Retreats",
+            "Partnerships",
+            "Speaking",
+            "Engagements",
           ],
         },
         {
-          label: 'Message',
-          name: 'message',
-          formType: 'input',
-          placeholder: '',
+          label: "Message",
+          name: "message",
+          formType: "input",
+          placeholder: "",
           required: true,
           multiline: true,
           rows: 2,
         },
       ],
-      btnText: 'Submit',
+      btnText: "Submit",
     },
   };
 
