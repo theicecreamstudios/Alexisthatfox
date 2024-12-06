@@ -110,7 +110,7 @@ const CacaoCircles = () => {
             color: "white",
           }}
         >
-          <Box sx={{ m: 'auto', width: "50%", mb: 3 }}>
+          <Box sx={{ m: 'auto', mb: 3 }}>
             <CardMedia
               component='img'
               sx={{

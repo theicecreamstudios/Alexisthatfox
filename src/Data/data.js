@@ -67,6 +67,7 @@ import onAir from "../assets/accessories/onAir.png";
 import stampIcon from "../assets/accessories/submit_Stamp.png"
 import envelop from '../assets/accessories/envelop.png'
 import brownPaper from '../assets/accessories/brownPaper.png'
+import noFlyer from "../assets/accessories/noFlyer25.png";
 
 export const useDataCustomHook = () => {
   const data = {
@@ -176,20 +177,32 @@ export const useDataCustomHook = () => {
           {
             name: "instagram",
             icons: instagram,
-            link: "https://www.instagram.com",
+            link: "https://www.instagram.com/alexisthatfox/",
           },
-          { name: "tiktok", icons: tiktok, link: "https://www.tiktok.com" },
-          { name: "youtube", icons: youtube, link: "https://www.youtube.com" },
+          {
+            name: "tiktok",
+            icons: tiktok,
+            link: "https://www.tiktok.com/@alexisthatfox",
+          },
+          {
+            name: "youtube",
+            icons: youtube,
+            link: "https://www.youtube.com/channel/UCAABQ1cbiVoPHxE-vHk_KKA",
+          },
           {
             name: "snapchat",
             icons: snapchat,
-            link: "https://www.snapchat.com",
+            link: "https://www.snapchat.com/add/alexisthatfox?invite_id=D-u16PF3&locale=en_US&share_id=I82lfK3LTzyp6Nyw_l7Pfg&sid=ed16522cdd704ab7aad80fa9af27b06f",
           },
-          { name: "threads", icons: threads, link: "https://www.threads.net" },
+          {
+            name: "threads",
+            icons: threads,
+            link: "https://www.threads.net/@alexisthatfox/post/DC-sg2Rvs2r",
+          },
           {
             name: "facebook",
             icons: facebook,
-            link: "https://www.facebook.com",
+            link: "https://www.facebook.com/Alexisthatfox",
           },
         ],
       },
@@ -262,7 +275,7 @@ export const useDataCustomHook = () => {
       btnTextLink: "",
     },
     soundBath: {
-      header: 'Sound Bath',
+      header: "Sound Bath",
       image: soundBathIMG,
       accessory: glitter,
       description: `A sound bath is a meditative experience where you’re immersed in the therapeutic sounds of instruments like crystal bowls, gongs, tuning forks, and so much more. These instruments create vibrations and frequencies that wash over you, helping to guide your body and mind into a deep state of relaxation and healing. Unlike traditional meditation, where silence or a guided voice is key, a sound bath uses the power of sound to connect you with deeper levels of calm.`,
@@ -328,7 +341,7 @@ export const useDataCustomHook = () => {
         icon: foxyLogo,
         accessory: {
           icon: InstaIcon,
-          link: "https://www.instagram.com/",
+          link: "https://www.instagram.com/alexisthatfox/",
           linkText: "@Foxesunplug",
         },
         retreatsHeader: "Foxes Unplug",
@@ -421,23 +434,27 @@ export const useDataCustomHook = () => {
           retreats: [
             {
               img: jamaicaFlyer25,
-              link: "",
+              link: "https://foxesunplug.wetravel.com/user/manage_trips/96808412",
             },
             {
               img: baliFlyer25,
-              link: "",
+              link: "https://foxesunplug.wetravel.com/trips/soulventure-to-bali-foxes-unplug-19509968",
             },
             {
               img: cancunFlyer25,
-              link: "",
+              link: "https://foxesunplug.wetravel.com/user/manage_trips/96808412",
             },
             {
               img: jTree26,
-              link: "",
+              link: "https://docs.google.com/forms/d/1_5WPLhFEOAolVmDUxYSc4aK5uXtpsmgAj1eHdKclmOk/edit",
             },
             {
               img: sAflyer25,
-              link: "",
+              link: "https://docs.google.com/forms/d/e/1FAIpQLSdcaVnIE9A2pehUddSo4UtiUHWrfM2M1QNZp_2BtA4hBp_QDg/viewform",
+            },
+            {
+              img: noFlyer,
+              link: "https://foxesunplug.wetravel.com/trips/weekender-to-new-orleans-foxes-unplug-32360608",
             },
           ],
         },
@@ -462,18 +479,19 @@ export const useDataCustomHook = () => {
       },
     },
     events: {
-      header: 'Events Happening near you',
+      header: "Events Happening near you",
       glitter: glitter,
-      description: `Whatever you're going through, you don't have to go through it alone. Alexis that Fox aims to create an inclusive community of womxnknown as “FOXGANG” who are all on a journey just like you.`,
+      description: `Whatever you're going through, you don't have to go through it alone. Alexis that Fox aims to create an inclusive community of women known as “FOXGANG” who are all on a journey just like you.`,
       btnText: "Book Event",
-      btnTextLink: "https://www.wetravel.com",
+      btnTextLink:
+        "https://foxesunplug.wetravel.com/user/manage_trips/96808412",
       accessory: soldOut,
       img: liveEvent,
     },
     SocialClub: {
       accessory: {
         icon: InstaIcon,
-        link: "https://www.instagram.com/",
+        link: "https://www.instagram.com/alexisthatfox/",
         linkText: "thefoxysocialclub",
       },
       logo: foxyClubLogo,

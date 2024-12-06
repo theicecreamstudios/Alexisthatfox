@@ -35,16 +35,16 @@ const SensualDance = () => {
 
   return (
     <div className={styles.SensualDance}>
-      <Box sx={{ position: 'relative' }}>
-        <Box sx={{ mt: 1, position: 'absolute' }}>
+      <Box sx={{ position: "relative" }}>
+        <Box sx={{ mt: 1, position: "absolute" }}>
           <CardMedia
-            component='img'
+            component="img"
             sx={{
-              width: {xs: 100, sm: 120,  md: 200},
-              opacity: 0.6
+              width: { xs: 100, sm: 120, md: 200 },
+              opacity: 0.6,
             }}
             image={accessory}
-            alt='Foxy'
+            alt="Foxy"
           />
         </Box>
         {/* <Box sx={{ mt: 3, position: 'absolute', right: 0, transform: 'rotate(93deg)' }}>
@@ -60,8 +60,8 @@ const SensualDance = () => {
         </Box> */}
         <Box
           sx={{
-            background: '#1E310A',
-            color: 'white',
+            background: "#1E310A",
+            color: "white",
             px: { xs: 3, md: 5 },
             pt: { xs: 3, md: 5 },
             pb: 22,
@@ -69,9 +69,9 @@ const SensualDance = () => {
         >
           <Box
             sx={{
-              fontFamily: 'BDSans',
-              textAlign: 'center',
-              display: { xs: 'none', lg: 'block' },
+              fontFamily: "BDSans",
+              textAlign: "center",
+              display: { xs: "none", lg: "block" },
             }}
           >
             <HeaderTitle title={header} />
@@ -81,43 +81,43 @@ const SensualDance = () => {
             sx={{
               flexGrow: 1,
               px: { md: 2 },
-              width: '100%',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             <Box
               sx={{
-                display: 'flex',
-                flexDirection: 'column',
+                display: "flex",
+                flexDirection: "column",
                 mt: -4,
-                border: 'none',
-                borderShadow: 'none',
+                border: "none",
+                borderShadow: "none",
               }}
             >
               <Box
                 sx={{
-                  display: 'flex',
-                  flexDirection: { xs: 'column', sm: 'row' },
-                  border: 'none',
-                  borderShadow: 'none',
-                  alignItems: { xs: 'center', md: 'flex-start' },
+                  display: "flex",
+                  flexDirection: { xs: "column", sm: "row" },
+                  border: "none",
+                  borderShadow: "none",
+                  alignItems: { xs: "center", md: "flex-start" },
                 }}
               >
                 <Box
                   sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    maxWidth: 'md',
+                    display: "flex",
+                    flexDirection: "column",
+                    maxWidth: "md",
                   }}
                 >
-                  <CardContent sx={{ flex: '1 0 auto' }}>
+                  <CardContent sx={{ flex: "1 0 auto" }}>
                     <Box
                       sx={{
-                        fontFamily: 'BDSans',
-                        textAlign: 'center',
-                        display: { xs: 'block', lg: 'none' },
+                        fontFamily: "BDSans",
+                        textAlign: "center",
+                        display: { xs: "block", lg: "none" },
                       }}
                     >
                       <HeaderTitle title={header} />
@@ -287,7 +287,7 @@ const SensualDance = () => {
           <Typography
             variant="body2"
             sx={{
-              textAlign: "start",
+              textAlign: "center",
               mb: 3,
               fontSize: "1rem",
               fontFamily: "Ovo",
@@ -318,7 +318,7 @@ const SensualDance = () => {
         </Container>
       </Box>
 
-      <Box sx={{ height: "70vh" }}>
+      <Box sx={{ height: "30vh" }}>
         <Box
           sx={{ position: "relative", background: "#CFC5B3", color: "white" }}
         >
