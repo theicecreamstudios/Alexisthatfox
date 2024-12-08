@@ -8,9 +8,11 @@ import FoxyButton from "../../components/FoxyButton/FoxyButton";
 import CardContent from "@mui/material/CardContent";
 import Brands from "../../components/Brands/Brands";
 import { useDataCustomHook } from "../../Data/data";
+import { useNavigate } from "react-router";
 
 const Home = () => {
   const data = useDataCustomHook();
+  const navigate = useNavigate()
   const {
     home: {
       jumbotron: { foxyImg, header, subHeader, bttnText, description },
@@ -21,7 +23,7 @@ const Home = () => {
     <Box
       className={styles.Home}
       sx={{
-        height: "calc(100vh - 100px)",
+        height: {xs:'initial', sm:"calc(100vh - 100px)"},
         display: "flex",
         flexDirection: "column",
         width: "100%",
@@ -50,9 +52,10 @@ const Home = () => {
           <Box
             sx={{
               display: "flex",
-              border: "none",
+              flexDirection: {xs: 'column-reverse', sm:'initial'},
               borderShadow: "none",
               alignItems: { xs: "center", md: "center" },
+
             }}
           >
             <Box sx={{ px: 1 }}>
@@ -131,6 +134,7 @@ const Home = () => {
                     color: "white",
                     fontWeight: 700,
                   }}
+                  onClick={() => navigate('/meet-me')}
                 />
               </Box>
             </Box>
@@ -169,7 +173,7 @@ const Home = () => {
             <FoxyButton
               fullWidth={false}
               variant="contained"
-              label={"Read More..."}
+              label={bttnText}
               backgroundColor={"#1c310a"}
               hoverBackgroundColor={"#1c310a"}
               height={"initial"}
@@ -180,6 +184,7 @@ const Home = () => {
                 color: "white",
                 fontWeight: 700,
               }}
+              onClick={() => navigate('/meet-me')}
             />
           </Box>
         </Box>

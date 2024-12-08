@@ -108,17 +108,17 @@ const Contact = () => {
                 xs: `url('${brownPaper}')`,
                 md: `url('${accessory}')`,
               },
-              backgroundSize: 'contain',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-              width: '100%',
-              height: { xs: '75vh', sm: '75vh', md: '80vh' },
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              position: 'relative',
-              flexDirection: 'column',
-              mb: { xs: '8vh', md: '1vh' },
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              width: "100%",
+              height: { xs: "75vh", sm: "75vh", md: "80vh" },
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              position: "relative",
+              flexDirection: "column",
+              mb: { xs: "8vh", md: "1vh" },
             }}
           >
             {/* Centered content */}
@@ -129,13 +129,19 @@ const Contact = () => {
                 position: 'relative',
                 padding: 2,
                 textAlign: 'center',
+                width: { xs: "80%", sm: "50%", md: 350 },
+                maxWidth: "90%",
+                position: "relative",
+                padding: 2,
+                textAlign: "center",
               }}
             >
               <Typography
                 variant="h4"
                 sx={{
-                  color: '#9c5632',
+                  color: "#9c5632",
                   mb: 2,
+                  fontFamily: "balthazar",
                 }}
               >
                 {header}
@@ -143,7 +149,7 @@ const Contact = () => {
 
               <Box
                 sx={{
-                  p: { xs: 2, sm: 'initial' },
+                  p: { xs: 2, sm: "initial" },
                 }}
               >
                 {forms.map((el, i) =>
@@ -158,11 +164,11 @@ const Contact = () => {
                       }}
                     >
                       <Typography
-                        variant='body2'
+                        variant="body2"
                         sx={{
                           mr: 1,
-                          fontFamily: 'KollektifBold',
-                          color: '#9c5632',
+                          fontFamily: "balthazar",
+                          color: "#9c5632",
                         }}
                       >
                         {el.label}
@@ -197,7 +203,7 @@ const Contact = () => {
                   ) : (
                     <Box
                       key={el.name}
-                      sx={{ display: "flex", flexDirection: "column", mt: 3 }}
+                      sx={{ display: "flex", flexDirection: "column", mt: 4 }}
                     >
                       <Typography
                         variant="body2"
@@ -241,7 +247,7 @@ const Contact = () => {
                             <MenuItem
                               key={opt}
                               value={opt}
-                              sx={{ fontFamily: 'Kollektif', color: '#9c5632' }}
+                              sx={{ fontFamily: "Kollektif", color: "#9c5632" }}
                             >
                               {opt}
                             </MenuItem>
@@ -257,11 +263,11 @@ const Contact = () => {
             <Box>
               <Box
                 sx={{
-                  textAlign: 'center',
+                  textAlign: "center",
                   backgroundImage: `url('${stamp}')`,
-                  backgroundSize: 'contain',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat',
+                  backgroundSize: "contain",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
                   width: 120,
                   height: 100,
                   mt: { xs: 5, lg: 10 },

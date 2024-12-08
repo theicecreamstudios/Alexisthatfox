@@ -123,7 +123,7 @@ const About = () => {
       <Box sx={{ flexGrow: 1, position: "relative", background: "#955B35" }}>
         <Box
           sx={{
-            width: 400,
+            width: {xs: 300, sm: 400},
             position: "absolute",
             top: -35,
             left: "50%",
@@ -143,6 +143,7 @@ const About = () => {
               fontWeight: 400,
               fontStyle: "normal",
               textAlign: "center",
+              fontSize:{xs: 40, sm: 50}
             }}
           >
             {subHeader}
@@ -266,7 +267,7 @@ const About = () => {
                           >
                             <CardContent
                               sx={{
-                                height: {xs: 120, sm:180},
+                                height: { xs: 120, sm: 180 },
                                 display: "flex",
                                 flexDirection: "column",
                                 justifyContent: el.secondary
@@ -344,8 +345,7 @@ const About = () => {
 
       <Box
         sx={{
-          height: "70vh",
-          pt: 8,
+          py: 8,
         }}
       >
         <Box
@@ -375,7 +375,7 @@ const About = () => {
             </Typography>
           </Box>
         </Box>
-        <Container>
+        <Container maxWidth="sm">
           <Box
             display="flex"
             gap="20px"
