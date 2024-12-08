@@ -95,11 +95,11 @@ const Contact = () => {
   return (
     <div className={styles.Contact}>
       <CssBaseline />
-      <Container maxWidth='xl'>
+      <Container maxWidth="xl">
         <Box
           sx={{
-            width: { xs: 'initial', md: '80vw' },
-            m: 'auto',
+            width: { xs: "initial", md: "80vw" },
+            m: "auto",
           }}
         >
           <Box
@@ -132,7 +132,7 @@ const Contact = () => {
               }}
             >
               <Typography
-                variant='h4'
+                variant="h4"
                 sx={{
                   color: '#9c5632',
                   mb: 2,
@@ -147,13 +147,13 @@ const Contact = () => {
                 }}
               >
                 {forms.map((el, i) =>
-                  el.formType === 'input' ? (
+                  el.formType === "input" ? (
                     <Box
                       key={el.name}
                       sx={{
-                        display: 'flex',
-                        justifyContent: 'flex-start',
-                        alignItems: 'end',
+                        display: "flex",
+                        justifyContent: "flex-start",
+                        alignItems: "end",
                         mt: 2,
                       }}
                     >
@@ -168,27 +168,27 @@ const Contact = () => {
                         {el.label}
                       </Typography>
                       <TextField
-                        id='standard-basic'
-                        variant='standard'
+                        id="standard-basic"
+                        variant="standard"
                         multiline={el.multiline}
                         rows={el.rows}
                         type={el.type}
                         value={state[el.name]}
                         sx={{
-                          color: '#9c5632',
-                          fontFamily: 'KollektifBold',
+                          color: "#9c5632",
+                          fontFamily: "KollektifBold",
                           flexGrow: 1,
-                          '& .MuiInput-underline:before': {
-                            borderBottomColor: '#9c5632 !important',
+                          "& .MuiInput-underline:before": {
+                            borderBottomColor: "#9c5632 !important",
                           },
-                          '& .MuiInput-underline.Mui-focused:after': {
-                            borderBottomColor: '#9c5632 !important',
+                          "& .MuiInput-underline.Mui-focused:after": {
+                            borderBottomColor: "#9c5632 !important",
                           },
-                          '& .MuiInputBase-input': {
-                            color: '#9c5632 !important',
+                          "& .MuiInputBase-input": {
+                            color: "#9c5632 !important",
                           },
-                          '& .MuiInputBase-input:focus': {
-                            color: '#9c5632 !important',
+                          "& .MuiInputBase-input:focus": {
+                            color: "#9c5632 !important",
                           },
                         }}
                         onChange={(event) => handleChange(event, el.name)}
@@ -197,44 +197,44 @@ const Contact = () => {
                   ) : (
                     <Box
                       key={el.name}
-                      sx={{ display: 'flex', flexDirection: 'column', mt: 4 }}
+                      sx={{ display: "flex", flexDirection: "column", mt: 3 }}
                     >
                       <Typography
-                        variant='body2'
+                        variant="body2"
                         sx={{
                           mt: 1,
-                          fontFamily: 'KollektifBold',
-                          textAlign: 'center',
-                          color: '#9c5632',
+                          fontFamily: "KollektifBold",
+                          textAlign: "center",
+                          color: "#9c5632",
                         }}
                       >
                         {el.label}
                       </Typography>
                       <FormControl
-                        variant='standard'
+                        variant="standard"
                         sx={{ m: 1, minWidth: 120 }}
                       >
                         <Select
                           value={state.interest}
                           onChange={(event) => handleChange(event, el.name)}
                           sx={{
-                            color: '#9c5632',
-                            fontFamily: 'KollektifBold',
-                            '.MuiSvgIcon-root ': {
-                              fill: '#9c5632 !important',
+                            color: "#9c5632",
+                            fontFamily: "KollektifBold",
+                            ".MuiSvgIcon-root ": {
+                              fill: "#9c5632 !important",
                             },
-                            '&.MuiSelect-root:before': {
-                              borderBottomColor: '#9c5632 !important',
+                            "&.MuiSelect-root:before": {
+                              borderBottomColor: "#9c5632 !important",
                             },
-                            '& .MuiInputBase-input': {
-                              color: '#9c5632 !important',
+                            "& .MuiInputBase-input": {
+                              color: "#9c5632 !important",
                             },
-                            '& .MuiInputBase-input:focus': {
-                              color: '#9c5632 !important',
+                            "& .MuiInputBase-input:focus": {
+                              color: "#9c5632 !important",
                             },
                           }}
                         >
-                          <MenuItem value=''>
+                          <MenuItem value="">
                             <em>None</em>
                           </MenuItem>
                           {el.options.map((opt) => (

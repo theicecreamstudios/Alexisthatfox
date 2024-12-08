@@ -1,49 +1,49 @@
 // import { useTranslation } from "react-i18next";
 
-import gap from '../assets/LogoPartnersBRANDS/adoreME.png';
-import cerebral from '../assets/LogoPartnersBRANDS/cerebral.png';
-import champs from '../assets/LogoPartnersBRANDS/Champs.png';
-import foria from '../assets/LogoPartnersBRANDS/Foria.png';
-import fruitByTheFoot from '../assets/LogoPartnersBRANDS/fruitbythefoot.png';
-import lelo from '../assets/LogoPartnersBRANDS/Lelo.png';
-import pantene from '../assets/LogoPartnersBRANDS/Pantene.png';
-import summers from '../assets/LogoPartnersBRANDS/summers.jpg';
-import tula from '../assets/LogoPartnersBRANDS/Tula.png';
-import walmart from '../assets/LogoPartnersBRANDS/walmart.png';
-import WomenBest from '../assets/photosAlexis1/womensbest.png';
-import Skylar from '../assets/photosAlexis1/SkylarLogo.jpg';
-import foxy from '../assets/photosAlexis2/foxy.jpg';
-import meetFoxy from '../assets/photosAlexis1/meetFoxxy.jpg';
-import SensualDanceWorkshop from '../assets/photosAlexis1/Sensual-dance.jpg';
-import coffeeBeans from '../assets/photosAlexis1/coffee.jpeg';
-import cacoaHealer from '../assets/photosAlexis1/cacaoHealer.png';
-import cacaoCircle from '../assets/photosAlexis1/cacaoCircle.png';
-import cocaoBrew from '../assets/photosAlexis1/cacaoBrew.png';
-import grlTrip from '../assets/photosAlexis2/retreat_girls_trips.jpg';
-import healing from '../assets/photosAlexis2/retreat_healing.jpg';
-import foxie from '../assets/photosAlexis2/foxie1.png';
-import pastRetreat from '../assets/photosAlexis1/pastRetreat.jpg';
-import pin from '../assets/photosAlexis1/pin.png';
-import pointer from '../assets/photosAlexis1/clickPointer.png';
-import videoFoxy from '../assets/photosAlexis1/retreatVideo.mp4';
-import shopImage1 from '../assets/foxxyIMGSHOP/podcastIMG.png';
-import shopImage5 from '../assets/photosAlexis2/appeal.jpg';
-import snowyFox from '../assets/photosAlexis1/fox.png';
-import yourHosts from '../assets/photosAlexis2/yourHosts.png';
-import arrow from '../assets/accessories/arrowDirection.png';
-import lipPrint from '../assets/accessories/Untitled design.png';
-import InstaIcon from '../assets/accessories/instLogo.png';
-import facebook from '../assets/accessories/facebook.svg';
-import instagram from '../assets/accessories/instagram.svg';
-import snapchat from '../assets/accessories/snapchat.svg';
-import threads from '../assets/accessories/threads.svg';
-import tiktok from '../assets/accessories/tiktok-square.svg';
-import youtube from '../assets/accessories/youtube.svg';
-import soldOut from '../assets/accessories/soldout.png';
-import foxyClubLogo from '../assets/accessories/foxyClub.webp';
-import vines from '../assets/accessories/vines.png'
-import glitter from '../assets/accessories/glitter.png'
-import foxyLogo from '../assets/accessories/logo.webp'
+import gap from "../assets/LogoPartnersBRANDS/adoreME.png";
+import cerebral from "../assets/LogoPartnersBRANDS/cerebral.png";
+import champs from "../assets/LogoPartnersBRANDS/Champs.png";
+import foria from "../assets/LogoPartnersBRANDS/Foria.png";
+import fruitByTheFoot from "../assets/LogoPartnersBRANDS/fruitbythefoot.png";
+import lelo from "../assets/LogoPartnersBRANDS/Lelo.png";
+import pantene from "../assets/LogoPartnersBRANDS/Pantene.png";
+import summers from "../assets/LogoPartnersBRANDS/summers.jpg";
+import tula from "../assets/LogoPartnersBRANDS/Tula.png";
+import walmart from "../assets/LogoPartnersBRANDS/walmart.png";
+import WomenBest from "../assets/photosAlexis1/womensbest.png";
+import Skylar from "../assets/photosAlexis1/SkylarLogo.jpg";
+import foxy from "../assets/photosAlexis2/foxy.jpg";
+import meetFoxy from "../assets/photosAlexis1/meetFoxxy.jpg";
+import SensualDanceWorkshop from "../assets/photosAlexis1/Sensual-dance.jpg";
+import coffeeBeans from "../assets/photosAlexis1/coffee.jpeg";
+import cacoaHealer from "../assets/photosAlexis1/cacaoHealer.png";
+import cacaoCircle from "../assets/photosAlexis1/cacaoCircle.png";
+import cocaoBrew from "../assets/photosAlexis1/cacaoBrew.png";
+import grlTrip from "../assets/photosAlexis2/retreat_girls_trips.jpg";
+import healing from "../assets/photosAlexis2/retreat_healing.jpg";
+import foxie from "../assets/photosAlexis2/foxie1.png";
+import pastRetreat from "../assets/photosAlexis1/pastRetreat.jpg";
+import pin from "../assets/photosAlexis1/pin.png";
+import pointer from "../assets/photosAlexis1/clickPointer.png";
+import videoFoxy from "../assets/photosAlexis1/retreatVideo.mp4";
+import shopImage1 from "../assets/foxxyIMGSHOP/podcastIMG.png";
+import shopImage5 from "../assets/photosAlexis2/appeal.jpg";
+import snowyFox from "../assets/photosAlexis1/fox.png";
+import yourHosts from "../assets/photosAlexis2/yourHosts.png";
+import arrow from "../assets/accessories/arrowDirection.png";
+import lipPrint from "../assets/accessories/Untitled design.png";
+import InstaIcon from "../assets/accessories/instLogo.png";
+import facebook from "../assets/accessories/facebook.svg";
+import instagram from "../assets/accessories/instagram.svg";
+import snapchat from "../assets/accessories/snapchat.svg";
+import threads from "../assets/accessories/threads.svg";
+import tiktok from "../assets/accessories/tiktok-square.svg";
+import youtube from "../assets/accessories/youtube.svg";
+import soldOut from "../assets/accessories/soldout.png";
+import foxyClubLogo from "../assets/accessories/foxyClub.webp";
+import vines from "../assets/accessories/vines.png";
+import glitter from "../assets/accessories/glitter.png";
+import foxyLogo from "../assets/accessories/logo.webp";
 import soundBathIMG from "../assets/accessories/soundBathImage.png";
 import soundBathIMG1 from "../assets/accessories/soundBathIMG1.png";
 import soundBathIMG2 from "../assets/accessories/soundBathIMG2.png";
@@ -64,10 +64,11 @@ import holdingHands from "../assets/accessories/womenChat.png";
 import foxxyYoutube from "../assets/accessories/foxxyYoutube.png";
 import comingSoon from "../assets/accessories/comingSoon.png";
 import onAir from "../assets/accessories/onAir.png";
-import stampIcon from "../assets/accessories/submit_Stamp.png"
-import envelop from '../assets/accessories/envelop.png'
-import brownPaper from '../assets/accessories/brownPaper.png'
+import stampIcon from "../assets/accessories/submit_Stamp.png";
+import envelop from "../assets/accessories/envelop.png";
+import brownPaper from "../assets/accessories/brownPaper.png";
 import noFlyer from "../assets/accessories/noFlyer25.png";
+import alexisYellow from "../assets/accessories/alexisYellow.png";
 
 export const useDataCustomHook = () => {
   const data = {
@@ -128,7 +129,7 @@ export const useDataCustomHook = () => {
     },
     meetAlexis: {
       header: "Meet Alexis",
-      foxyImg: meetFoxy,
+      foxyImg: alexisYellow,
       about: [
         `I’m Alexis Ramirez Jackson—a true fox of all trades. Born and raised in the heart of New York City, I’m a proud Latina embodying a whirlwind of passion, power, and resilience. From facilitating retreats, feminine embodiment movement
         classes, Sound Baths and cacao ceremonies, to mentoring women and creating content for over 5 million followers, a
@@ -169,7 +170,7 @@ export const useDataCustomHook = () => {
         ],
       },
       exploreService:
-        "EXPLORE INDIVIDUAL OR GROUP SESSIONS WITH ALEXIS FROM CACAO CIRCLES TO SENSUAL MOVEMENT CLASSES. EACH SESSION IS DESIGNED WITH YOUR HIGHEST INTENIONS AT THE CENTER.",
+        "Explore individual or group sessions with Alexis from Cacao Circles to sensual movement class. Each session is designed with your highest intentions at the center.",
       media: {
         mediaHeader: "Stay in touch",
         accessory: lipPrint,
@@ -342,7 +343,7 @@ export const useDataCustomHook = () => {
         accessory: {
           icon: InstaIcon,
           link: "https://www.instagram.com/alexisthatfox/",
-          linkText: "@Foxesunplug",
+          linkText: "Foxesunplug",
         },
         retreatsHeader: "Foxes Unplug",
         videoSrc: videoFoxy,
@@ -434,7 +435,7 @@ export const useDataCustomHook = () => {
           retreats: [
             {
               img: jamaicaFlyer25,
-              link: "https://foxesunplug.wetravel.com/user/manage_trips/96808412",
+              link: "https://foxesunplug.wetravel.com/trips/girls-trip-to-jamaica-foxes-unplug-96808412",
             },
             {
               img: baliFlyer25,
@@ -442,7 +443,7 @@ export const useDataCustomHook = () => {
             },
             {
               img: cancunFlyer25,
-              link: "https://foxesunplug.wetravel.com/user/manage_trips/96808412",
+              link: "https://docs.google.com/forms/d/e/1FAIpQLSdnQnzB2GTVGOoMcQuIBPfXztRbxBU5zeclRawfLAGXlD1w7w/viewform",
             },
             {
               img: jTree26,
@@ -495,7 +496,7 @@ export const useDataCustomHook = () => {
         linkText: "thefoxysocialclub",
       },
       logo: foxyClubLogo,
-      header: "WELCOME TO THE FOXY SOCIAL CLUB: WHERE FOXES UNITE!",
+      header: "Welcome to the Foxy Social Club: Where Foxes Unite!",
       description: [
         `Let’s be real—life is better when you’ve got a fierce, fabulous community around you. That’s exactly what the Foxy Social Club is all about! This isn’t just a social club; it’s a whole lifestyle for bold, adventurous women who are ready to live life to the fullest. We’re Foxes—aka #FoxGang—and we’re all about building connections, having fun, and making memories, both online and in person`,
 
@@ -526,7 +527,7 @@ export const useDataCustomHook = () => {
             pricing: {
               note: "Normally $10.99 but today",
               price: "$4.99",
-              btnText: "Foxgang",
+              btnText: "FoxGang",
               btnTextLink: "",
               btnMessage: "Click here to be a part of the gang",
             },
@@ -549,7 +550,7 @@ export const useDataCustomHook = () => {
             pricing: {
               note: "Normally $15.99 but today",
               price: "$9.99",
-              btnText: "Foxgang",
+              btnText: "FoxGang",
               btnTextLink: "",
               btnMessage: "Click here to be a part of the gang",
             },
@@ -586,7 +587,7 @@ export const useDataCustomHook = () => {
       accessory: envelop,
       stamp: stampIcon,
       brownPaper: brownPaper,
-      header: 'Lets Connect',
+      header: "Lets Connect",
       initialState: {
         name: "",
         email: "",
@@ -625,12 +626,11 @@ export const useDataCustomHook = () => {
           options: [
             "Sensual Dance",
             "Cacao Circles",
-            "Retreats",
+            "Retreats/Events",
             "Partnerships",
-            "Speaking",
-            "Engagements",
+            "Speaking Engagements",
+            "Social Club",
             "Something Else",
-            ""
           ],
         },
         {

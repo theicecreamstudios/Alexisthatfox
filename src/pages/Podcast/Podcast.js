@@ -54,7 +54,7 @@ const Podcast = () => {
                 <Link href={vlog.link.path}>
                   <CardMedia
                     component="img"
-                    sx={{ my: 3, width: 300 }}
+                    sx={{ my: 3, width: 600 }}
                     image={vlog.link.img}
                     alt="FoxyYouTube"
                   />
@@ -118,14 +118,14 @@ const Podcast = () => {
                 }}
               >
                 <HeaderTitle title={""} fontFamily='"Style Script", cursive;' />
-                <CardMedia
+                {/* <CardMedia
                   component="img"
                   sx={{
                     width: { xs: 200, sm: 300 },
                   }}
                   image={air.img}
                   alt="ComingSoon"
-                />
+                /> */}
               </Box>
             </Grid>
           </Grid>
