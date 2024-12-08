@@ -64,7 +64,7 @@ const SensualDance = () => {
             color: "white",
             px: { xs: 3, md: 5 },
             pt: { xs: 3, md: 5 },
-            pb: 22,
+            pb: 2,
           }}
         >
           <Box
@@ -135,7 +135,7 @@ const SensualDance = () => {
                         component="div"
                         variant="body2"
                         gutterBottom
-                        sx={{ mb: 2, px: 1, fontFamily: "Ovo" }}
+                        sx={{ mb: 2, px: 1, fontFamily: "balthazar" }}
                         key={text}
                       >
                         {text}
@@ -149,7 +149,7 @@ const SensualDance = () => {
                         gutterBottom
                         sx={{
                           p: 1,
-                          fontFamily: "Ovo",
+                          fontFamily: "balthazar",
                           display: "flex",
                         }}
                       >
@@ -193,11 +193,11 @@ const SensualDance = () => {
                     key={text}
                     sx={{
                       my: 3,
-                      fontSize: { xs: 12, md: 16 },
+                      fontSize: { xs: 20, md: 36 },
                       display: {
                         xs: "block",
                         md: "none",
-                        fontFamily: "Ovo",
+                        fontFamily: "balthazar",
                       },
                     }}
                   >
@@ -211,7 +211,12 @@ const SensualDance = () => {
                     component="div"
                     variant="caption"
                     gutterBottom
-                    sx={{ p: 1, fontFamily: "Ovo", display: "flex" }}
+                    sx={{
+                      p: 1,
+                      fontFamily: "balthazar",
+                      display: "flex",
+                      fontSize: { xs: 20, md: 36 },
+                    }}
                   >
                     <span style={{ marginRight: "5px" }}>*</span>
                     <span
@@ -237,7 +242,7 @@ const SensualDance = () => {
               height: { xs: "50%", md: "40%" },
               display: "flex",
               flexDirection: "column",
-              fontFamily: "Ovo",
+              fontFamily: "balthazar",
             }}
           >
             <Typography
@@ -265,14 +270,14 @@ const SensualDance = () => {
                       gutterBottom
                       sx={{
                         p: 1,
-                        fontSize: "0.8rem",
-                        fontFamily: "Ovo",
+                        fontSize: "1.0rem",
+                        fontFamily: "balthazar",
                         display: "flex",
                         alignItems: "center",
                       }}
                     >
                       <span style={{ marginRight: 5 }}> * </span>
-                      <span style={{ flexGrow: 1 }}>{el.toUpperCase()}</span>
+                      <span style={{ flexGrow: 1 }}>{el}</span>
                     </Typography>
                   ))}
                 </Box>
@@ -290,7 +295,7 @@ const SensualDance = () => {
               textAlign: "center",
               mb: 3,
               fontSize: "1rem",
-              fontFamily: "Ovo",
+              fontFamily: "balthazar",
             }}
           >
             {subText}
