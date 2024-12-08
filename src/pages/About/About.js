@@ -174,7 +174,7 @@ const About = () => {
                           >
                             <CardContent
                               sx={{
-                                height: 180,
+                                height: {xs: 120, sm:180},
                                 display: "flex",
                                 flexDirection: "column",
                                 justifyContent: el.secondary
@@ -257,12 +257,12 @@ const About = () => {
                             sx={{
                               background: "#d4a481",
                               color: "#ffffff",
-                              borderRadius: { xs: "56%", sm: "50%", md: "56%" },
+                              borderRadius: { xs: "50%", sm: "50%", md: "56%" },
                             }}
                           >
                             <CardContent
                               sx={{
-                                height: 180,
+                                height: {xs: 120, sm:180},
                                 display: "flex",
                                 flexDirection: "column",
                                 justifyContent: el.secondary

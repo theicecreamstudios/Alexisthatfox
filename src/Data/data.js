@@ -593,11 +593,14 @@ export const useDataCustomHook = () => {
         interest: "",
         message: "",
       },
+      messageSentSuccess: 'Message Sent Successfully!',
+      messageSentFailed: 'Something Went Wrong!.',
       forms: [
         {
           label: "Name",
           name: "name",
           formType: "input",
+          type: 'text',
           placeholder: "",
           required: true,
           multiline: false,
@@ -606,6 +609,7 @@ export const useDataCustomHook = () => {
         {
           label: "Email",
           name: "email",
+          type: 'email',
           formType: "input",
           placeholder: "",
           required: true,
@@ -625,22 +629,23 @@ export const useDataCustomHook = () => {
             "Partnerships",
             "Speaking",
             "Engagements",
-            "Something Else"
+            "Something Else",
+            ""
           ],
         },
         {
           label: "Message",
           name: "message",
+          type: 'text',
           formType: "input",
           placeholder: "",
           required: true,
           multiline: true,
-          rows: 2,
+          rows: 3,
         },
       ],
       btnText: "Submit",
     },
   };
-
   return data;
 };
