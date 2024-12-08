@@ -40,38 +40,38 @@ const SoundBath = () => {
       <Box>
         <Box
           sx={{
-            height: { xs: '30vh', md: '35vh', lg: '40vh' },
-            background: '#1e3706',
-            textAlign: 'center',
+            height: { xs: "30vh", md: "35vh", lg: "40vh" },
+            background: "#1e3706",
+            textAlign: "center",
           }}
         >
-          <Box sx={{ mt: 1, position: 'absolute' }}>
+          <Box sx={{ mt: 1, position: "absolute" }}>
             <CardMedia
-              component='img'
+              component="img"
               sx={{
                 width: { xs: 100, sm: 120, md: 200 },
                 opacity: 0.6,
               }}
               image={accessory}
-              alt='Foxy'
+              alt="Foxy"
             />
           </Box>
           <Box
             sx={{
               mt: 3,
-              position: 'absolute',
+              position: "absolute",
               right: 0,
-              transform: 'rotate(93deg)',
+              transform: "rotate(93deg)",
             }}
           >
             <CardMedia
-              component='img'
+              component="img"
               sx={{
                 width: { xs: 100, sm: 120, md: 200 },
                 opacity: 0.6,
               }}
               image={accessory}
-              alt='Foxy'
+              alt="Foxy"
             />
           </Box>
           <Typography
@@ -103,7 +103,7 @@ const SoundBath = () => {
               textAlign: "center",
               width: { xs: "85%", md: "70%" },
               m: "auto",
-              fontFamily: "Ovo",
+              fontFamily: "balthazar",
             }}
           >
             {description}
@@ -125,28 +125,30 @@ const SoundBath = () => {
           {/* Right Arrow */}
           <ArrowRightIcon sx={{ ml: -1.5 }} />
         </Box>
-
+        <br />
         {/* impact */}
         <Box sx={{ pb: 5 }}>
           <Typography
             variant="h5"
-            sx={{ textAlign: "center", m: "auto", fontFamily: "Ovo" }}
+            sx={{ textAlign: "center", m: "auto", fontFamily: "balthazar" }}
           >
             {impactHeader.toUpperCase()}
           </Typography>
 
           <Typography
             variant="body2"
-            sx={{ textAlign: "center", mt: 3, fontFamily: "Ovo" }}
+            sx={{ textAlign: "center", mt: 3, fontFamily: "balthazar" }}
           >
             {impactDescription.toUpperCase()}
           </Typography>
+          <br />
           <Typography
             variant="body2"
-            sx={{ textAlign: "center", mt: 3, fontFamily: "Ovo" }}
+            sx={{ textAlign: "center", mt: 3, fontFamily: "balthazar" }}
           >
             {impactSubHeader.toUpperCase()}
           </Typography>
+          <br />
           {soundBathBenefits.map((el, index) => (
             <Typography
               key={`${el.heading}-${index}`} // Ensure uniqueness
@@ -156,13 +158,13 @@ const SoundBath = () => {
               sx={{
                 p: 1,
                 fontSize: "0.8rem",
-                fontFamily: "Ovo",
+                fontFamily: "balthazar",
               }}
             >
               <span style={{ marginRight: 5 }}> * </span>
               <span style={{ flexGrow: 1 }}>
-                <span>{el.heading.toUpperCase()}: </span>
-                <span>{el.content.toUpperCase()}</span>
+                <span>{el.heading}: </span>
+                <span>{el.content}</span>
               </span>
             </Typography>
           ))}
@@ -202,14 +204,15 @@ const SoundBath = () => {
               columns={{ xs: 12, sm: 12, md: 12 }}
             >
               {soundBathsSessions.map((session) => (
-                <Grid item xs={12} sm={6} >
-                  <Box sx={{
-                    display: 'flex',
-                    flexDirection:'column',
-                    alignItems: 'center',
-                    justifyContent:'center'
-
-                  }}>
+                <Grid item xs={12} sm={6}>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
                     <Typography
                       variant="h4"
                       sx={{
@@ -224,11 +227,11 @@ const SoundBath = () => {
                         variant="h6"
                         sx={{
                           textAlign: "center",
-                          fontFamily: "Ovo",
+                          fontFamily: "balthazar",
                         }}
                         key={el}
                       >
-                        {el.toUpperCase()}
+                        {el}
                       </Typography>
                     ))}
                   </Box>
@@ -253,7 +256,23 @@ const SoundBath = () => {
             {findUs}
           </Typography>
         </Box>
+        <Box
+          display="flex"
+          alignItems="center"
+          justifyContent="space-between"
+          width="90%"
+          position="relative"
+          margin="auto"
+          sx={{ mt: 5 }}
+        >
+          <ArrowLeftIcon sx={{ mr: -1.5 }} />
+          {/* Connecting Line */}
+          <Box flex="1" height="2px" bgcolor="black"></Box>
 
+          {/* Right Arrow */}
+          <ArrowRightIcon sx={{ ml: -1.5 }} />
+        </Box>
+        <br />
         {subscribe.map((el) => (
           <Box
             key={el}
@@ -266,14 +285,14 @@ const SoundBath = () => {
               variant="caption"
               sx={{
                 fontSize: 10,
-                fontFamily: "Ovo",
+                fontFamily: "balthazar",
               }}
             >
               {el.toUpperCase()}
             </Typography>
           </Box>
         ))}
-        <Box sx={{ textAlign: "center", mt: 2 }}>
+        <Box sx={{ textAlign: "center", mt: 2, mb: 2 }}>
           <FoxyButton
             fullWidth={false}
             variant="contained"
@@ -286,7 +305,7 @@ const SoundBath = () => {
               borderRadius: 5,
               fontSize: 15,
               color: "white",
-              fontFamily: "Ovo",
+              fontFamily: "balthazar",
             }}
           />
         </Box>
