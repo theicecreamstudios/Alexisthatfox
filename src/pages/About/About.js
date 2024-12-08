@@ -55,7 +55,7 @@ const About = () => {
                       component="div"
                       variant="body2"
                       gutterBottom
-                      sx={{ mb: 3, px: 3, fontFamily: "Ovo" }}
+                      sx={{ mb: 3, px: 3, fontFamily: "balthazar" }}
                     >
                       {el}
                     </Typography>
@@ -107,7 +107,7 @@ const About = () => {
               component="div"
               variant="body2"
               gutterBottom
-              sx={{ mb: 3, fontFamily: "Ovo" }}
+              sx={{ mb: 3, fontFamily: "balthazar" }}
             >
               {about.map((el) => (
                 <React.Fragment key={el}>
@@ -174,7 +174,7 @@ const About = () => {
                           >
                             <CardContent
                               sx={{
-                                height: 180,
+                                height: { xs: 120, sm: 180 },
                                 display: "flex",
                                 flexDirection: "column",
                                 justifyContent: el.secondary
@@ -197,12 +197,12 @@ const About = () => {
                                     md: "0.9rem",
                                     lg: "1.3rem",
                                   },
-                                  fontFamily: "Ovo",
+                                  fontFamily: "balthazar",
                                   color: "#ffffff",
                                   borderRadius: "45%",
                                 }}
                               >
-                                {el.primary.toUpperCase()}
+                                {el.primary}
                               </Typography>
                               {el.secondary && (
                                 <Typography
@@ -212,7 +212,7 @@ const About = () => {
                                     textAlign: "center",
                                     mt: 2,
                                     fontSize: { xs: "0.6rem", sm: "1rem" },
-                                    fontFamily: "Ovo",
+                                    fontFamily: "balthazar",
                                     color: "#ffffff",
                                   }}
                                 >
@@ -230,7 +230,7 @@ const About = () => {
                             component="div"
                             sx={{
                               color: "#ffffff",
-                              fontFamily: "Ovo",
+                              fontFamily: "balthazar",
                               fontWeight: 700,
                             }}
                           >
@@ -257,12 +257,16 @@ const About = () => {
                             sx={{
                               background: "#d4a481",
                               color: "#ffffff",
-                              borderRadius: { xs: "56%", sm: "50%", md: "56%" },
+                              borderRadius: {
+                                xs: "156%",
+                                sm: "150%",
+                                md: "56%",
+                              },
                             }}
                           >
                             <CardContent
                               sx={{
-                                height: 180,
+                                height: {xs: 120, sm:180},
                                 display: "flex",
                                 flexDirection: "column",
                                 justifyContent: el.secondary
@@ -283,7 +287,7 @@ const About = () => {
                                     md: "0.9rem",
                                     lg: "1.3rem",
                                   },
-                                  fontFamily: "Ovo",
+                                  fontFamily: "balthazar",
                                   color: "#ffffff",
                                   p: 3,
                                 }}
@@ -299,7 +303,7 @@ const About = () => {
                                     textAlign: "center",
                                     mt: 2,
                                     fontSize: { xs: "0.6rem", sm: "1rem" },
-                                    fontFamily: "Ovo",
+                                    fontFamily: "balthazar",
                                     fontWeight: 700,
                                     color: "#ffffff",
                                     p: 3,
@@ -320,11 +324,11 @@ const About = () => {
                               component="div"
                               sx={{
                                 color: "#ffffff",
-                                fontFamily: "Ovo",
+                                fontFamily: "balthazar",
                                 fontWeight: 700,
                               }}
                             >
-                              {el.description.toUpperCase()}
+                              {el.description}
                             </Typography>
                           </Box>
                         </Grid>
@@ -348,7 +352,7 @@ const About = () => {
           sx={{
             display: "flex",
             justifyContent: "center",
-            alignItems: {xs: 'center', md: "flex-start"},
+            alignItems: { xs: "center", md: "flex-start" },
             mb: 4,
           }}
         >
@@ -356,7 +360,7 @@ const About = () => {
             src={accessory}
             alt="accessory"
             style={{
-              width: "90px",
+              width: "50px",
               transform: "rotate(348deg)",
               marginTop: 8,
             }}
@@ -365,7 +369,7 @@ const About = () => {
             <Typography
               variant="h2"
               component="div"
-              sx={{ fontFamily: "Italiana" }}
+              sx={{ fontFamily: "Italiana", fontSize: "40px" }}
             >
               {mediaHeader.toUpperCase()}
             </Typography>
@@ -381,17 +385,20 @@ const About = () => {
             }}
           >
             {platforms.map((platform) => (
-              <Link href={platform.link} underline="none" target="_blank" key={platform.name}>
+              <Link
+                href={platform.link}
+                underline="none"
+                target="_blank"
+                key={platform.name}
+              >
                 <CardMedia
                   component="img"
                   sx={{
-                    width: { xs: 40,  md: 50 },
+                    width: { xs: 40, md: 40 },
                   }}
                   image={platform.icons}
                   alt={platform.name}
-                  
                 />
-                
               </Link>
             ))}
           </Box>

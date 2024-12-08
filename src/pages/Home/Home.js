@@ -52,7 +52,7 @@ const Home = () => {
               display: "flex",
               border: "none",
               borderShadow: "none",
-              alignItems: { xs: "center", md: "flex-start" },
+              alignItems: { xs: "center", md: "center" },
             }}
           >
             <Box sx={{ px: 1 }}>
@@ -86,7 +86,7 @@ const Home = () => {
                   variant="body1"
                   component="div"
                   sx={{
-                    px: {xs: 1, sm: 2},
+                    px: { xs: 1, sm: 2 },
                     fontFamily: "Tenor Sans, sans-serif",
                     fontSize: { xs: 12, md: 15 },
                     display: { xs: "none", sm: "block" },
@@ -109,7 +109,7 @@ const Home = () => {
                     component="div"
                     sx={{
                       fontSize: 15,
-                      fontFamily: "Ovo",
+                      fontFamily: "balthazar",
                       mb: 2,
                     }}
                   >
@@ -159,7 +159,7 @@ const Home = () => {
               component="div"
               sx={{
                 fontSize: 15,
-                fontFamily: "Ovo",
+                fontFamily: "balthazar",
                 fontWeight: "bold",
                 p: 3,
               }}
