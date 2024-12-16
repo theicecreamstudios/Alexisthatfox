@@ -76,7 +76,7 @@ const Events = () => {
         >
           {header}
         </Typography>
-        <Typography
+        {/* <Typography
           variant="body2"
           sx={{
             mb: 0,
@@ -89,7 +89,7 @@ const Events = () => {
           }}
         >
           {description}
-        </Typography>
+        </Typography> */}
       </Box>
 
       {/* Image Section */}
@@ -140,15 +140,16 @@ const Events = () => {
           fullWidth={false}
           variant="contained"
           label={btnText.toUpperCase()}
-          backgroundColor={"#706953"}
+          backgroundColor={"#392d14"}
           hoverBackgroundColor={"#706953"}
           height={"initial"}
           width={"initial"}
           sx={{
-            borderRadius: 0,
+            borderRadius: 5,
             fontSize: { xs: 15, md: 18 },
             color: "#FFFFF",
             fontWeight: 700,
+            fontFamily: "balthazar",
             px: 5,
           }}
           onClick={() => {

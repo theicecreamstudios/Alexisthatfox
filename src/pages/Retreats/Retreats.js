@@ -28,7 +28,13 @@ const SectionHeader = ({ text, subText }) => (
     </Typography>
     <Typography
       variant="h5"
-      sx={{ textAlign: "center", m: "auto", mt: -1, fontFamily: "Tenor Sans" }}
+      sx={{
+        textAlign: "center",
+        m: "auto",
+        mt: -1,
+        fontFamily: "Tenor Sans",
+        fontSize: "18px",
+      }}
     >
       {subText}
     </Typography>
@@ -216,7 +222,7 @@ const Retreats = () => {
       </Box>
 
       <Container maxWidth="xl">
-        <Box sx={{ mt: 2 }}>
+        <Box sx={{ mt: 5 }}>
           <Typography
             variant="body2"
             sx={{
@@ -239,7 +245,7 @@ const Retreats = () => {
                 textAlign: "center",
                 m: "auto",
                 fontFamily: "balthazar",
-                mb: 2,
+                mb: 5,
               }}
             >
               {text}
@@ -273,7 +279,7 @@ const Retreats = () => {
               fontFamily: "Tenor sans",
               mb: 3,
               textAlign: "center",
-              fontWeight: 400,
+              fontWeight: 800,
               fontSize: 20,
             }}
           >
@@ -330,7 +336,7 @@ const Retreats = () => {
               mb: 8,
               textAlign: "center",
               fontWeight: 700,
-              fontSize: 30,
+              fontSize: 40,
             }}
           >
             {upcoming.header}
@@ -343,9 +349,14 @@ const Retreats = () => {
                 gridTemplateColumns: {
                   xs: "repeat(2, 1fr)", // 2 items per row on extra-small screens
                   sm: "repeat(3, 1fr)", // 3 items per row on small screens
-                  md: "repeat(4, 1fr)", // 4 items per row on medium and larger screens
+                  // md: "repeat(4, 1fr)",
+                  // 4 items per row on medium and larger screens
                 },
+                gridAutoFlow: "row",
+                // justifyItems: "center", // Horizontally center items
+                // alignItems: "center", // Vertically center items
                 mt: 5,
+                justifyContent: "center", // Centers the rows horizontally
               }}
             >
               {upcoming.retreats.map((item, index) => (
@@ -480,7 +491,7 @@ const Retreats = () => {
               fontFamily: "Tenor Sans",
             }}
           />
-          <CardMedia
+          {/* <CardMedia
             component="img"
             sx={{
               width: 50,
@@ -492,7 +503,7 @@ const Retreats = () => {
             }}
             image={memories.handIcon}
             alt="Retreat"
-          />
+          /> */}
         </Box>
       </Box>
       {/* become a sponsor */}
@@ -508,7 +519,7 @@ const Retreats = () => {
           <Typography
             component="div"
             variant="body2"
-            sx={{ p: 3, pt: 1, fontFamily: "balthazar" }}
+            sx={{ p: 3, pt: 1, fontFamily: "balthazar", textAlign: "center" }}
           >
             {sponsor.description}{" "}
             <a
@@ -535,7 +546,7 @@ const Retreats = () => {
                 fontSize: 20,
                 color: "white",
                 fontWeight: 700,
-                fontFamily: "Tenor Sans",
+                fontFamily: "balthazar",
               }}
               // onClick={() => {
               //   const newTab = window.open("", "_blank");

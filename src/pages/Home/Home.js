@@ -12,7 +12,7 @@ import { useNavigate } from "react-router";
 
 const Home = () => {
   const data = useDataCustomHook();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const {
     home: {
       jumbotron: { foxyImg, header, subHeader, bttnText, description },
@@ -23,7 +23,7 @@ const Home = () => {
     <Box
       className={styles.Home}
       sx={{
-        height: {xs:'initial', sm:"calc(100vh - 100px)"},
+        height: { xs: "initial", sm: "calc(100vh - 100px)" },
         display: "flex",
         flexDirection: "column",
         width: "100%",
@@ -52,10 +52,9 @@ const Home = () => {
           <Box
             sx={{
               display: "flex",
-              flexDirection: {xs: 'column-reverse', sm:'initial'},
+              flexDirection: { xs: "column-reverse", sm: "initial" },
               borderShadow: "none",
               alignItems: { xs: "center", md: "center" },
-
             }}
           >
             <Box sx={{ px: 1 }}>
@@ -132,9 +131,10 @@ const Home = () => {
                     borderRadius: 5,
                     fontSize: 15,
                     color: "white",
+                    fontFamily: "balthazar",
                     fontWeight: 700,
                   }}
-                  onClick={() => navigate('/meet-me')}
+                  onClick={() => navigate("/meet-me")}
                 />
               </Box>
             </Box>
@@ -183,8 +183,9 @@ const Home = () => {
                 fontSize: 15,
                 color: "white",
                 fontWeight: 700,
+                fontFamily: "balthazar",
               }}
-              onClick={() => navigate('/meet-me')}
+              onClick={() => navigate("/meet-me")}
             />
           </Box>
         </Box>

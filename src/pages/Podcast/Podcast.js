@@ -88,7 +88,7 @@ const Podcast = () => {
                   justifyContent: "center",
                 }}
               >
-                <HeaderTitle title={header} fontFamily="Italiana" />
+                <HeaderTitle title={header} fontFamily="Italiana"  />
                 <CardMedia
                   component="img"
                   sx={{

@@ -15,8 +15,8 @@ import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 
 
-const serviceKey = process.env.REACT_APP_EMAILJS_KEY;
-const templateKey = process.env.REACT_APP_EMAILJS_TEMPLATE_KEY;
+const serviceKey = 'service_sqis4tc'
+const templateKey = 'template_j43cppi'
 
 const Contact = () => {
   const data = useDataCustomHook();

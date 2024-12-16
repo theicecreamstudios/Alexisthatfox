@@ -9,9 +9,11 @@ import FoxyButton from "../../components/FoxyButton/FoxyButton";
 import { useDataCustomHook } from "../../Data/data";
 import HeaderTitle from "../../components/HeaderTitle/HeaderTitle";
 import Toolbar from "@mui/material/Toolbar";
+import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
 
 const SensualDance = () => {
   const data = useDataCustomHook();
+  const navigate = useNavigate();
   const {
     sensualDance: {
       header,
@@ -19,6 +21,7 @@ const SensualDance = () => {
       foxyImg,
       description,
       workshopDescription,
+      workshopdescription2,
       benefits,
       workshopBenefits,
       subText,
@@ -32,6 +35,22 @@ const SensualDance = () => {
   const midIndex = Math.ceil(workshopBenefits.length / 2);
   const firstColumn = workshopBenefits.slice(0, midIndex);
   const secondColumn = workshopBenefits.slice(midIndex);
+
+  const handleButtonClick = () => {
+    // Log the email to check if bttnLink is a valid email
+    console.log("Button clicked, bttnLink:", bttnLink);
+
+    // Check if bttnLink contains a valid email
+    if (bttnLink && bttnLink.includes("@")) {
+      console.log("Valid email, opening mail client.");
+      // If email is valid, open the email client
+      window.location.href = `mailto:${bttnLink}`;
+    } else {
+      console.log("Invalid email, navigating to /contact.");
+      // If email is invalid, navigate to the contact page
+      navigate("/contact");
+    }
+  };
 
   return (
     <div className={styles.SensualDance}>
@@ -157,6 +176,7 @@ const SensualDance = () => {
                         <span
                           style={{
                             flexGrow: 1,
+                            fontWeight: 700,
                           }}
                         >
                           {el}
@@ -198,6 +218,7 @@ const SensualDance = () => {
                         xs: "block",
                         md: "none",
                         fontFamily: "balthazar",
+                        textAlign: "center",
                       },
                     }}
                   >
@@ -253,9 +274,12 @@ const SensualDance = () => {
                 mb: 3,
                 fontSize: "1.2rem",
                 fontFamily: "Italiana",
+                textAlign: "center",
               }}
             >
               {workshopDescription}
+              <br />
+              {workshopdescription2}
             </Typography>
 
             <Box display="flex" justifyContent="space-between" gap="32px">
@@ -339,7 +363,7 @@ const SensualDance = () => {
             <Typography
               component="div"
               variant=""
-              sx={{ fontWeight: 700, fontFamily: "KollektifBold" }}
+              sx={{ fontWeight: 700, fontFamily: "balthazar" }}
             >
               {subHeader}
             </Typography>
@@ -357,17 +381,103 @@ const SensualDance = () => {
             sx={{
               borderRadius: 5,
               fontSize: { xs: 15, md: 18 },
-              color: "#FFFFF",
+              color: "#FFFFFF", // Corrected the color code
+              fontWeight: 700,
+              fontFamily: "balthazar",
+              px: 3,
+            }}
+            onClick={handleButtonClick} // Pass the handleButtonClick function to the FoxyButton
+          />
+
+          {/* <FoxyButton
+            fullWidth={false}
+            variant="contained"
+            label={bttnText}
+            backgroundColor={"#1E3706"}
+            hoverBackgroundColor={"#1E3706"}
+            height={"initial"}
+            width={"initial"}
+            sx={{
+              borderRadius: 5,
+              fontSize: { xs: 15, md: 18 },
+              color: "#FFFFFF", // Corrected the color code
               fontWeight: 700,
               px: 3,
             }}
             onClick={() => {
-              const newTab = window.open("", "_blank");
-              if (newTab) {
-                newTab.location.href = `mailto:${bttnLink}`;
+              // Ensure the bttnLink is a valid email
+              if (bttnLink && bttnLink.includes("@")) {
+                window.location.href = `mailto:${bttnLink}`;
+              } else {
+                navigate("/contact");
+                console.error("Invalid email address.");
               }
             }}
-          />
+          /> */}
+          {/* <FoxyButton
+  label="Email Alexis"
+  variant="contained"
+  backgroundColor="#1E3706"
+  hoverBackgroundColor="#2E4D08"
+  onClick={() => {
+    window.location.href =
+      "mailto:alexisthatfox@gmail.com?subject=Hello%20Alexis&body=I%20wanted%20to%20get%20in%20touch!";
+  }}
+  fullWidth={false}
+  height="50px"
+  width="150px"
+  sx={{
+    fontSize: 16,
+    fontWeight: "bold",
+    borderRadius: 8,
+  }}
+  href="mailto:alexisthatfox@gmail.com?subject=Hello%20Alexis&body=I%20wanted%20to%20get%20in%20touch!"
+  component="a"
+/> */}
+          {/* <div style={{ textAlign: "center" }}>
+            <p>Contact me via:</p>
+            <FoxyButton
+              label="Email via Gmail"
+              variant="contained"
+              backgroundColor="#1E3706"
+              hoverBackgroundColor="#2E4D08"
+              onClick={() => {
+                const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=alexisthatfox@gmail.com&su=Hello%20Alexis&body=I%20wanted%20to%20get%20in%20touch!`;
+                window.open(gmailUrl, "_blank");
+              }}
+              sx={{ marginRight: "10px" }}
+            />
+            <FoxyButton
+              label="Copy Email Address"
+              variant="outlined"
+              backgroundColor="#FFFFFF"
+              hoverBackgroundColor="#F0F0F0"
+              onClick={() => {
+                navigator.clipboard.writeText("alexisthatfox@gmail.com");
+                alert("Email address copied to clipboard!");
+              }}
+            />
+            <FoxyButton
+              label="Email Alexis"
+              variant="contained"
+              backgroundColor="#1E3706"
+              hoverBackgroundColor="#2E4D08"
+              onClick={() => {
+                window.location.href =
+                  "mailto:alexisthatfox@gmail.com?subject=Hello%20Alexis&body=I%20wanted%20to%20get%20in%20touch!";
+              }}
+              fullWidth={false}
+              height="50px"
+              width="150px"
+              sx={{
+                fontSize: 16,
+                fontWeight: "bold",
+                borderRadius: 8,
+              }}
+              href="mailto:alexisthatfox@gmail.com?subject=Hello%20Alexis&body=I%20wanted%20to%20get%20in%20touch!"
+              component="a"
+            />
+          </div> */}
         </Box>
       </Box>
     </div>

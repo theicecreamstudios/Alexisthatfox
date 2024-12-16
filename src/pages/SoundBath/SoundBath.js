@@ -11,6 +11,7 @@ import Grid from "@mui/material/Grid";
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
+
 const SoundBath = () => {
   const data = useDataCustomHook();
 
@@ -130,21 +131,31 @@ const SoundBath = () => {
         <Box sx={{ pb: 5 }}>
           <Typography
             variant="h5"
-            sx={{ textAlign: "center", m: "auto", fontFamily: "balthazar" }}
+            sx={{
+              textAlign: "center",
+              m: "auto",
+              fontFamily: "balthazar",
+              fontSize: "2.0rem",
+            }}
           >
             {impactHeader.toUpperCase()}
           </Typography>
 
           <Typography
             variant="body2"
-            sx={{ textAlign: "center", mt: 3, fontFamily: "balthazar" }}
+            sx={{ textAlign: "center", mt: 1, fontFamily: "balthazar" }}
           >
             {impactDescription.toUpperCase()}
           </Typography>
           <br />
           <Typography
             variant="body2"
-            sx={{ textAlign: "center", mt: 3, fontFamily: "balthazar" }}
+            sx={{
+              textAlign: "center",
+              mt: -2,
+              fontFamily: "balthazar",
+              fontSize: "1.5rem",
+            }}
           >
             {impactSubHeader.toUpperCase()}
           </Typography>

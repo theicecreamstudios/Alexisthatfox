@@ -11,8 +11,10 @@ import Container from "@mui/material/Container";
 import HeaderTitle from "../../components/HeaderTitle/HeaderTitle";
 import { useDataCustomHook } from "../../Data/data";
 import Link from "@mui/material/Link";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
   const data = useDataCustomHook();
   const {
     meetAlexis: {
@@ -123,7 +125,7 @@ const About = () => {
       <Box sx={{ flexGrow: 1, position: "relative", background: "#955B35" }}>
         <Box
           sx={{
-            width: {xs: 300, sm: 400},
+            width: { xs: 300, sm: 400 },
             position: "absolute",
             top: -35,
             left: "50%",
@@ -143,7 +145,7 @@ const About = () => {
               fontWeight: 400,
               fontStyle: "normal",
               textAlign: "center",
-              fontSize:{xs: 40, sm: 50}
+              fontSize: { xs: 40, sm: 50 },
             }}
           >
             {subHeader}
@@ -167,6 +169,7 @@ const About = () => {
                       {services.withDesc.map((el, index) => (
                         <Grid item xs={2} sm={6} key={el.primary}>
                           <Card
+                            onClick={() => navigate("/contact")}
                             sx={{
                               background: "#d4a481",
                               color: "#ffffff",

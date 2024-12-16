@@ -80,7 +80,7 @@ const SocialClub = () => {
       <Container maxWidth="xl">
         <Box>
           <Typography
-            variant="h5"
+            variant="h4"
             sx={{
               textAlign: "center",
               mt: 1,
@@ -214,7 +214,10 @@ const SocialClub = () => {
                   </Typography>
                   <br />
                   <br />
-                  <Typography variant="h6" sx={{ fontFamily: "balthazar" }}>
+                  <Typography
+                    variant="h6"
+                    sx={{ fontFamily: "balthazar", p: "25px", fontWeight:700 }}
+                  >
                     {column.description}
                   </Typography>
                   {column.benefits.map((el, index) => (
@@ -242,6 +245,8 @@ const SocialClub = () => {
                       fontFamily: "balthazar",
                       fontWeight: "bold",
                       mt: 3,
+                      p: 1,
+                      textAlign: "center",
                     }}
                   >
                     {column.note.toUpperCase()}
@@ -258,7 +263,15 @@ const SocialClub = () => {
                       mt: 3,
                     }}
                   >
-                    <Typography variant="h6" sx={{ my: 3 }}>
+                    <Typography
+                      variant="h4"
+                      sx={{
+                        my: 3,
+                        textDecoration: "line-through", // Adds the strikethrough effect
+                        textDecorationColor: "rgba(255, 0, 0, 0.4)",
+                        fontFamily: "balthazar",
+                      }}
+                    >
                       {column.pricing.note}
                     </Typography>
 
