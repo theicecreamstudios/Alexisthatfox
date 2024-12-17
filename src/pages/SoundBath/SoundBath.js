@@ -89,11 +89,12 @@ const SoundBath = () => {
         <CardMedia
           component="img"
           sx={{
-            width: { xs: 200, sm: 300 },
-            height: { xs: 200, sm: 300 },
+            p: {xs: 'initial', sm: 2.5, md: 'initial' },
+            width: { xs: 200, sm: 350, md: 450 },
+            height: { xs: 200, sm: 350, md: 450 },
             borderRadius: "50%",
             m: "auto",
-            mt: { xs: "-90px", sm: "-140px" },
+            mt: { xs: "-100.5px", sm: "-176.5px", md: "-226px" },
           }}
           image={image}
           alt="Foxy"
@@ -239,7 +240,6 @@ const SoundBath = () => {
                       sx={{
                         textAlign: "center",
                         fontFamily: "Balthazar",
-                        fontSize: "16px",
                       }}
                     >
                       {session.type}
@@ -321,14 +321,15 @@ const SoundBath = () => {
           <FoxyButton
             fullWidth={false}
             variant="contained"
-            label={btnText}
+            label={btnText.toUpperCase()}
             backgroundColor={"#9C5632"}
             hoverBackgroundColor={"#9C5632"}
             height={"initial"}
             sx={{
               width: 170,
               borderRadius: 5,
-              fontSize: 15,
+              fontSize: 12,
+              fontWeight: 700,
               color: "white",
               fontFamily: "balthazar",
             }}

@@ -28,7 +28,7 @@ const Events = () => {
       <Box
         sx={{
           height: { xs: "30vh", md: "45vh" },
-          background: "#392D14",
+          background: "#1e3706",
           textAlign: "center",
           position: "relative",
         }}
@@ -76,20 +76,6 @@ const Events = () => {
         >
           {header}
         </Typography>
-        {/* <Typography
-          variant="body2"
-          sx={{
-            mb: 0,
-            color: "#FFFFFF",
-            fontFamily: "Ovo",
-            fontSize: { xs: 12, sm: "unset" },
-            px: 1,
-            maxWidth: { sm: "sm" },
-            m: "auto",
-          }}
-        >
-          {description}
-        </Typography> */}
       </Box>
 
       {/* Image Section */}
@@ -140,7 +126,7 @@ const Events = () => {
           fullWidth={false}
           variant="contained"
           label={btnText.toUpperCase()}
-          backgroundColor={"#392d14"}
+          backgroundColor={"#a1653e"}
           hoverBackgroundColor={"#706953"}
           height={"initial"}
           width={"initial"}

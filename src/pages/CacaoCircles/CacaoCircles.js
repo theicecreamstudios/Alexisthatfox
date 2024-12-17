@@ -461,14 +461,14 @@ const CacaoCircles = () => {
             <FoxyButton
               fullWidth={false}
               variant="contained"
-              label={btnText}
+              label={btnText.toUpperCase()}
               backgroundColor={"#1C310A"}
               hoverBackgroundColor={"#1C310A"}
               height={"initial"}
               width={"initial"}
               sx={{
                 borderRadius: 5,
-                fontSize: { xs: 12, md: 15 },
+                fontSize: 12,
                 color: "white",
                 fontWeight: 700,
                 fontFamily: "balthazar",

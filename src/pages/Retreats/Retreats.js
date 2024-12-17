@@ -169,8 +169,8 @@ const Retreats = () => {
               justifyContent: "center",
               alignItems: "center",
               color: "#FFFFFF",
-              fontSize: 9,
-              fontFamily: "italiana",
+              fontSize: 12,
+              fontFamily: "balthazar",
             }}
             target="_blank"
           >
@@ -206,7 +206,7 @@ const Retreats = () => {
             mb: 0,
             color: "#FFFFFF",
             mt: 1,
-            fontFamily: "Italiana",
+            fontFamily: "balthazar",
             fontSize: { xs: 10, md: 12 },
           }}
         >
@@ -218,7 +218,10 @@ const Retreats = () => {
           width: { xs: 300, sm: 300, md: 500 },
           height: { xs: 200, sm: 300, md: 500 },
           m: "auto",
-          mt: { xs: "-80px", sm: "-100px", md: "-40px" },
+          p: 1,
+          mt: { xs: "-80px", sm: "-150px", md: "-60px", lg: "-150px" },
+          "@media (max-width: 375px)": { mt: "-60px" },
+        
           position: "relative",
           overflow: "hidden",
         }}
@@ -490,6 +493,7 @@ const Retreats = () => {
             sx={{
               width: {xs: 300, sm: 350, md: 400},
               margin: "auto",
+              "@media (max-width: 375px)": { width: "250px" },
             }}
             image={memories.img}
             alt="Retreat"
