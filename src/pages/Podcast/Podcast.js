@@ -73,7 +73,7 @@ const Podcast = () => {
             <Grid
               item
               xs={12}
-              md={6}
+              md={12}
               sx={{
                 display: "flex",
                 alignItems: "center",

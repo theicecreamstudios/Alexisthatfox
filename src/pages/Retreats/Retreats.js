@@ -40,6 +40,22 @@ const SectionHeader = ({ text, subText }) => (
     </Typography>
   </Box>
 );
+
+
+const getPosition = (value) => {
+  switch (value) {
+    case 0:
+      return { top: 0, left: 0, transform: 'rotate(99deg)' }
+    case 1:
+      return   { top: 0, right: 0,  }
+    case 2:
+     return { bottom: 0, left: 0 }
+    case 3:
+      return { bottom: 0, right: 0, transform: 'rotate(99deg)' }
+    default:
+      return;
+  }
+}
 const RetreatCard = ({ header, subHeader, description, img, reverse }) => (
   <Box
     sx={{
@@ -114,6 +130,7 @@ const Retreats = () => {
       memories,
       sponsor,
       subText,
+      
     },
   } = data;
 
@@ -425,7 +442,7 @@ const Retreats = () => {
       >
         <Box
           sx={{
-            width: 350,
+            width: {xs: 'initial', sm: 400, md: 450},
             p: 3,
             background: "white",
             mt: 2,
@@ -453,12 +470,14 @@ const Retreats = () => {
               sx={{
                 position: "absolute",
                 ...position,
+                ...getPosition(index)
               }}
             >
+              
               <CardMedia
                 component="img"
                 sx={{
-                  width: 30,
+                  width: {xs:70, md: 90},
                   margin: "auto",
                 }}
                 image={memories.pinIcon}
@@ -469,7 +488,7 @@ const Retreats = () => {
           <CardMedia
             component="img"
             sx={{
-              width: { xs: "100%", md: 400 },
+              width: {xs: 300, sm: 350, md: 400},
               margin: "auto",
             }}
             image={memories.img}
@@ -493,20 +512,13 @@ const Retreats = () => {
               cursor: "pointer",
               fontFamily: "italiana",
             }}
-          />
-          {/* <CardMedia
-            component="img"
-            sx={{
-              width: 50,
-              margin: "auto",
-              position: "absolute",
-              right: 0,
-              bottom: "-20px",
-              transform: "rotate(347deg)",
+            onClick={() => {
+              const newTab = window.open("", "_blank");
+              if (newTab) {
+                newTab.location.href = memories.link.path;
+              }
             }}
-            image={memories.handIcon}
-            alt="Retreat"
-          /> */}
+          />
         </Box>
       </Box>
       {/* become a sponsor */}

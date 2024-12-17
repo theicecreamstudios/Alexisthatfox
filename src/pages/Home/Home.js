@@ -61,8 +61,8 @@ const Home = () => {
               <CardMedia
                 component="img"
                 sx={{
-                  width: { xs: 200, sm: 300 },
-                  height: { xs: 200, sm: 300 },
+                  width: { xs: 300, md: 400 },
+                  height: { xs: 300, md: 400 },
                   borderRadius: "50%",
                 }}
                 image={foxyImg}

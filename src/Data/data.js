@@ -69,6 +69,7 @@ import envelop from "../assets/accessories/envelop.png";
 import brownPaper from "../assets/accessories/brownPaper.png";
 import noFlyer from "../assets/accessories/noFlyer25.png";
 import alexisYellow from "../assets/accessories/alexisYellow.png";
+import ig_grey from  "../assets/platformLogos/ig_grey.png"
 
 export const useDataCustomHook = () => {
   const data = {
@@ -483,7 +484,7 @@ export const useDataCustomHook = () => {
         pinIcon: pin,
         link: {
           btnText: "SEE MORE MEMORIES",
-          path: "",
+          path: "https://www.instagram.com/foxesunplug",
         },
       },
       sponsor: {
@@ -506,7 +507,7 @@ export const useDataCustomHook = () => {
     },
     SocialClub: {
       accessory: {
-        icon: InstaIcon,
+        icon: ig_grey,
         link: "https://www.instagram.com/alexisthatfox/",
         linkText: "thefoxysocialclub",
       },
@@ -526,7 +527,7 @@ export const useDataCustomHook = () => {
         memberships: [
           {
             title: "Foxy Insider",
-            type: " Entry level membership",
+            type: "Entry level membership",
             description: `As a foxy insider, you get access to exclusive perks that bring you closer to our community, lifestyle, and all the fabulous things foxes love. Here’s what you’ll enjoy:`,
             benefits: [
               "Exclusive access to the foxy social club private online community, connect with other foxes like you!",
@@ -544,7 +545,7 @@ export const useDataCustomHook = () => {
               price: "$4.99",
               btnText: "FoxGang",
               btnTextLink: "",
-              btnMessage: "Click here to be a part of the gang",
+              btnMessage: "",
             },
           },
           {
@@ -567,7 +568,7 @@ export const useDataCustomHook = () => {
               price: "$9.99",
               btnText: "FoxGang",
               btnTextLink: "",
-              btnMessage: "Click here to be a part of the gang",
+              btnMessage: "",
             },
           },
         ],

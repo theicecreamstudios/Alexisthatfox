@@ -5,7 +5,6 @@ import Box from "@mui/material/Box";
 import CardMedia from "@mui/material/CardMedia";
 import { useDataCustomHook } from "../../Data/data";
 import Link from "@mui/material/Link";
-import InstagramIcon from "../../components/instagramIcon/instagramIcon";
 import { Container, Grid, Typography } from "@mui/material";
 import FoxyButton from "../../components/FoxyButton/FoxyButton";
 
@@ -71,7 +70,16 @@ const SocialClub = () => {
             }}
             target="_blank"
           >
-            <InstagramIcon />
+            {/* <InstagramIcon /> */}
+            <CardMedia
+          component="img"
+          sx={{
+            width: { xs: 20, md: 20 },
+            mr: {xs:'initial', md: 1}
+          }}
+          image={accessory.icon}
+          alt={'instagram'}
+        />
 
             <span>{accessory.linkText.toUpperCase()}</span>
           </Link>
