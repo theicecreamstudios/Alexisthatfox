@@ -321,17 +321,17 @@ const SoundBath = () => {
           <FoxyButton
             fullWidth={false}
             variant="contained"
-            label={btnText.toUpperCase()}
+            label={btnText}
             backgroundColor={"#9C5632"}
             hoverBackgroundColor={"#9C5632"}
             height={"initial"}
             sx={{
-              width: 170,
               borderRadius: 5,
-              fontSize: 12,
+              fontSize: { xs: 15, md: 18 },
+              color: "#FFFFFF", // Corrected the color code
               fontWeight: 700,
-              color: "white",
               fontFamily: "balthazar",
+              px: 3,
             }}
             onClick={() =>
               navigate(btnTextLink, {

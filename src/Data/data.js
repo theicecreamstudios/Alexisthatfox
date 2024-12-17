@@ -286,7 +286,7 @@ export const useDataCustomHook = () => {
       },
       subHeader:
         "ELEVATE YOUR NEXT EVENT OR RETREAT AND INCLUDE A CACAO CIRCLE",
-      btnText: "BOOK CACAO CIRCLE",
+      btnText: "Book Cacoa Circle",
       btnTextLink: "/contact",
       state: "Cacao Circles",
     },

@@ -461,17 +461,18 @@ const CacaoCircles = () => {
             <FoxyButton
               fullWidth={false}
               variant="contained"
-              label={btnText.toUpperCase()}
+              label={btnText}
               backgroundColor={"#1C310A"}
               hoverBackgroundColor={"#1C310A"}
               height={"initial"}
               width={"initial"}
               sx={{
                 borderRadius: 5,
-                fontSize: 12,
-                color: "white",
+                fontSize: { xs: 15, md: 18 },
+                color: "#FFFFFF", // Corrected the color code
                 fontWeight: 700,
                 fontFamily: "balthazar",
+                px: 3,
               }}
               onClick={() =>
                 navigate(btnTextLink, {
