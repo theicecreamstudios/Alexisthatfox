@@ -79,7 +79,7 @@ const SensualDance = () => {
         </Box> */}
         <Box
           sx={{
-            background: "#1E310A",
+            background: "#1e3706",
             color: "white",
             px: { xs: 3, md: 5 },
             pt: { xs: 3, md: 5 },
@@ -189,8 +189,8 @@ const SensualDance = () => {
                   <CardMedia
                     component="img"
                     sx={{
-                      width: { xs: 200, sm: 300 },
-                      height: { xs: 200, sm: 300 },
+                      width: { xs: "100%", sm: 300, md: 400 },
+                      height: { xs: "100%", sm: 300, md: 400 },
                       mt: { xs: 3, md: 8, lg: "initial" },
                       borderRadius: "50%",
                     }}
@@ -297,7 +297,7 @@ const SensualDance = () => {
                         fontSize: "1.0rem",
                         fontFamily: "balthazar",
                         display: "flex",
-                        alignItems: "center",
+                        alignItems: { xs: "flex-start", sm: "center" },
                       }}
                     >
                       <span style={{ marginRight: 5 }}> * </span>

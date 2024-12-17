@@ -10,10 +10,12 @@ import { useDataCustomHook } from "../../Data/data";
 import Grid from "@mui/material/Grid";
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-
+import Socials from "../../components/Socials/Socials";
+import { useNavigate } from "react-router-dom";
 
 const SoundBath = () => {
   const data = useDataCustomHook();
+  const navigate = useNavigate();
 
   const {
     soundBath: {
@@ -33,6 +35,7 @@ const SoundBath = () => {
       subscribe,
       btnText,
       btnTextLink,
+      state,
     },
   } = data;
   return (
@@ -105,6 +108,7 @@ const SoundBath = () => {
               width: { xs: "85%", md: "70%" },
               m: "auto",
               fontFamily: "balthazar",
+              fontSize: "16px",
             }}
           >
             {description}
@@ -143,7 +147,12 @@ const SoundBath = () => {
 
           <Typography
             variant="body2"
-            sx={{ textAlign: "center", mt: 1, fontFamily: "balthazar" }}
+            sx={{
+              textAlign: "center",
+              mt: 1,
+              fontFamily: "balthazar",
+              fontSize: "16px",
+            }}
           >
             {impactDescription.toUpperCase()}
           </Typography>
@@ -168,7 +177,8 @@ const SoundBath = () => {
               gutterBottom
               sx={{
                 p: 1,
-                fontSize: "0.8rem",
+                // fontSize: "0.8rem",
+                fontSize: "16px",
                 fontFamily: "balthazar",
               }}
             >
@@ -228,7 +238,8 @@ const SoundBath = () => {
                       variant="h4"
                       sx={{
                         textAlign: "center",
-                        fontFamily: "Tenor Sans",
+                        fontFamily: "Balthazar",
+                        fontSize: "16px",
                       }}
                     >
                       {session.type}
@@ -258,8 +269,8 @@ const SoundBath = () => {
             sx={{
               textAlign: "center",
               width: 350,
-              fontFamily: "Tenor Sans",
-
+              fontFamily: "balthazar",
+              fontSize: "16px",
               m: "auto",
               pb: 1,
             }}
@@ -295,7 +306,7 @@ const SoundBath = () => {
             <Typography
               variant="caption"
               sx={{
-                fontSize: 10,
+                fontSize: 13,
                 fontFamily: "balthazar",
               }}
             >
@@ -303,6 +314,9 @@ const SoundBath = () => {
             </Typography>
           </Box>
         ))}
+        <Box sx={{ my: 1 }}>
+          <Socials />
+        </Box>
         <Box sx={{ textAlign: "center", mt: 2, mb: 2 }}>
           <FoxyButton
             fullWidth={false}
@@ -318,6 +332,11 @@ const SoundBath = () => {
               color: "white",
               fontFamily: "balthazar",
             }}
+            onClick={() =>
+              navigate(btnTextLink, {
+                state: { defaultInterest: state },
+              })
+            }
           />
         </Box>
       </Container>

@@ -31,8 +31,8 @@ const SectionHeader = ({ text, subText }) => (
       sx={{
         textAlign: "center",
         m: "auto",
-        mt: -1,
-        fontFamily: "Tenor Sans",
+        mt: 1,
+        fontFamily: "italiana",
         fontSize: "18px",
       }}
     >
@@ -153,7 +153,7 @@ const Retreats = () => {
               alignItems: "center",
               color: "#FFFFFF",
               fontSize: 9,
-              fontFamily: "Tenor Sans",
+              fontFamily: "italiana",
             }}
             target="_blank"
           >
@@ -188,7 +188,8 @@ const Retreats = () => {
           sx={{
             mb: 0,
             color: "#FFFFFF",
-            fontFamily: "Tenor Sans",
+            mt: 1,
+            fontFamily: "Italiana",
             fontSize: { xs: 10, md: 12 },
           }}
         >
@@ -233,6 +234,7 @@ const Retreats = () => {
               textAlign: "center",
               fontFamily: "Italiana",
               fontWeight: 800,
+              fontSize: "20px",
             }}
           >
             {retreatIntroHeader}
@@ -276,7 +278,7 @@ const Retreats = () => {
             component="div"
             variant="body2"
             sx={{
-              fontFamily: "Tenor sans",
+              fontFamily: "italiana",
               mb: 3,
               textAlign: "center",
               fontWeight: 800,
@@ -332,7 +334,7 @@ const Retreats = () => {
             component="div"
             variant="body2"
             sx={{
-              fontFamily: "Tenor Sans",
+              fontFamily: "italiana",
               mb: 8,
               textAlign: "center",
               fontWeight: 700,
@@ -402,7 +404,7 @@ const Retreats = () => {
               mb: 5,
               textAlign: "center",
               color: "#9C5733",
-              fontFamily: "Tenor Sans",
+              fontFamily: "italiana",
             }}
           >
             {subText}
@@ -467,6 +469,7 @@ const Retreats = () => {
           <CardMedia
             component="img"
             sx={{
+              width: { xs: "100%", md: 400 },
               margin: "auto",
             }}
             image={memories.img}
@@ -479,8 +482,8 @@ const Retreats = () => {
             fullWidth={false}
             variant="contained"
             label={memories.link.btnText}
-            backgroundColor={"#de2626"}
-            hoverBackgroundColor={"#de2626"}
+            backgroundColor={"#955B35"}
+            hoverBackgroundColor={"#955B35"}
             height={"initial"}
             sx={{
               width: 250,
@@ -488,7 +491,7 @@ const Retreats = () => {
               color: "white",
               fontWeight: 700,
               cursor: "pointer",
-              fontFamily: "Tenor Sans",
+              fontFamily: "italiana",
             }}
           />
           {/* <CardMedia

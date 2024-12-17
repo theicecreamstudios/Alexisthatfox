@@ -1,25 +1,27 @@
-import React, { useState } from 'react';
-import styles from './Contact.module.css';
-import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import TextField from '@mui/material/TextField';
-import MenuItem from '@mui/material/MenuItem';
-import Select from '@mui/material/Select';
-import FormControl from '@mui/material/FormControl';
-import { useDataCustomHook } from '../../Data/data';
-import emailjs from '@emailjs/browser';
-import { useEffect } from 'react';
-import Snackbar from '@mui/material/Snackbar';
-import Alert from '@mui/material/Alert';
+import React, { useState } from "react";
+import styles from "./Contact.module.css";
+import CssBaseline from "@mui/material/CssBaseline";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import TextField from "@mui/material/TextField";
+import MenuItem from "@mui/material/MenuItem";
+import Select from "@mui/material/Select";
+import FormControl from "@mui/material/FormControl";
+import { useDataCustomHook } from "../../Data/data";
+import emailjs from "@emailjs/browser";
+import { useEffect } from "react";
+import Snackbar from "@mui/material/Snackbar";
+import Alert from "@mui/material/Alert";
+import { useLocation } from "react-router-dom";
 
-
-const serviceKey = 'service_sqis4tc'
-const templateKey = 'template_j43cppi'
+const serviceKey = "service_sqis4tc";
+const templateKey = "template_j43cppi";
 
 const Contact = () => {
   const data = useDataCustomHook();
+  const location = useLocation();
+  const defaultInterest = location.state?.defaultInterest;
   const {
     contact: {
       header,
@@ -34,10 +36,26 @@ const Contact = () => {
   } = data;
   const [state, setState] = useState(initialState);
   const [open, setOpen] = React.useState(false);
-  const [severity, setSeverity] = React.useState('');
-  const [feedback, setFeedback] = React.useState('');
+  const [severity, setSeverity] = React.useState("");
+  const [feedback, setFeedback] = React.useState("");
 
-  useEffect(() => emailjs.init('s7caCHPM23LHkbEln'), []);
+  useEffect(() => emailjs.init("s7caCHPM23LHkbEln"), []);
+
+  // set defaultInterest
+  useEffect(() => {
+    console.log("defaultInterest::", defaultInterest);
+    if (defaultInterest) {
+      setState((prevState) => ({
+        ...prevState,
+        interest: defaultInterest,
+      }));
+    } else {
+      setState((prevState) => ({
+        ...prevState,
+        interest: "",
+      }));
+    }
+  }, [defaultInterest]);
 
   const handleChange = (event, name) => {
     const value = event.target.value;
@@ -51,28 +69,28 @@ const Contact = () => {
     // Perform form validation
     const { name, email, interest, message } = state;
     if (!name || !email || !interest || !message) {
-      setSeverity('warning');
-      setFeedback('Please fill out all required fields.');
+      setSeverity("warning");
+      setFeedback("Please fill out all required fields.");
       setOpen(true);
       return;
     }
-  
+
     // Check for valid email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      setSeverity('warning');
-      setFeedback('Please enter a valid email address.');
+      setSeverity("warning");
+      setFeedback("Please enter a valid email address.");
       setOpen(true);
       return;
     }
-  
+
     // Proceed to send email
     handleSubmitMail(state);
   };
 
   const handleSubmitMail = async (data) => {
     const serviceId = serviceKey;
-    const templateId = templateKey
+    const templateId = templateKey;
     try {
       await emailjs.send(serviceId, templateId, {
         name: data.name,
@@ -80,14 +98,14 @@ const Contact = () => {
         interest: data.interest,
         message: data.message,
       });
-      setState(initialState)
-      setSeverity('success')
-      setFeedback(messageSentSuccess)
+      setState(initialState);
+      setSeverity("success");
+      setFeedback(messageSentSuccess);
       setOpen(true);
     } catch (error) {
       console.log(error);
-      setSeverity('error')
-      setFeedback(messageSentFailed)
+      setSeverity("error");
+      setFeedback(messageSentFailed);
       setOpen(false);
     }
   };
@@ -124,11 +142,11 @@ const Contact = () => {
             {/* Centered content */}
             <Box
               sx={{
-                width: { xs: '80%', sm: '50%', md: 350 },
-                maxWidth: '90%',
-                position: 'relative',
+                width: { xs: "80%", sm: "50%", md: 350 },
+                maxWidth: "90%",
+                position: "relative",
                 padding: 2,
-                textAlign: 'center',
+                textAlign: "center",
                 width: { xs: "80%", sm: "50%", md: 350 },
                 maxWidth: "90%",
                 position: "relative",
@@ -182,7 +200,7 @@ const Contact = () => {
                         value={state[el.name]}
                         sx={{
                           color: "#9c5632",
-                          fontFamily: "KollektifBold",
+                          fontFamily: "balthazar",
                           flexGrow: 1,
                           "& .MuiInput-underline:before": {
                             borderBottomColor: "#9c5632 !important",
@@ -209,7 +227,7 @@ const Contact = () => {
                         variant="body2"
                         sx={{
                           mt: 1,
-                          fontFamily: "KollektifBold",
+                          fontFamily: "balthazar",
                           textAlign: "center",
                           color: "#9c5632",
                         }}
@@ -225,7 +243,7 @@ const Contact = () => {
                           onChange={(event) => handleChange(event, el.name)}
                           sx={{
                             color: "#9c5632",
-                            fontFamily: "KollektifBold",
+                            fontFamily: "balthazar",
                             ".MuiSvgIcon-root ": {
                               fill: "#9c5632 !important",
                             },
@@ -247,7 +265,7 @@ const Contact = () => {
                             <MenuItem
                               key={opt}
                               value={opt}
-                              sx={{ fontFamily: "Kollektif", color: "#9c5632" }}
+                              sx={{ fontFamily: "balthazar", color: "#9c5632" }}
                             >
                               {opt}
                             </MenuItem>
@@ -270,7 +288,8 @@ const Contact = () => {
                   backgroundRepeat: "no-repeat",
                   width: 120,
                   height: 100,
-                  mt: { xs: 5, lg: 10 },
+                  mt: { xs: 0, sm: 3, lg: 10 },
+                  cursor: "pointer",
                 }}
                 onClick={handleSubmit}
               />
@@ -278,15 +297,20 @@ const Contact = () => {
           </Box>
         </Box>
       </Container>
-      <Snackbar open={open} autoHideDuration={6000} onClose={() => setOpen(false)} anchorOrigin={{
-        vertical: 'top',
-        horizontal: 'right'
-      }}>
+      <Snackbar
+        open={open}
+        autoHideDuration={6000}
+        onClose={() => setOpen(false)}
+        anchorOrigin={{
+          vertical: "top",
+          horizontal: "right",
+        }}
+      >
         <Alert
           onClose={() => setOpen(false)}
           severity={severity}
           variant="filled"
-          sx={{ width: '100%' }}
+          sx={{ width: "100%" }}
         >
           {feedback}
         </Alert>

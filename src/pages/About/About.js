@@ -12,6 +12,8 @@ import HeaderTitle from "../../components/HeaderTitle/HeaderTitle";
 import { useDataCustomHook } from "../../Data/data";
 import Link from "@mui/material/Link";
 import { useNavigate } from "react-router-dom";
+import Socials from "../../components/Socials/Socials";
+import broomStick from "../../assets/accessories/broomstick.png";
 
 const About = () => {
   const navigate = useNavigate();
@@ -24,13 +26,41 @@ const About = () => {
       subHeader,
       services,
       exploreService,
-      media: { mediaHeader, accessory, platforms },
+      media: { mediaHeader, accessory },
     },
   } = data;
+
+  const handlePageNavigation = (link, state) => {
+    navigate(link, {
+      state: { defaultInterest: state },
+    });
+  };
 
   return (
     <Box className={styles.About}>
       <CssBaseline />
+
+      <Box
+        sx={{
+          position: "absolute",
+          top: "50px", // Adjust the distance from the top
+          left: "350px", // Adjust the distance from the right
+          zIndex: 10, // Ensure it appears above other content
+        }}
+      >
+        <CardMedia
+          component="img"
+          image={broomStick} // Replace with your image variable or URL
+          alt="Small Image"
+          sx={{
+            width: "150px", // Adjust the size of the image
+            height: "150px", // Keep the image square, or omit for natural proportions
+            borderRadius: "0%", // Makes the image circular (optional)
+            display: { xs: "none", sm: "block" },
+          }}
+        />
+      </Box>
+
       <Container maxWidth="lg">
         <Box sx={{ flexGrow: 1, mt: 4, display: { xs: "none", sm: "block" } }}>
           <Grid
@@ -169,7 +199,6 @@ const About = () => {
                       {services.withDesc.map((el, index) => (
                         <Grid item xs={2} sm={6} key={el.primary}>
                           <Card
-                            onClick={() => navigate("/contact")}
                             sx={{
                               background: "#d4a481",
                               color: "#ffffff",
@@ -187,7 +216,11 @@ const About = () => {
                                 alignItems: "center",
                                 py: 3,
                                 wordWrap: "wrap",
+                                cursor: "pointer",
                               }}
+                              onClick={() =>
+                                handlePageNavigation(el.link, el.state)
+                              }
                             >
                               <Typography
                                 variant="h5"
@@ -278,7 +311,11 @@ const About = () => {
                                   : "center",
                                 alignItems: "center",
                                 py: 3,
+                                cursor: "pointer",
                               }}
+                              onClick={() =>
+                                handlePageNavigation(el.link, el.state)
+                              }
                             >
                               <Typography
                                 variant="h5"
@@ -378,34 +415,7 @@ const About = () => {
             </Typography>
           </Box>
         </Box>
-        <Container maxWidth="sm">
-          <Box
-            display="flex"
-            gap="20px"
-            sx={{
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            {platforms.map((platform) => (
-              <Link
-                href={platform.link}
-                underline="none"
-                target="_blank"
-                key={platform.name}
-              >
-                <CardMedia
-                  component="img"
-                  sx={{
-                    width: { xs: 40, md: 40 },
-                  }}
-                  image={platform.icons}
-                  alt={platform.name}
-                />
-              </Link>
-            ))}
-          </Box>
-        </Container>
+        <Socials />
       </Box>
     </Box>
   );

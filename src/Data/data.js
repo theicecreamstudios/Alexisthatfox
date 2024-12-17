@@ -23,7 +23,7 @@ import grlTrip from "../assets/photosAlexis2/retreat_girls_trips.jpg";
 import healing from "../assets/photosAlexis2/retreat_healing.jpg";
 import foxie from "../assets/photosAlexis2/foxie1.png";
 import pastRetreat from "../assets/photosAlexis1/pastRetreat.jpg";
-import pin from "../assets/photosAlexis1/pin.png";
+import pin from "../assets/accessories/tape.png";
 import pointer from "../assets/photosAlexis1/clickPointer.png";
 import videoFoxy from "../assets/photosAlexis1/retreatVideo.mp4";
 import shopImage1 from "../assets/foxxyIMGSHOP/podcastIMG.png";
@@ -73,6 +73,40 @@ import alexisYellow from "../assets/accessories/alexisYellow.png";
 export const useDataCustomHook = () => {
   const data = {
     name: "AlexisThatFox",
+    media: {
+      platforms: [
+        {
+          name: "instagram",
+          icons: instagram,
+          link: "https://www.instagram.com/alexisthatfox/",
+        },
+        {
+          name: "tiktok",
+          icons: tiktok,
+          link: "https://www.tiktok.com/@alexisthatfox",
+        },
+        {
+          name: "youtube",
+          icons: youtube,
+          link: "https://www.youtube.com/channel/UCAABQ1cbiVoPHxE-vHk_KKA",
+        },
+        {
+          name: "snapchat",
+          icons: snapchat,
+          link: "https://www.snapchat.com/add/alexisthatfox?invite_id=D-u16PF3&locale=en_US&share_id=I82lfK3LTzyp6Nyw_l7Pfg&sid=ed16522cdd704ab7aad80fa9af27b06f",
+        },
+        {
+          name: "threads",
+          icons: threads,
+          link: "https://www.threads.net/@alexisthatfox/post/DC-sg2Rvs2r",
+        },
+        {
+          name: "facebook",
+          icons: facebook,
+          link: "https://www.facebook.com/Alexisthatfox",
+        },
+      ],
+    },
     header: {
       pages: [
         { label: "Home", path: "/" },
@@ -148,11 +182,15 @@ export const useDataCustomHook = () => {
             primary: "AWAKEN THE GODDESS MOVEMENT CLASS",
             // secondary: "MOVEMENT CLASS",
             description: "",
+            link: "/contact",
+            state: "Sensual Dance",
           },
           {
             primary: "CACAO CIRCLE & SOUND BATHS",
             secondary: "",
             description: "",
+            link: "/contact",
+            state: "Cacao Circles",
           },
         ],
         withoutDesc: [
@@ -160,12 +198,16 @@ export const useDataCustomHook = () => {
             primary: "FOXES UNPLUG",
             description:
               "Alexis hosts women's retreats. She is also available to facilitate at your next retreat!. Click below to join us on one of our retreats or see how Alexis can support your event.",
+            link: "/contact",
+            state: "Retreats/Events",
           },
           {
             primary: "Content Creator",
             secondary: "",
             description:
               "Interested in hiring me for speaking, engagements, partnerships or other business inquires",
+            link: "/contact",
+            state: "Partnerships",
           },
         ],
       },
@@ -174,38 +216,6 @@ export const useDataCustomHook = () => {
       media: {
         mediaHeader: "Stay in touch",
         accessory: lipPrint,
-        platforms: [
-          {
-            name: "instagram",
-            icons: instagram,
-            link: "https://www.instagram.com/alexisthatfox/",
-          },
-          {
-            name: "tiktok",
-            icons: tiktok,
-            link: "https://www.tiktok.com/@alexisthatfox",
-          },
-          {
-            name: "youtube",
-            icons: youtube,
-            link: "https://www.youtube.com/channel/UCAABQ1cbiVoPHxE-vHk_KKA",
-          },
-          {
-            name: "snapchat",
-            icons: snapchat,
-            link: "https://www.snapchat.com/add/alexisthatfox?invite_id=D-u16PF3&locale=en_US&share_id=I82lfK3LTzyp6Nyw_l7Pfg&sid=ed16522cdd704ab7aad80fa9af27b06f",
-          },
-          {
-            name: "threads",
-            icons: threads,
-            link: "https://www.threads.net/@alexisthatfox/post/DC-sg2Rvs2r",
-          },
-          {
-            name: "facebook",
-            icons: facebook,
-            link: "https://www.facebook.com/Alexisthatfox",
-          },
-        ],
       },
     },
     sensualDance: {
@@ -276,7 +286,8 @@ export const useDataCustomHook = () => {
       subHeader:
         "ELEVATE YOUR NEXT EVENT OR RETREAT AND INCLUDE A CACAO CIRCLE",
       btnText: "BOOK CACAO CIRCLE",
-      btnTextLink: "",
+      btnTextLink: "/contact",
+      state: "Cacao Circles",
     },
     soundBath: {
       header: "Sound Bath",
@@ -338,7 +349,8 @@ export const useDataCustomHook = () => {
         "Join the foxy social club to receive soundbaths and many more perks",
       ],
       btnText: `Book Sound Bath`,
-      btnTextLink: "",
+      btnTextLink: "/contact",
+      state: "SoundBath",
     },
     retreats: {
       jumbotron: {
@@ -633,6 +645,7 @@ export const useDataCustomHook = () => {
             "Partnerships",
             "Speaking Engagements",
             "Social Club",
+            "SoundBath",
             "Something Else",
           ],
         },
@@ -645,6 +658,7 @@ export const useDataCustomHook = () => {
           required: true,
           multiline: true,
           rows: 3,
+          cursor: "pointer",
         },
       ],
       btnText: "Submit",
