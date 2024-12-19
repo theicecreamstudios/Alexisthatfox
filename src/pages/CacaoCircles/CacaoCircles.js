@@ -82,17 +82,17 @@ const CacaoCircles = () => {
                 paddingBottom: 0, // Removes bottom padding
               }}
             >
-              <Box
-                sx={{
-                  position: "absolute", // Allow positioning within the grid item
-                  top: -62, // Align the image flush to the top of its container
-                  left: -10, // Align the image to the left
-                  right: 0, // Stretch the image across the full width
-                  bottom: 0, // Ensure the image reaches the bottom of its container
-                  width: "100%", // Make sure it takes full width
-                  height: "100%", // Make it fill the container height
-                }}
-              >
+           <Box
+  sx={{
+    position: "absolute", // Allow positioning within the grid item
+    top: { md: 77, sm: -62, xl:-65 }, // 77 for small screens, -62 for larger screens (adjust sm for other larger breakpoints)
+    left: -10, // Align the image to the left
+    right: 0, // Stretch the image across the full width
+    bottom: 0, // Ensure the image reaches the bottom of its container
+    width: "100%", // Make sure it takes full width
+    height: "100%", // Make it fill the container height
+  }}
+>
                 <CardMedia
                   component="img"
                   image={healer.img}
@@ -244,7 +244,7 @@ const CacaoCircles = () => {
               <Box
                 sx={{
                   position: "absolute", // Allow positioning within the grid item
-                  top: -62, // Align the image flush to the top of its container
+                  top: { md: -21, sm: -62, xl:-77 },
                   right: -10, // Align the image to the right
                   left: 0, // Stretch the image across the full width
                   bottom: 0, // Ensure the image reaches the bottom of its container
@@ -343,7 +343,7 @@ const CacaoCircles = () => {
               <Box
                 sx={{
                   position: "absolute", // Allow positioning within the grid item
-                  top: -62, // Align the image flush to the top of its container
+                  top: { md: -15, sm: -62, xl:-77 },
                   left: -10, // Align the image to the left
                   right: 0, // Stretch the image across the full width
                   bottom: 0, // Ensure the image reaches the bottom of its container

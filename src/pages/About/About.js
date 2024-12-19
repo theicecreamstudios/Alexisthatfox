@@ -44,7 +44,7 @@ const About = () => {
         sx={{
           position: "absolute",
           top: "50px", // Adjust the distance from the top
-          left: "350px", // Adjust the distance from the right
+          left: { xs: "350px", md: "200px" },
           zIndex: 10, // Ensure it appears above other content
         }}
       >

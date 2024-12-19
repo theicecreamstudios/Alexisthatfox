@@ -80,7 +80,7 @@ const SoundBath = () => {
           </Box>
           <Typography
             variant="h2"
-            sx={{ py: 5, mb: 0, fontFamily: "Italiana", color: "#FFFFFF" }}
+            sx={{ py: 3, mb: 0, fontFamily: "Italiana", color: "#FFFFFF" }}
           >
             {header}
           </Typography>
@@ -89,12 +89,12 @@ const SoundBath = () => {
         <CardMedia
           component="img"
           sx={{
-            p: {xs: 'initial', sm: 2.5, md: 'initial' },
-            width: { xs: 200, sm: 350, md: 450 },
-            height: { xs: 200, sm: 350, md: 450 },
+            p: { xs: "initial", sm: 2.5, md: "initial" },
+            width: { xs: 200, sm: 350, md: 400 },
+            height: { xs: 200, sm: 350, md: 400 },
             borderRadius: "50%",
             m: "auto",
-            mt: { xs: "-100.5px", sm: "-176.5px", md: "-226px" },
+            mt: { xs: "-100.5px", sm: "-176.5px", md: "-201px" },
           }}
           image={image}
           alt="Foxy"

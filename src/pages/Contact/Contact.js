@@ -130,7 +130,7 @@ const Contact = () => {
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
               width: "100%",
-              height: { xs: "75vh", sm: "75vh", md: "80vh" },
+              height: { xs: "75vh", sm: "75vh", md: "106vh" },
               display: "flex",
               justifyContent: "center",
               alignItems: "center",

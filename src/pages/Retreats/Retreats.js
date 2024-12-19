@@ -191,11 +191,14 @@ const Retreats = () => {
         <Typography
           // variant='h2'
           sx={{
-            pt: { xs: 7, sm: 5 },
+            pt: { xs: 6, sm: 4 }, // Adjust padding on top for heading
             mb: 0,
             color: "#FFFFFF",
             fontSize: { xs: "2rem", md: "4rem" },
             fontFamily: "Italiana",
+            position: "relative", // Allow independent positioning
+
+            top: { xs: "0px", md: "-8px" },
           }}
         >
           {retreatsHeader}
@@ -205,9 +208,9 @@ const Retreats = () => {
           sx={{
             mb: 0,
             color: "#FFFFFF",
-            mt: 1,
+            mt: { xs: 3, md: 0 }, // Add margin between the heading and subheading
             fontFamily: "balthazar",
-            fontSize: { xs: 10, md: 12 },
+            fontSize: { xs: 12, md: 15 },
           }}
         >
           {subHeader.toUpperCase()}
@@ -219,7 +222,7 @@ const Retreats = () => {
           height: { xs: 200, sm: 300, md: 500 },
           m: "auto",
           p: 1,
-          mt: { xs: "-80px", sm: "-150px", md: "-60px", lg: "-150px" },
+          mt: { xs: "-80px", sm: "-150px", md: "-60px", lg: "-115px" },
           "@media (max-width: 375px)": { mt: "-60px" },
         
           position: "relative",
